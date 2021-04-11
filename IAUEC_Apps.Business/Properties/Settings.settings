@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="IAUEC_Apps.Business.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="IAUEC_Apps_Business_Isida4_webservice_main_Isida4_webservice_mainservice" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.1.18:8888/soap/Isida4_webservice_main</Value>
+    </Setting>
+    <Setting Name="IAUEC_Apps_Business_ir_shaparak_bpm1_PaymentGatewayImplService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://bpm.shaparak.ir/pgwchannel/services/pgw</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

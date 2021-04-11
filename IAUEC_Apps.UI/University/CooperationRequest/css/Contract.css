@@ -1,0 +1,563 @@
+﻿@font-face {
+    font-family: 'IranNastaliq';
+    src: url('../fonts/IranNastaliq.eot?#') format('eot'), url('../fonts/IranNastaliq.ttf') format('truetype'), url('../fonts/IranNastaliq.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'BZar';
+    src: url('../fonts/BZar.eot?#') format('eot'), url('../fonts/BZar.ttf') format('truetype'), url('../fonts/BZar.woff') format('woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'BZar';
+    src: url('../fonts/BZarBold.eot?#') format('eot'), url('../fonts/BZarBold.ttf') format('truetype'), url('../fonts/BZarBold.woff') format('woff');
+    font-weight: bold;
+}
+
+.contractPages {
+    direction: rtl;
+    font-family: 'BZar';
+    color: #000;
+    /*width: 220mm;border: 1px solid #ccc;*/ /*ForPrint*/
+    padding: 5mm;
+    margin: 0 auto;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.pageFooter {
+    text-align: center;
+    font-size: 12px;
+    border-top: 3px solid #649ec3;
+    padding: 20px 0 0;
+}
+
+.pageHeader {
+    position: relative;
+}
+
+@page {
+    size: A4;
+    margin: 11mm 13mm 17mm 15mm;
+}
+
+/*.sSpace{display:inline-block; width: 50px;}
+.mSpace{display:inline-block; width: 150px;}
+.lSpace{display:inline-block; width: 250px;}*/
+.sSpace, .mSpace, .lSpace {
+    display: inline-block;
+    padding: 0 15px;
+    font-weight: bold;
+    font-size: 11.5pt;
+}
+
+.boldFont {
+    font-weight: bold;
+}
+
+.topTitle {
+    text-align: center;
+    font-family: 'IranNastaliq';
+    margin-top: 25px;
+}
+
+.hRight {
+    float: right;
+    width: 20%;
+}
+
+    .hRight img {
+        width: 100%;
+    }
+
+.hLeft {
+    float: left;
+    margin-top: -10px;
+}
+
+.clear {
+    clear: both;
+}
+
+.hLine {
+    margin-right: 8%;
+    width: 92%;
+    top: 76px;
+    border-bottom: 4px solid #115294;
+    position: absolute;
+}
+
+.content-block {
+    text-align: justify;
+    font-size: 12pt;
+    padding: 0 25px;
+}
+
+.professorCode {
+    position: absolute;
+    top: 15px;
+    right: 100px;
+}
+
+.headInfoTitle {
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    vertical-align: bottom;
+    line-height: 38px;
+}
+
+.headInfo {
+    border-bottom: dotted 1px #000;
+    display: inline-block;
+    width: 120px;
+    height: 20px;
+    vertical-align: bottom;
+}
+/*.signatureWrapper{text-align: center;}*/
+.signatureBox {
+    display: inline-block;
+    text-align: center;
+    width: 49%;
+    margin: 60px 0 30px;
+    font-family: 'IranNastaliq';
+}
+
+.confirmPanel {
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+    background: #ccc;
+    width: 220mm;
+    border: 1px solid #999;
+}
+
+.contractWrapper.boxed {
+    width: 220mm;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+}
+
+#sBox3 {
+    text-align: right;
+    width: 33%;
+}
+
+#sBox4 {
+    text-align: right;
+    width: 33%;
+    margin-right: 20px;
+}
+
+span.divBlock {
+    display: block;
+}
+
+@media print {
+    /*.contractPages{display:none;}*/
+    html, body {
+        width: 210mm;
+        height: 297mm;
+    }
+
+    .pageFooter {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .pageHeader {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .hLeft {
+        margin-top: 0px;
+    }
+
+    .sSpace, .mSpace, .lSpace {
+        display: inline-block;
+        padding-left: 10mm;
+        font-weight: bold;
+        font-size: 11.5pt;
+    }
+
+    .topTitle {
+        margin-top: -50px;
+    }
+    /*.sSpace{display:inline-block; width: 20mm;}
+	.mSpace{display:inline-block; width: 45mm;}
+	.lSpace{display:inline-block; width: 120mm;}*/
+    .professorCode {
+        position: fixed;
+        top: 10px;
+        right: 40mm;
+    }
+
+    .pageWrapper:last-child {
+        page-break-after: avoid;
+        margin: 40mm 0 0;
+    }
+
+    .hLine {
+        border-bottom: 2px solid #115294;
+        top: 79px;
+        position: fixed;
+    }
+
+    .pageWrapper {
+        margin: 35mm 0 50mm;
+        page-break-after: always;
+    }
+
+    .signatureBox {
+        margin: 20px 0;
+        vertical-align: middle;
+    }
+
+        .signatureBox img {
+            height: 30mm;
+        }
+
+    .headInfoTitle {
+        height: 3mm;
+        vertical-align: top;
+        line-height: 5mm;
+        font-size: 10pt;
+        width: 10mm;
+    }
+
+    .headInfo {
+        height: 3mm;
+        font-size: 10pt;
+        width: 30mm;
+        vertical-align: top;
+    }
+
+    .buttonsWrapper {
+        display: none;
+    }
+
+    .contractWrapper {
+        width: 220mm;
+        border-width: 0px;
+    }
+
+        .contractWrapper.boxed {
+            border-width: 0px;
+        }
+
+    .confirmPanel {
+        border-width: 0px;
+    }
+
+    a, a:focus, a:hover, a:active, a:visited {
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+.contractsMainWrapper {
+    direction: rtl;
+    display: block;
+}
+
+.agreementMainWrapper {
+    direction: rtl;
+    display: block;
+}
+
+table > tbody > tr > td.termTitle {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.statusTable {
+    margin-top: 30px;
+}
+
+table > tbody > tr > th {
+    text-align: right;
+    font-size: 18px;
+}
+
+/*---------------------*/
+
+.f1Contract {
+    padding: 25px;
+    background: #fff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+    .f1Contract h3 {
+        margin-top: 0;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+
+.f1Contract-steps {
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.f1Contract-progress {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    /*background: #debdfb;*/
+    background: #d4ebff;
+}
+
+.f1Contract-progress-line {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1px;
+    /*background: #8800ff;*/
+    background: #0088ff;
+}
+
+.f1Contract-step {
+    position: relative;
+    float: right;
+    width: 33.3%;
+    padding: 0 5px;
+}
+
+.f1Contract-step-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-top: 4px;
+    background: #d4ebff;
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.f1Contract-step.activated .f1Contract-step-icon {
+    background: #fff;
+    border: 1px solid #0088ff;
+    color: #0088ff;
+    line-height: 38px;
+}
+
+.f1Contract-step.active .f1Contract-step-icon {
+    width: 48px;
+    height: 48px;
+    margin-top: 0;
+    background: #0088ff;
+    font-size: 22px;
+    line-height: 48px;
+}
+
+.f1Contract-step p {
+    color: #ccc;
+}
+
+.f1Contract-step.activated p {
+
+    color: #0088ff;
+}
+
+.f1Contract-step.active p {
+
+    color: #0088ff;
+}
+/*---------------------*/
+
+.f1ContractHOD {
+    padding: 25px;
+    background: #fff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+    .f1ContractHOD h3 {
+        margin-top: 0;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+
+.f1ContractHOD-steps {
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.f1ContractHOD-progress {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: #ffd4d4;
+}
+
+.f1ContractHOD-progress-line {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1px;
+    background: #ff4646;
+}
+
+.f1ContractHOD-step {
+    position: relative;
+    float: right;
+    width: 33.3%;
+    padding: 0 5px;
+}
+
+.f1ContractHOD-step-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-top: 4px;
+    background: #ffd4d4;
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.f1ContractHOD-step.activated .f1ContractHOD-step-icon {
+    background: #fff;
+    border: 1px solid #ff4646;
+    color: #ff4646;
+    line-height: 38px;
+}
+
+.f1ContractHOD-step.active .f1ContractHOD-step-icon {
+    width: 48px;
+    height: 48px;
+    margin-top: 0;
+    background: #ff4646;
+    font-size: 22px;
+    line-height: 48px;
+}
+
+.f1ContractHOD-step p {
+    color: #ccc;
+}
+
+.f1ContractHOD-step.activated p {
+
+    color: #ff4646;
+}
+
+.f1ContractHOD-step.active p {
+
+    color: #ff4646;
+}
+/*---------------------*/
+.f1Agreement {
+    padding: 25px;
+    background: #fff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+    .f1Agreement h3 {
+        margin-top: 0;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+
+.f1Agreement-steps {
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.f1Agreement-progress {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: #ecd8ff;
+}
+
+.f1Agreement-progress-line {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1px;
+    background: #8000ff;
+}
+
+.f1Agreement-step {
+    position: relative;
+    float: right;
+    width: 33.3%;
+    padding: 0 5px;
+}
+
+.f1Agreement-step-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-top: 4px;
+    background: #ecd8ff;
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.f1Agreement-step.activated .f1Agreement-step-icon {
+    background: #fff;
+    /*border: 1px solid #8800ff;
+            color: #8800ff;*/
+    border: 1px solid #8000ff;
+    color: #8000ff;
+    line-height: 38px;
+}
+
+.f1Agreement-step.active .f1Agreement-step-icon {
+    width: 48px;
+    height: 48px;
+    margin-top: 0;
+    /*background: #8800ff;*/
+    background: #8000ff;
+    font-size: 22px;
+    line-height: 48px;
+}
+
+.f1Agreement-step p {
+    color: #ccc;
+}
+
+.f1Agreement-step.activated p {
+    /*color: #8800ff;*/
+    color: #8000ff;
+}
+
+.f1Agreement-step.active p {
+    /*color: #8800ff;*/
+    color: #8000ff;
+}

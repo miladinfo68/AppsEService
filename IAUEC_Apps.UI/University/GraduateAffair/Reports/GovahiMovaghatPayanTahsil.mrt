@@ -1,0 +1,717 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <Connection1 Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>Connection1</Alias>
+        <ConnectionStringEncrypted>+XDLieRLed3iW/3s5QF3595ad+tNa1Gc+X31pfvQsRvEeFOhTxIx3elN0dTpHPV/w1rhg80Ko5nsYd1sTT0yP9HI+2BPWcOsb0u5gGUcd3vZeMvr6F0xreNcpIDDBCVK39Blq09rQ/V6HrXM8QDkL4Fa2Yk=</ConnectionStringEncrypted>
+        <Name>Connection1</Name>
+      </Connection1>
+    </Databases>
+    <DataSources isList="true" count="2">
+      <_x005B_Graduate_x005D___x005B_SP_getFormGovahiMovaghatPayanTahsilat_x005D_ Ref="3" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>[Graduate].[SP_getFormGovahiMovaghatPayanTahsilat]</Alias>
+        <Columns isList="true" count="41">
+          <value>name,System.String</value>
+          <value>namep,System.String</value>
+          <value>idd,System.String</value>
+          <value>date_tav,System.String</value>
+          <value>mahalSodor,System.String</value>
+          <value>sal_vorod,System.String</value>
+          <value>reshte,System.String</value>
+          <value>sys_amozeshi,System.String</value>
+          <value>date_far,System.String</value>
+          <value>magh,System.String</value>
+          <value>kol_ghaboli,System.Double</value>
+          <value>kol_moadel,System.Decimal</value>
+          <value>scoreByWord,System.String</value>
+          <value>value,System.String</value>
+          <value>exp1,System.String</value>
+          <value>TotalLoanAmount,System.String</value>
+          <value>exp2,System.String</value>
+          <value>openp,System.String</value>
+          <value>closep,System.String</value>
+          <value>exp3,System.String</value>
+          <value>word,System.String</value>
+          <value>exp4,System.String</value>
+          <value>exp5,System.String</value>
+          <value>exp6,System.String</value>
+          <value>exp7,System.String</value>
+          <value>exp8,System.String</value>
+          <value>exp9,System.String</value>
+          <value>exp91,System.String</value>
+          <value>exp10,System.String</value>
+          <value>exp11,System.String</value>
+          <value>exp12,System.String</value>
+          <value>sDate,System.String</value>
+          <value>monthpay,System.String</value>
+          <value>acountNumber,System.String</value>
+          <value>bankName,System.String</value>
+          <value>branchName,System.String</value>
+          <value>UniAddress,System.String</value>
+          <value>RaieesUni,System.String</value>
+          <value>RaiesUni,System.String</value>
+          <value>moavenStd,System.String</value>
+          <value>nameMoavenStd,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <IsCloud>False</IsCloud>
+        <Name>[Graduate].[SP_getFormGovahiMovaghatPayanTahsilat]</Name>
+        <NameInSource>Connection1</NameInSource>
+        <Parameters isList="true" count="7">
+          <value>_x0040_stCode,,22,11</value>
+          <value>_x0040_date,,22,30</value>
+          <value>_x0040_monthPay,,22,20</value>
+          <value>_x0040_acountNumber,,22,20</value>
+          <value>_x0040_bankName,,22,50</value>
+          <value>_x0040_branchName,,22,50</value>
+          <value>_x0040_address,,22,200</value>
+        </Parameters>
+        <SqlCommand>[Graduate].[SP_getFormGovahiMovaghatPayanTahsilat]</SqlCommand>
+        <Type>StoredProcedure</Type>
+      </_x005B_Graduate_x005D___x005B_SP_getFormGovahiMovaghatPayanTahsilat_x005D_>
+      <_x005B_GetTermJary_x005D_ Ref="4" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>[GetTermJary]</Alias>
+        <Columns isList="true" count="3">
+          <value>sal,System.String</value>
+          <value>Nowdate,System.String</value>
+          <value>nimsal,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <IsCloud>False</IsCloud>
+        <Name>[GetTermJary]</Name>
+        <NameInSource>Connection1</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>execute [GetTermJary]</SqlCommand>
+        <Type>StoredProcedure</Type>
+      </_x005B_GetTermJary_x005D_>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="5" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="3">
+        <PageHeaderBand1 Ref="6" type="PageHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.2,7.72,3.6</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text85 Ref="7" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.8,2.8,0.7,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,9,Bold,Point,False,178</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text85</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{_GetTermJary_.Nowdate}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text85>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageHeaderBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </PageHeaderBand1>
+        <DataBand1 Ref="8" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,4.2,7.72,2.3</ClientRectangle>
+          <Components isList="true" count="14">
+            <Text86 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.3,0,1.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IranNastaliq,11.25,Bold,Point,False,0</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text86</Name>
+              <Page isRef="5" />
+              <Parent isRef="8" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.name}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text86>
+            <Text44 Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3,0,1.3,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IranNastaliq,11.25,Bold,Point,False,0</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text44</Name>
+              <Page isRef="5" />
+              <Parent isRef="8" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.namep}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text44>
+            <Text45 Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.9,0,1.1,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,11.25,Bold,Point,False,178</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text45</Name>
+              <Page isRef="5" />
+              <Parent isRef="8" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.idd}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text45>
+            <Text46 Ref="12" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.5,0.4,0.7,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,11.25,Bold,Point,False,178</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text46</Name>
+              <Page isRef="5" />
+              <Parent isRef="8" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.date_tav}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text46>
+            <Text48 Ref="13" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.4,0.5,0.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,11.25,Bold,Point,False,178</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text48</Name>
+              <Page isRef="5" />
+              <Parent isRef="8" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.sal_vorod}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text48>
+            <Text49 Ref="14" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.9,0.5,0.3,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,11.25,Bold,Point,False,178</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text49</Name>
+              <Page isRef="5" />
+              <Parent isRef="8" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.kol_ghaboli}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text49>
+            <Text50 Ref="15" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.5,0.8,0.6,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,12,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text50</Name>
+              <Page isRef="5" />
+              <Parent isRef="8" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.date_far}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text50>
+            <Text54 Ref="16" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6,1.2,0.4,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,11.25,Bold,Point,False,178</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text54</Name>
+              <Page isRef="5" />
+              <Parent isRef="8" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.kol_moadel}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Bottom</VertAlignment>
+            </Text54>
+            <Text47 Ref="17" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.3,0.3,1.3,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IranNastaliq,11.25,Bold,Point,False,0</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text47</Name>
+              <Page isRef="5" />
+              <Parent isRef="8" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.mahalSodor}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text47>
+            <Text51 Ref="18" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.5,0.9,2.1,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IranNastaliq,11.25,Bold,Point,False,0</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text51</Name>
+              <Page isRef="5" />
+              <Parent isRef="8" />
+              <ShrinkFontToFit>True</ShrinkFontToFit>
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.reshte}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text51>
+            <Text52 Ref="19" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.2,0.9,0.9,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IranNastaliq,11.25,Bold,Point,False,0</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text52</Name>
+              <Page isRef="5" />
+              <Parent isRef="8" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.magh}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text52>
+            <Text53 Ref="20" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.5,0.8,0.8,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IranNastaliq,11.25,Bold,Point,False,0</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text53</Name>
+              <Page isRef="5" />
+              <Parent isRef="8" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.sys_amozeshi}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text53>
+            <Text55 Ref="21" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.3,1.3,1.9,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IranNastaliq,11.25,Bold,Point,False,0</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text55</Name>
+              <Page isRef="5" />
+              <Parent isRef="8" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.scoreByWord}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text55>
+            <Text56 Ref="22" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.3,1.8,1.5,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IranNastaliq,11.25,Bold,Point,False,0</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text56</Name>
+              <Page isRef="5" />
+              <Parent isRef="8" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.value}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text56>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <DataBand2 Ref="23" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,6.9,7.72,1.4</ClientRectangle>
+          <Components isList="true" count="23">
+            <Text59 Ref="24" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.7,0.1,0.3,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IranNastaliq,10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text59</Name>
+              <Page isRef="5" />
+              <Parent isRef="23" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.exp2}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text59>
+            <Text61 Ref="25" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5,0.1,1.1,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text61</Name>
+              <Page isRef="5" />
+              <Parent isRef="23" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.TotalLoanAmount}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text61>
+            <Text60 Ref="26" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4,0.1,0.5,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IranNastaliq,10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text60</Name>
+              <Page isRef="5" />
+              <Parent isRef="23" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.exp3}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text60>
+            <Text62 Ref="27" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.5,0.1,0.2,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IranNastaliq,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text62</Name>
+              <Page isRef="5" />
+              <Parent isRef="23" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.openp}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text62>
+            <Text63 Ref="28" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.5,0.1,1.5,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IranNastaliq,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text63</Name>
+              <Page isRef="5" />
+              <Parent isRef="23" />
+              <ShrinkFontToFit>True</ShrinkFontToFit>
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.word}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text63>
+            <Text64 Ref="29" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.3,0.1,0.2,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IranNastaliq,10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text64</Name>
+              <Page isRef="5" />
+              <Parent isRef="23" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.closep}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text64>
+            <Text65 Ref="30" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,0.1,2.1,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IranNastaliq,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text65</Name>
+              <Page isRef="5" />
+              <Parent isRef="23" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.exp4}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text65>
+            <Text66 Ref="31" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7,0.4,0.5,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IranNastaliq,10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text66</Name>
+              <Page isRef="5" />
+              <Parent isRef="23" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.exp5}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text66>
+            <Text67 Ref="32" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.2,0.4,1.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IranNastaliq,10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text67</Name>
+              <Page isRef="5" />
+              <Parent isRef="23" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.exp6}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text67>
+            <Text68 Ref="33" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.8,0.4,0.7,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IranNastaliq,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text68</Name>
+              <Page isRef="5" />
+              <Parent isRef="23" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.exp7}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text68>
+            <Text69 Ref="34" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.7,0.4,1,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IranNastaliq,10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text69</Name>
+              <Page isRef="5" />
+              <Parent isRef="23" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.exp8}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text69>
+            <Text70 Ref="35" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.1,0.7,0.4,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IranNastaliq,10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text70</Name>
+              <Page isRef="5" />
+              <Parent isRef="23" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.exp91}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text70>
+            <Text71 Ref="36" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,0.4,0.4,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IranNastaliq,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text71</Name>
+              <Page isRef="5" />
+              <Parent isRef="23" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.exp9}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text71>
+            <Text72 Ref="37" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.6,0.7,0.4,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IranNastaliq,10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text72</Name>
+              <Page isRef="5" />
+              <Parent isRef="23" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.exp10}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text72>
+            <Text73 Ref="38" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.9,0.7,1.6,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IranNastaliq,10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text73</Name>
+              <Page isRef="5" />
+              <Parent isRef="23" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.exp11}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text73>
+            <Text74 Ref="39" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.4,1,1.1,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IranNastaliq,10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text74</Name>
+              <Page isRef="5" />
+              <Parent isRef="23" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.exp12}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text74>
+            <Text79 Ref="40" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.5,0.4,0.7,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text79</Name>
+              <Page isRef="5" />
+              <Parent isRef="23" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.sDate}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text79>
+            <Text80 Ref="41" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.7,0.4,1.1,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text80</Name>
+              <Page isRef="5" />
+              <Parent isRef="23" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.monthpay}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text80>
+            <Text81 Ref="42" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.6,0.4,1.1,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text81</Name>
+              <Page isRef="5" />
+              <Parent isRef="23" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.acountNumber}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text81>
+            <Text82 Ref="43" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.5,0.7,1.1,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text82</Name>
+              <Page isRef="5" />
+              <Parent isRef="23" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.branchName}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text82>
+            <Text83 Ref="44" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6,0.7,1.1,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text83</Name>
+              <Page isRef="5" />
+              <Parent isRef="23" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.bankName}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text83>
+            <Text84 Ref="45" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,0.7,2.7,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text84</Name>
+              <Page isRef="5" />
+              <Parent isRef="23" />
+              <ShrinkFontToFit>True</ShrinkFontToFit>
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.UniAddress}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text84>
+            <Text57 Ref="46" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.1,0.1,1.4,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IranNastaliq,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text57</Name>
+              <Page isRef="5" />
+              <Parent isRef="23" />
+              <Text>{_Graduate___SP_getFormGovahiMovaghatPayanTahsilat_.exp1}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text57>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <Filters isList="true" count="0" />
+          <Name>DataBand2</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <Sort isList="true" count="0" />
+        </DataBand2>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>51611e318b1c4a9d8ce7713c4409174c</Guid>
+      <Margins>0.39,0.39,0.39,0.39</Margins>
+      <Name>Page1</Name>
+      <PageHeight>11</PageHeight>
+      <PageWidth>8.5</PageWidth>
+      <PaperSize>Letter</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="47" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="48" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>10/26/2016 9:15:02 AM</ReportChanged>
+  <ReportCreated>8/30/2016 12:54:26 PM</ReportCreated>
+  <ReportFile>C:\Users\a_jafarpour\Desktop\GovahiMovaghatPayanTahsil.mrt</ReportFile>
+  <ReportGuid>64fd677726694ae49b2abf1942b96c1a</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2014.3.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

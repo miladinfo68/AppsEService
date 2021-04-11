@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="Isida4_webservice_mainservice" targetNamespace="http://tempuri.org/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types />
+  <message name="rrr0Request">
+    <part name="var1" type="xs:string" />
+    <part name="var2" type="xs:string" />
+    <part name="var3" type="xs:string" />
+    <part name="var4" type="xs:string" />
+    <part name="var5" type="xs:string" />
+    <part name="var6" type="xs:string" />
+    <part name="var7" type="xs:string" />
+    <part name="var8" type="xs:string" />
+    <part name="var9" type="xs:string" />
+    <part name="var10" type="xs:string" />
+  </message>
+  <message name="rrr0Response">
+    <part name="var1" type="xs:string" />
+    <part name="var2" type="xs:string" />
+    <part name="var3" type="xs:string" />
+    <part name="var4" type="xs:string" />
+    <part name="var5" type="xs:string" />
+    <part name="var6" type="xs:string" />
+    <part name="var7" type="xs:string" />
+    <part name="var8" type="xs:string" />
+    <part name="var9" type="xs:string" />
+    <part name="var10" type="xs:string" />
+    <part name="return" type="xs:string" />
+  </message>
+  <message name="GetCertificateId_sahem1Request">
+    <part name="code" type="xs:string" />
+    <part name="date_" type="xs:string" />
+    <part name="time_" type="xs:string" />
+    <part name="type_s" type="xs:string" />
+    <part name="param" type="xs:string" />
+  </message>
+  <message name="GetCertificateId_sahem1Response">
+    <part name="code" type="xs:string" />
+    <part name="date_" type="xs:string" />
+    <part name="time_" type="xs:string" />
+    <part name="type_s" type="xs:string" />
+    <part name="param" type="xs:string" />
+    <part name="return" type="xs:string" />
+  </message>
+  <message name="ExecProcInOut12Request">
+    <part name="procname" type="xs:string" />
+    <part name="paramInCount" type="xs:string" />
+    <part name="paramOutCount" type="xs:string" />
+    <part name="param1" type="xs:string" />
+    <part name="param2" type="xs:string" />
+    <part name="param3" type="xs:string" />
+    <part name="param4" type="xs:string" />
+    <part name="param5" type="xs:string" />
+    <part name="param6" type="xs:string" />
+    <part name="param7" type="xs:string" />
+    <part name="param8" type="xs:string" />
+    <part name="param9" type="xs:string" />
+    <part name="param10" type="xs:string" />
+  </message>
+  <message name="ExecProcInOut12Response">
+    <part name="return" type="xs:string" />
+  </message>
+  <message name="ExecProc4Select3Request">
+    <part name="procname" type="xs:string" />
+    <part name="proccount" type="xs:string" />
+    <part name="param1" type="xs:string" />
+    <part name="param2" type="xs:string" />
+    <part name="param3" type="xs:string" />
+    <part name="param4" type="xs:string" />
+    <part name="param5" type="xs:string" />
+    <part name="param6" type="xs:string" />
+  </message>
+  <message name="ExecProc4Select3Response">
+    <part name="return" type="xs:string" />
+  </message>
+  <message name="GetP_sida4Request">
+    <part name="newPacket" type="xs:string" />
+    <part name="ctrl" type="xs:string" />
+  </message>
+  <message name="GetP_sida4Response">
+    <part name="ctrl" type="xs:string" />
+    <part name="return" type="xs:string" />
+  </message>
+  <message name="Fnsend_sms5Request">
+    <part name="param" type="xs:string" />
+  </message>
+  <message name="Fnsend_sms5Response">
+    <part name="param" type="xs:string" />
+    <part name="return" type="xs:int" />
+  </message>
+  <message name="getip_vahed_digit6Request">
+    <part name="param1" type="xs:string" />
+    <part name="param2" type="xs:string" />
+    <part name="param3" type="xs:string" />
+    <part name="type_s" type="xs:string" />
+  </message>
+  <message name="getip_vahed_digit6Response">
+    <part name="return" type="xs:string" />
+  </message>
+  <message name="get_proc7Request">
+    <part name="param" type="xs:string" />
+    <part name="param_dif" type="xs:string" />
+  </message>
+  <message name="get_proc7Response">
+    <part name="param" type="xs:string" />
+    <part name="param_dif" type="xs:string" />
+    <part name="return" type="xs:string" />
+  </message>
+  <message name="rrr_new8Request">
+    <part name="var1" type="xs:string" />
+  </message>
+  <message name="rrr_new8Response">
+    <part name="var1" type="xs:string" />
+    <part name="return" type="xs:string" />
+  </message>
+  <message name="shenas_bank9Request">
+    <part name="shenas" type="xs:string" />
+  </message>
+  <message name="shenas_bank9Response">
+    <part name="return" type="xs:string" />
+  </message>
+  <message name="send_data_to_gra10Request">
+    <part name="param1" type="xs:string" />
+  </message>
+  <message name="send_data_to_gra10Response">
+    <part name="param1" type="xs:string" />
+    <part name="return" type="xs:string" />
+  </message>
+  <message name="send_data_to_ican11Request">
+    <part name="param1" type="xs:string" />
+    <part name="param2" type="xs:string" />
+  </message>
+  <message name="send_data_to_ican11Response">
+    <part name="param1" type="xs:string" />
+    <part name="param2" type="xs:string" />
+    <part name="return" type="xs:string" />
+  </message>
+  <message name="send_attach_to_ican12Request">
+    <part name="pic" type="xs:string" />
+    <part name="MainEC" type="xs:string" />
+  </message>
+  <message name="send_attach_to_ican12Response">
+    <part name="MainEC" type="xs:string" />
+    <part name="return" type="xs:string" />
+  </message>
+  <message name="sendsmsgroup13Request">
+    <part name="param" type="xs:string" />
+  </message>
+  <message name="sendsmsgroup13Response">
+    <part name="param" type="xs:string" />
+    <part name="return" type="xs:int" />
+  </message>
+  <message name="mobile_login_main14Request">
+    <part name="deviceId" type="xs:string" />
+    <part name="param1" type="xs:string" />
+  </message>
+  <message name="mobile_login_main14Response">
+    <part name="return" type="xs:string" />
+  </message>
+  <message name="ctrl_p15Request">
+    <part name="param1" type="xs:string" />
+    <part name="param2" type="xs:string" />
+    <part name="param3" type="xs:string" />
+  </message>
+  <message name="ctrl_p15Response">
+    <part name="param1" type="xs:string" />
+    <part name="param2" type="xs:string" />
+    <part name="param3" type="xs:string" />
+    <part name="return" type="xs:string" />
+  </message>
+  <message name="Inquiry_from_u16Request">
+    <part name="param1" type="xs:string" />
+  </message>
+  <message name="Inquiry_from_u16Response">
+    <part name="param1" type="xs:string" />
+    <part name="return" type="xs:string" />
+  </message>
+  <message name="InitKey17Request">
+    <part name="deviceId" type="xs:string" />
+    <part name="pk" type="xs:string" />
+  </message>
+  <message name="InitKey17Response">
+    <part name="return" type="xs:string" />
+  </message>
+  <message name="DecryptPrimarykey18Request">
+    <part name="deviceId" type="xs:string" />
+    <part name="privateKey" type="xs:string" />
+    <part name="primaryKeyEncrypted" type="xs:string" />
+  </message>
+  <message name="DecryptPrimarykey18Response">
+    <part name="return" type="xs:string" />
+  </message>
+  <message name="ctrl_elec19Request">
+    <part name="param1" type="xs:string" />
+    <part name="param2" type="xs:string" />
+    <part name="param3" type="xs:string" />
+    <part name="param4" type="xs:string" />
+    <part name="param5" type="xs:string" />
+  </message>
+  <message name="ctrl_elec19Response">
+    <part name="return" type="xs:string" />
+  </message>
+  <portType name="Isida4_webservice_main">
+    <operation name="rrr">
+      <input message="tns:rrr0Request" />
+      <output message="tns:rrr0Response" />
+    </operation>
+    <operation name="GetCertificateId_sahem">
+      <input message="tns:GetCertificateId_sahem1Request" />
+      <output message="tns:GetCertificateId_sahem1Response" />
+    </operation>
+    <operation name="ExecProcInOut1">
+      <input message="tns:ExecProcInOut12Request" />
+      <output message="tns:ExecProcInOut12Response" />
+    </operation>
+    <operation name="ExecProc4Select">
+      <input message="tns:ExecProc4Select3Request" />
+      <output message="tns:ExecProc4Select3Response" />
+    </operation>
+    <operation name="GetP_sida">
+      <input message="tns:GetP_sida4Request" />
+      <output message="tns:GetP_sida4Response" />
+    </operation>
+    <operation name="Fnsend_sms">
+      <input message="tns:Fnsend_sms5Request" />
+      <output message="tns:Fnsend_sms5Response" />
+    </operation>
+    <operation name="getip_vahed_digit">
+      <input message="tns:getip_vahed_digit6Request" />
+      <output message="tns:getip_vahed_digit6Response" />
+    </operation>
+    <operation name="get_proc">
+      <input message="tns:get_proc7Request" />
+      <output message="tns:get_proc7Response" />
+    </operation>
+    <operation name="rrr_new">
+      <input message="tns:rrr_new8Request" />
+      <output message="tns:rrr_new8Response" />
+    </operation>
+    <operation name="shenas_bank">
+      <input message="tns:shenas_bank9Request" />
+      <output message="tns:shenas_bank9Response" />
+    </operation>
+    <operation name="send_data_to_gra">
+      <input message="tns:send_data_to_gra10Request" />
+      <output message="tns:send_data_to_gra10Response" />
+    </operation>
+    <operation name="send_data_to_ican">
+      <input message="tns:send_data_to_ican11Request" />
+      <output message="tns:send_data_to_ican11Response" />
+    </operation>
+    <operation name="send_attach_to_ican">
+      <input message="tns:send_attach_to_ican12Request" />
+      <output message="tns:send_attach_to_ican12Response" />
+    </operation>
+    <operation name="sendsmsgroup">
+      <input message="tns:sendsmsgroup13Request" />
+      <output message="tns:sendsmsgroup13Response" />
+    </operation>
+    <operation name="mobile_login_main">
+      <input message="tns:mobile_login_main14Request" />
+      <output message="tns:mobile_login_main14Response" />
+    </operation>
+    <operation name="ctrl_p">
+      <input message="tns:ctrl_p15Request" />
+      <output message="tns:ctrl_p15Response" />
+    </operation>
+    <operation name="Inquiry_from_u">
+      <input message="tns:Inquiry_from_u16Request" />
+      <output message="tns:Inquiry_from_u16Response" />
+    </operation>
+    <operation name="InitKey">
+      <input message="tns:InitKey17Request" />
+      <output message="tns:InitKey17Response" />
+    </operation>
+    <operation name="DecryptPrimarykey">
+      <input message="tns:DecryptPrimarykey18Request" />
+      <output message="tns:DecryptPrimarykey18Response" />
+    </operation>
+    <operation name="ctrl_elec">
+      <input message="tns:ctrl_elec19Request" />
+      <output message="tns:ctrl_elec19Response" />
+    </operation>
+  </portType>
+  <binding name="Isida4_webservice_mainbinding" type="tns:Isida4_webservice_main">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <operation name="rrr">
+      <soap:operation soapAction="urn:sida4_webservice_mainIntf-Isida4_webservice_main#rrr" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="GetCertificateId_sahem">
+      <soap:operation soapAction="urn:sida4_webservice_mainIntf-Isida4_webservice_main#GetCertificateId_sahem" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="ExecProcInOut1">
+      <soap:operation soapAction="urn:sida4_webservice_mainIntf-Isida4_webservice_main#ExecProcInOut1" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="ExecProc4Select">
+      <soap:operation soapAction="urn:sida4_webservice_mainIntf-Isida4_webservice_main#ExecProc4Select" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="GetP_sida">
+      <soap:operation soapAction="urn:sida4_webservice_mainIntf-Isida4_webservice_main#GetP_sida" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="Fnsend_sms">
+      <soap:operation soapAction="urn:sida4_webservice_mainIntf-Isida4_webservice_main#Fnsend_sms" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="getip_vahed_digit">
+      <soap:operation soapAction="urn:sida4_webservice_mainIntf-Isida4_webservice_main#getip_vahed_digit" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="get_proc">
+      <soap:operation soapAction="urn:sida4_webservice_mainIntf-Isida4_webservice_main#get_proc" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="rrr_new">
+      <soap:operation soapAction="urn:sida4_webservice_mainIntf-Isida4_webservice_main#rrr_new" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="shenas_bank">
+      <soap:operation soapAction="urn:sida4_webservice_mainIntf-Isida4_webservice_main#shenas_bank" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="send_data_to_gra">
+      <soap:operation soapAction="urn:sida4_webservice_mainIntf-Isida4_webservice_main#send_data_to_gra" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="send_data_to_ican">
+      <soap:operation soapAction="urn:sida4_webservice_mainIntf-Isida4_webservice_main#send_data_to_ican" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="send_attach_to_ican">
+      <soap:operation soapAction="urn:sida4_webservice_mainIntf-Isida4_webservice_main#send_attach_to_ican" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="sendsmsgroup">
+      <soap:operation soapAction="urn:sida4_webservice_mainIntf-Isida4_webservice_main#sendsmsgroup" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="mobile_login_main">
+      <soap:operation soapAction="urn:sida4_webservice_mainIntf-Isida4_webservice_main#mobile_login_main" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="ctrl_p">
+      <soap:operation soapAction="urn:sida4_webservice_mainIntf-Isida4_webservice_main#ctrl_p" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="Inquiry_from_u">
+      <soap:operation soapAction="urn:sida4_webservice_mainIntf-Isida4_webservice_main#Inquiry_from_u" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="InitKey">
+      <soap:operation soapAction="urn:sida4_webservice_mainIntf-Isida4_webservice_main#InitKey" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="DecryptPrimarykey">
+      <soap:operation soapAction="urn:sida4_webservice_mainIntf-Isida4_webservice_main#DecryptPrimarykey" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="ctrl_elec">
+      <soap:operation soapAction="urn:sida4_webservice_mainIntf-Isida4_webservice_main#ctrl_elec" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:sida4_webservice_mainIntf-Isida4_webservice_main" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Isida4_webservice_mainservice">
+    <port name="Isida4_webservice_mainPort" binding="tns:Isida4_webservice_mainbinding">
+      <soap:address location="http://192.168.1.18:8888/soap/Isida4_webservice_main" />
+    </port>
+  </service>
+</definitions>

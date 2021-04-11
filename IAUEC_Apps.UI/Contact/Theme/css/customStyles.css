@@ -1,0 +1,25 @@
+﻿/*.top_nav {
+    padding: 0 !important;
+    display: block;
+}
+
+.nav_menu {
+    float: right;
+    background: #EDEDED;
+    border-bottom: 1px solid #D9DEE4;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+
+.toggle {
+    float: right;
+    margin: 0;
+    padding-top: 16px;
+    width: 70px;
+}
+
+.toggle a {
+     /*padding: 15px 15px 0;*/ 
+    margin: 0;   
+}*/

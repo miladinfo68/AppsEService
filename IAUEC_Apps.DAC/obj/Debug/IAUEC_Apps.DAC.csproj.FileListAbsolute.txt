@@ -1,0 +1,8 @@
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DAC\bin\Debug\IAUEC_Apps.DAC.dll
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DAC\bin\Debug\IAUEC_Apps.DAC.pdb
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DAC\bin\Debug\MyConnections.dll
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DAC\obj\Debug\IAUEC_Apps.DAC.csproj.CoreCompileInputs.cache
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DAC\obj\Debug\IAUEC_Apps.DAC.csproj.CopyComplete
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DAC\obj\Debug\IAUEC_Apps.DAC.dll
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DAC\obj\Debug\IAUEC_Apps.DAC.pdb
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DAC\obj\Debug\IAUEC_Apps.DAC.csprojAssemblyReference.cache

@@ -1,0 +1,15 @@
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DAO\bin\Debug\IAUEC_Apps.DAO.dll
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DAO\bin\Debug\IAUEC_Apps.DAO.pdb
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DAO\bin\Debug\DocumentFormat.OpenXml.dll
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DAO\bin\Debug\EPPlus.dll
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DAO\bin\Debug\IAUEC_Apps.DAC.dll
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DAO\bin\Debug\IAUEC_Apps.DTO.dll
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DAO\bin\Debug\MyConnections.dll
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DAO\bin\Debug\IAUEC_Apps.DAC.pdb
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DAO\bin\Debug\IAUEC_Apps.DTO.pdb
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DAO\bin\Debug\IAUEC_Apps.DTO.xml
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DAO\obj\Debug\IAUEC_Apps.DAO.csprojAssemblyReference.cache
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DAO\obj\Debug\IAUEC_Apps.DAO.csproj.CoreCompileInputs.cache
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DAO\obj\Debug\IAUEC_Apps.DAO.csproj.CopyComplete
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DAO\obj\Debug\IAUEC_Apps.DAO.dll
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DAO\obj\Debug\IAUEC_Apps.DAO.pdb

@@ -1,0 +1,1501 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <Connection1 Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>Connection1</Alias>
+        <ConnectionStringEncrypted>w1jZAk1Lq4XsQdWETiV3YtVw9wLFSlvxZ0ux2OFx5D/TePeCT1dR9csIsIVNAKR/kFyTCGdNUd3LXLmEZ3FtfsTazStNVdOFQ0ah3GFAomaCcGmjTxhRzcsTuZHKcaU/wsLJq2EY</ConnectionStringEncrypted>
+        <Name>Connection1</Name>
+      </Connection1>
+    </Databases>
+    <DataSources isList="true" count="1">
+      <_x005B_Faculty_x005D___x005B_SP_ListPayTuition_x005D_ Ref="3" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>[Faculty].[SP_ListPayTuition]</Alias>
+        <Columns isList="true" count="35">
+          <value>idostad,System.Decimal</value>
+          <value>nameostad,System.String</value>
+          <value>nameresh,System.String</value>
+          <value>namemadrak,System.String</value>
+          <value>namemartabeh,System.String</value>
+          <value>name_nahveh,System.String</value>
+          <value>payeh,System.String</value>
+          <value>rial_ost,System.Decimal</value>
+          <value>rial_ost2,System.Decimal</value>
+          <value>iddanesh,System.Decimal</value>
+          <value>idgroup,System.Decimal</value>
+          <value>nahveh_hamk,System.Decimal</value>
+          <value>namedanesh,System.String</value>
+          <value>namegroup,System.String</value>
+          <value>saat_movazaf,System.Decimal</value>
+          <value>saat_tadris,System.Int32</value>
+          <value>Date,System.String</value>
+          <value>v_nazari,System.Decimal</value>
+          <value>v_amali,System.Decimal</value>
+          <value>sumkol,System.Double</value>
+          <value>mazad,System.Double</value>
+          <value>mab,System.Double</value>
+          <value>dvk_nazari,System.Double</value>
+          <value>dvk_aa_amali,System.Double</value>
+          <value>dvk_ka_amali,System.Double</value>
+          <value>dvk_kv_amali,System.Double</value>
+          <value>dva_nazari,System.Double</value>
+          <value>dva_aa_amali,System.Double</value>
+          <value>dva_ka_amali,System.Double</value>
+          <value>dva_kv_amali,System.Double</value>
+          <value>dvd_nazari,System.Double</value>
+          <value>dvd_aa_amali,System.Double</value>
+          <value>dvd_ka_amali,System.Double</value>
+          <value>dvd_kv_amali,System.Double</value>
+          <value>saat_ghebat,System.Single</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <IsCloud>False</IsCloud>
+        <Name>[Faculty].[SP_ListPayTuition]</Name>
+        <NameInSource>Connection1</NameInSource>
+        <Parameters isList="true" count="7">
+          <value>_x0040_Zarib,,8,0</value>
+          <value>_x0040_Term,,22,7</value>
+          <value>_x0040_Departman,,8,0</value>
+          <value>_x0040_Daneshkade,,8,0</value>
+          <value>_x0040_Field,,8,0</value>
+          <value>_x0040_Cooperation,,8,0</value>
+          <value>_x0040_CodeOstad,,8,0</value>
+        </Parameters>
+        <SqlCommand>[Faculty].[SP_ListPayTuition]</SqlCommand>
+        <Type>StoredProcedure</Type>
+      </_x005B_Faculty_x005D___x005B_SP_ListPayTuition_x005D_>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="4" type="Page" isKey="true">
+      <Border>All;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="5">
+        <PageFooterBand1 Ref="5" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,18.4,27.7,0.6</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text66 Ref="6" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>25.6,0,1.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Regular,Point,False,0</Font>
+              <Guid>9ae73a31af1e4a5a9f61ed3d94a44c9a</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text66</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>صفحه</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text66>
+            <Text67 Ref="7" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>25.2,0,0.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Regular,Point,False,0</Font>
+              <Guid>58d9530c5ec5473887de6793949c65d3</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text67</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{PageNumber}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>SystemVariables</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text67>
+            <Text68 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>24.8,0,0.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Regular,Point,False,0</Font>
+              <Guid>25952c783eae4b78ba316c8b3d6f0463</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text68</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>از</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text68>
+            <Text69 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>24.4,0,0.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Regular,Point,False,0</Font>
+              <Guid>3c153bd46a8f410f89d5a0ff077009cc</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text69</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{TotalPageCount}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>SystemVariables</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text69>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageFooterBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </PageFooterBand1>
+        <ReportTitleBand1 Ref="10" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,27.7,4.2</ClientRectangle>
+          <Components isList="true" count="16">
+            <Text16 Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11.6,0.2,6.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,15.75,Bold,Point,False,178</Font>
+              <Guid>9a6ffc9223554a13bc278cebc50cf1a3</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="4" />
+              <Parent isRef="10" />
+              <Text>بسمه تعالی</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text16>
+            <Text23 Ref="12" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10.8,1.2,8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,14.25,Bold,Point,False,178</Font>
+              <Guid>3367098753a74bcd8730cb04daf06ab9</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text23</Name>
+              <Page isRef="4" />
+              <Parent isRef="10" />
+              <Text>دانشگاه آزاد اسلامی واحد الکترونیکی</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text23>
+            <Image1 Ref="13" type="Image" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,0.2,1.4,2.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Guid>42b9e4445e684926bf60eea381ab5bef</Guid>
+              <Image>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</Image>
+              <Name>Image1</Name>
+              <Page isRef="4" />
+              <Parent isRef="10" />
+            </Image1>
+            <Text24 Ref="14" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>24.6,3.2,2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,12,Bold,Point,False,178</Font>
+              <Guid>00a488b1a929475380ffabd305f4c87b</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text24</Name>
+              <Page isRef="4" />
+              <Parent isRef="10" />
+              <Text>نیمسال</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text24>
+            <Text1 Ref="15" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>18.6,3.2,1.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,12,Bold,Point,False,178</Font>
+              <Guid>5ef7761186334f3ca3708e1c259b322e</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="4" />
+              <Parent isRef="10" />
+              <Text>دانشکده</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Text22 Ref="16" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,3.2,2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,12,Bold,Point,False,178</Font>
+              <Guid>fff9e8cd4a3a45308aea2e9988c11420</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text22</Name>
+              <Page isRef="4" />
+              <Parent isRef="10" />
+              <Text>ضریب هفته</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text22>
+            <Text37 Ref="17" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>25.2,0.8,1.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,9,Bold,Point,False,178</Font>
+              <Guid>b79f99e014554abcac6285a351ba6ded</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text37</Name>
+              <Page isRef="4" />
+              <Parent isRef="10" />
+              <Text>: ساعت صدور</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text37>
+            <Text39 Ref="18" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>22.2,0.2,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,9,Bold,Point,False,178</Font>
+              <Guid>3a04a18da9ec4e7e9c46cc1bcff806c9</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text39</Name>
+              <Page isRef="4" />
+              <Parent isRef="10" />
+              <Text>{_Faculty___SP_ListPayTuition_.Date}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="19" type="TimeFormat" isKey="true">
+                <StringFormat>T</StringFormat>
+              </TextFormat>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text39>
+            <Text42 Ref="20" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>22.2,0.8,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,9,Bold,Point,False,178</Font>
+              <Guid>4cf1822f28a04c829c24feb443f3ed98</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text42</Name>
+              <Page isRef="4" />
+              <Parent isRef="10" />
+              <Text>{Time}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="21" type="TimeFormat" isKey="true">
+                <StringFormat>T</StringFormat>
+              </TextFormat>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text42>
+            <Text3 Ref="22" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>25.2,0.2,1.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,9,Bold,Point,False,178</Font>
+              <Guid>9948c8a310304b129bf0273434ebd605</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="4" />
+              <Parent isRef="10" />
+              <Text>: تاریخ صدور</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <Text2 Ref="23" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11.4,3.2,1.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,12,Bold,Point,False,178</Font>
+              <Guid>8eb8aed2824f4cf7a0468ae529d9a2f0</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="4" />
+              <Parent isRef="10" />
+              <Text>گروه</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <Text70 Ref="24" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>21.8,3.2,2.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11.25,Bold,Point,False,178</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text70</Name>
+              <Page isRef="4" />
+              <Parent isRef="10" />
+              <Text>{_Faculty___SP_ListPayTuition_.Parameters["@Term"].ParameterValue}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text70>
+            <Text18 Ref="25" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>13.8,3.2,4.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11.25,Bold,Point,False,178</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="4" />
+              <Parent isRef="10" />
+              <Text>{_Faculty___SP_ListPayTuition_.Parameters["@Daneshkade"].ParameterValue}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text18>
+            <Text4 Ref="26" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.8,3.2,5.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11.25,Bold,Point,False,178</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="4" />
+              <Parent isRef="10" />
+              <Text>{_Faculty___SP_ListPayTuition_.Parameters["@Departman"].ParameterValue}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+            <Text36 Ref="27" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2,3.2,1.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11.25,Bold,Point,False,178</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text36</Name>
+              <Page isRef="4" />
+              <Parent isRef="10" />
+              <Text>{_Faculty___SP_ListPayTuition_.Parameters["@Zarib"].ParameterValue}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text36>
+            <Text74 Ref="28" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11.6,2.2,6.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,12,Bold,Point,False,178</Font>
+              <Guid>fe61079379c44c6c9622b7e11044a58b</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text74</Name>
+              <Page isRef="4" />
+              <Parent isRef="10" />
+              <Text>لیست پرداخت اساتید</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text74>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>7de10c0831074554b7d25bf9a8609c50</Guid>
+          <Name>ReportTitleBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </ReportTitleBand1>
+        <HeaderBand1 Ref="29" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,5.4,27.7,2.2</ClientRectangle>
+          <Components isList="true" count="34">
+            <Text15 Ref="30" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>26.8,0,0.8,2.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Bold,Point,False,0</Font>
+              <Guid>d5bab89f06f94a5baede5384057b7942</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>ردیف</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text15>
+            <Text5 Ref="31" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>23.8,0,3,2.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Bold,Point,False,0</Font>
+              <Guid>b97c79e5d8464ed6a983d84681551856</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>نام استاد</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <Text6 Ref="32" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>21.4,0,2.4,2.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Bold,Point,False,0</Font>
+              <Guid>539ffcb669cb415d9c82ce7333db9ecb</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>مدرک تحصیلی</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+            <Text7 Ref="33" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>19.4,0,2,2.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Bold,Point,False,0</Font>
+              <Guid>e02f5623021e4393ae030d8674faab53</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>مرتبه علمی</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text7>
+            <Text20 Ref="34" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>14.2,0.4,5.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Bold,Point,False,0</Font>
+              <Guid>ee62a42ee461450188042bc3f6a9a47a</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>نظری</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text20>
+            <Text25 Ref="35" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>9,0,10.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Bold,Point,False,0</Font>
+              <Guid>464de625f7a04c97ac24698fee8ba9a2</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text25</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>ساعت قابل پرداخت در ترم</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text25>
+            <Text26 Ref="36" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>9,0.4,5.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Bold,Point,False,0</Font>
+              <Guid>35a80401cb264ad6bf71352d80505f9a</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text26</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>عملی</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text26>
+            <Text29 Ref="37" type="Text" isKey="true">
+              <Border>Top, Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>12.4,1,1.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,6.75,Bold,Point,False,0</Font>
+              <Guid>d5b13963585c43ab8800c5904ac89a2e</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text29</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>کارشناسی</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text29>
+            <Text30 Ref="38" type="Text" isKey="true">
+              <Border>Top, Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>10.2,1,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,6.75,Bold,Point,False,0</Font>
+              <Guid>89f4d5506b974f2484a166726d56a862</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text30</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>کارشناسی ارشد</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text30>
+            <Text31 Ref="39" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>9,1,1.2,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,6.75,Bold,Point,False,0</Font>
+              <Guid>fca7a946d87f458380732597a9ae4678</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text31</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>دکترای تخصصی</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text31>
+            <Text32 Ref="40" type="Text" isKey="true">
+              <Border>Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>12.4,1.6,1.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,6.75,Bold,Point,False,0</Font>
+              <Guid>afcf9029bd104687b5260f87d55c99db</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text32</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text> کاردانی</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text32>
+            <Text33 Ref="41" type="Text" isKey="true">
+              <Border>Left, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>10.2,1.6,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,6.75,Bold,Point,False,0</Font>
+              <Guid>3a5c181468994eae87e0695e0df0f2d5</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text33</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text> دکترای حرفه ای</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text33>
+            <Text38 Ref="42" type="Text" isKey="true">
+              <Border>Top, Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>6.6,0,1.2,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Bold,Point,False,0</Font>
+              <Guid>a9152543b9004325ba8d687803f405aa</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text38</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>جمع</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text38>
+            <Text40 Ref="43" type="Text" isKey="true">
+              <Border>Left, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>6.6,1.2,1.2,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Bold,Point,False,0</Font>
+              <Guid>0b225266058146eabf8e9284827a88b4</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text40</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>کل</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text40>
+            <Text41 Ref="44" type="Text" isKey="true">
+              <Border>Top, Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>5.4,0,1.2,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Bold,Point,False,0</Font>
+              <Guid>67fa8d59a37e4213984b8c59779fdd0d</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text41</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>ساعت</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text41>
+            <Text43 Ref="45" type="Text" isKey="true">
+              <Border>Left, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>5.4,1.2,1.2,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Bold,Point,False,0</Font>
+              <Guid>a831edd0f7ed4b8cbedc02e03af2e5fa</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text43</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>موظف</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text43>
+            <Text21 Ref="46" type="Text" isKey="true">
+              <Border>Top, Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>4.2,0,1.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Bold,Point,False,0</Font>
+              <Guid>502f9ed0d0fd4710ac53aea82e6dcb32</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>مازاد</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text21>
+            <Text44 Ref="47" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>4.2,0.6,1.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Bold,Point,False,0</Font>
+              <Guid>d006b3d878c84e1898128a98154c1814</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text44</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>یا</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text44>
+            <Text46 Ref="48" type="Text" isKey="true">
+              <Border>Left, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>4.2,1.4,1.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Bold,Point,False,0</Font>
+              <Guid>343fec505f5d47f3b07a86b1aca69ca8</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text46</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>کسر</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text46>
+            <Text47 Ref="49" type="Text" isKey="true">
+              <Border>Top, Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>3,0,1.2,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Bold,Point,False,0</Font>
+              <Guid>a32bd42a620f44569628e25e99d67b2a</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text47</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>ساعت</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text47>
+            <Text48 Ref="50" type="Text" isKey="true">
+              <Border>Left, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>3,1.2,1.2,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Bold,Point,False,0</Font>
+              <Guid>5738d5249a454a6e979e5c96687c7d0c</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text48</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>غیبت</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text48>
+            <Text49 Ref="51" type="Text" isKey="true">
+              <Border>Top, Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>1.2,0,1.8,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Bold,Point,False,0</Font>
+              <Guid>c8674ea0b392491d87afa894c877e36f</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text49</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>ارزش ریالی</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text49>
+            <Text50 Ref="52" type="Text" isKey="true">
+              <Border>Left, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>1.2,1.2,1.8,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Bold,Point,False,0</Font>
+              <Guid>6c6436e535f34e4687fb3bebfd9aa8e7</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text50</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>یک ساعت</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text50>
+            <Text51 Ref="53" type="Text" isKey="true">
+              <Border>Top, Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>0,0,1.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Bold,Point,False,0</Font>
+              <Guid>de43d00718de4c18950f8afae4f22937</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text51</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>مبلغ</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text51>
+            <Text52 Ref="54" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>0,0.6,1.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Bold,Point,False,0</Font>
+              <Guid>813c38b4e0a64dc095d89e2ce2c13d18</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text52</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>قابل</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text52>
+            <Text53 Ref="55" type="Text" isKey="true">
+              <Border>Left, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>0,1.4,1.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Bold,Point,False,0</Font>
+              <Guid>e23cf30a717840cdb36bfe51d6eb4248</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text53</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>پرداخت</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text53>
+            <Text54 Ref="56" type="Text" isKey="true">
+              <Border>Top, Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>7.8,0,1.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Bold,Point,False,0</Font>
+              <Guid>de680450f51c4237aec5217e0e6118f4</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text54</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>کارآموز</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text54>
+            <Text55 Ref="57" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>7.8,0.6,1.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Bold,Point,False,0</Font>
+              <Guid>d2ce1f8f8f3444448afae6ea1698159c</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text55</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>و</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text55>
+            <Text56 Ref="58" type="Text" isKey="true">
+              <Border>Left, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>7.8,1.4,1.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8.25,Bold,Point,False,0</Font>
+              <Guid>584d8cf6327a4e108ab7d913aa612d7f</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text56</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>کارورز</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text56>
+            <Text14 Ref="59" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>14.2,1,1.2,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,6.75,Bold,Point,False,0</Font>
+              <Guid>1e228cf325ea47f2a6d976d7499ad097</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>دکترای تخصصی</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text14>
+            <Text34 Ref="60" type="Text" isKey="true">
+              <Border>Top, Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>15.4,1,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,6.75,Bold,Point,False,0</Font>
+              <Guid>1e6ec59cd9734c78818f35424416c6a0</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text34</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>کارشناسی ارشد</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text34>
+            <Text35 Ref="61" type="Text" isKey="true">
+              <Border>Left, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>15.4,1.6,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,6.75,Bold,Point,False,0</Font>
+              <Guid>dae0505c3af74ff5959c64c74841b06b</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text35</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text> دکترای حرفه ای</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text35>
+            <Text57 Ref="62" type="Text" isKey="true">
+              <Border>Top, Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>17.6,1,1.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,6.75,Bold,Point,False,0</Font>
+              <Guid>7ced290f66f04173a0703fda806ad634</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text57</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>کارشناسی</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text57>
+            <Text58 Ref="63" type="Text" isKey="true">
+              <Border>Left, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>NavajoWhite</Brush>
+              <ClientRectangle>17.6,1.6,1.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,6.75,Bold,Point,False,0</Font>
+              <Guid>86261b33ceed4e2f8316ea5fdd1dc87b</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text58</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text> کاردانی</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text58>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>HeaderBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </HeaderBand1>
+        <DataBand1 Ref="64" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,8.4,27.7,1.4</ClientRectangle>
+          <Components isList="true" count="17">
+            <Text8 Ref="65" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>26.8,0,0.8,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,9,Regular,Point,False,178</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>a529114bcc194a3bb3cb54e8164038c8</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="4" />
+              <Parent isRef="64" />
+              <Text>{Line}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text8>
+            <Text9 Ref="66" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>23.8,0,3,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,9,Regular,Point,False,178</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>2daaa92de4b14f2ea2c062bc14659142</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="4" />
+              <Parent isRef="64" />
+              <Text>{_Faculty___SP_ListPayTuition_.nameostad}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text9>
+            <Text10 Ref="67" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>21.4,0,2.4,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,9,Regular,Point,False,178</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>ab26bc470f4b46f8837178cd83f839d3</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="4" />
+              <Parent isRef="64" />
+              <Text>{_Faculty___SP_ListPayTuition_.namemadrak}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+            <Text11 Ref="68" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>19.4,0,2,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,9,Regular,Point,False,178</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>d36b40704c1941089b4e71b1a0d1c3d9</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="4" />
+              <Parent isRef="64" />
+              <Text>{_Faculty___SP_ListPayTuition_.namemartabeh}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text11>
+            <Text12 Ref="69" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>17.6,0,1.8,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,9,Regular,Point,False,178</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>ad2c8c651010406f9e94d360042f5f7a</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="4" />
+              <Parent isRef="64" />
+              <Text>{_Faculty___SP_ListPayTuition_.dvk_nazari}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text12>
+            <Text17 Ref="70" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>14.2,0,1.2,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,9,Regular,Point,False,178</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>3204a4c188ed4999a62ab2b8710aa212</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="4" />
+              <Parent isRef="64" />
+              <Text>{_Faculty___SP_ListPayTuition_.dvd_nazari}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text17>
+            <Text19 Ref="71" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>12.4,0,1.8,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>494c4749f4a64625be8d6b63a874f4b6</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="4" />
+              <Parent isRef="64" />
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text19>
+            <Text27 Ref="72" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>10.2,0,2.2,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>aa0460fb880540eb95ad3299a43ac200</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text27</Name>
+              <Page isRef="4" />
+              <Parent isRef="64" />
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text27>
+            <Text28 Ref="73" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>9,0,1.2,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,9,Regular,Point,False,178</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>6c75fb7da45c47d0891ee7dbc2cb20de</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text28</Name>
+              <Page isRef="4" />
+              <Parent isRef="64" />
+              <Text>{_Faculty___SP_ListPayTuition_.dva_aa_amali}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text28>
+            <Text59 Ref="74" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>7.8,0,1.2,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,9,Regular,Point,False,178</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>e49d230e702e4c17bb4fe7c568b2d02d</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text59</Name>
+              <Page isRef="4" />
+              <Parent isRef="64" />
+              <Text>{_Faculty___SP_ListPayTuition_.dva_aa_amali}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text59>
+            <Text60 Ref="75" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>6.6,0,1.2,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,9,Regular,Point,False,178</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>c93fd126096c498f86e985cf850c6aa5</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text60</Name>
+              <Page isRef="4" />
+              <Parent isRef="64" />
+              <Text>{_Faculty___SP_ListPayTuition_.sumkol}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text60>
+            <Text61 Ref="76" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>5.4,0,1.2,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,9,Regular,Point,False,178</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>e7a194f8f1ef4367884993d9d2a95081</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text61</Name>
+              <Page isRef="4" />
+              <Parent isRef="64" />
+              <Text>{_Faculty___SP_ListPayTuition_.saat_movazaf}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text61>
+            <Text62 Ref="77" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>4.2,0,1.2,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,9,Regular,Point,False,178</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>3e431a4f6e0a4db5a6cfa0e0117fe8bc</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text62</Name>
+              <Page isRef="4" />
+              <Parent isRef="64" />
+              <Text>{_Faculty___SP_ListPayTuition_.mazad}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text62>
+            <Text63 Ref="78" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>3,0,1.2,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,9,Regular,Point,False,178</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>7ee2b66643da4ab3b44789c492fe8f5a</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text63</Name>
+              <Page isRef="4" />
+              <Parent isRef="64" />
+              <Text>{_Faculty___SP_ListPayTuition_.saat_ghebat}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text63>
+            <Text64 Ref="79" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>1.2,0,1.8,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,9,Regular,Point,False,178</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>1f75ae1abba441a49dada7ead8e01fb3</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text64</Name>
+              <Page isRef="4" />
+              <Parent isRef="64" />
+              <Text>{_Faculty___SP_ListPayTuition_.rial_ost}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text64>
+            <Text65 Ref="80" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,1.2,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,9,Regular,Point,False,178</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>cf822e06025642009a6b02478dcdd02d</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text65</Name>
+              <Page isRef="4" />
+              <Parent isRef="64" />
+              <Text>{_Faculty___SP_ListPayTuition_.mab}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text65>
+            <Text13 Ref="81" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>15.4,0,2.2,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,9,Regular,Point,False,178</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>2470fd78befb4e94a1535a45709133da</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="4" />
+              <Parent isRef="64" />
+              <Text>{_Faculty___SP_ListPayTuition_.dva_nazari}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text13>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>[Faculty].[SP_ListPayTuition]</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <FooterBand1 Ref="82" type="FooterBand" isKey="true">
+          <Brush>Gainsboro</Brush>
+          <ClientRectangle>0,10.6,27.7,2.2</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text45 Ref="83" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>23.2,0.6,2.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,12,Bold,Point,False,178</Font>
+              <Guid>8edbf4c5cfab41108ee6caf1b68a681c</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text45</Name>
+              <Page isRef="4" />
+              <Parent isRef="82" />
+              <Text>کارشناس آموزش</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text45>
+            <Text71 Ref="84" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16.8,0.6,2.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,12,Bold,Point,False,178</Font>
+              <Guid>89502f0b13a64e23be09e9f5b872fc09</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text71</Name>
+              <Page isRef="4" />
+              <Parent isRef="82" />
+              <Text>رئیس دانشکده</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text71>
+            <Text72 Ref="85" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8.4,0.6,5,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,12,Bold,Point,False,178</Font>
+              <Guid>018f688ea80744508ccbd2813225b748</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text72</Name>
+              <Page isRef="4" />
+              <Parent isRef="82" />
+              <Text>اداره حق الزحمه و حق التدریس</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text72>
+            <Text73 Ref="86" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.2,0.6,4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,12,Bold,Point,False,178</Font>
+              <Guid>6274953a762443c19c7e20974175c896</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text73</Name>
+              <Page isRef="4" />
+              <Parent isRef="82" />
+              <Text>معاون آموزشی</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text73>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>FooterBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </FooterBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>6e6edf18e8494689914e95ee8c7b7bcd</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>21</PageHeight>
+      <PageWidth>29.7</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="87" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="88" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>ReportListPayProf</ReportAlias>
+  <ReportChanged>10/25/2015 12:57:06 PM</ReportChanged>
+  <ReportCreated>10/10/2015 12:46:33 PM</ReportCreated>
+  <ReportFile>C:\Users\sh_ramezanian\Desktop\Report\Faculty\ReportListPayProf.mrt</ReportFile>
+  <ReportGuid>bf41cc6dc10d480caa8afd891091c9a3</ReportGuid>
+  <ReportName>ReportListPayProf</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2014.3.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class ReportListPayProf : Stimulsoft.Report.StiReport
+    {
+        public ReportListPayProf()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

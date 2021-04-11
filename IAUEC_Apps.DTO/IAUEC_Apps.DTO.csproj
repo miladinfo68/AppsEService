@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{33F96CEF-F280-4C54-92F0-4B124F1AE61D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IAUEC_Apps.DTO</RootNamespace>
+    <AssemblyName>IAUEC_Apps.DTO</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\IAUEC_Apps.DTO.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\serviceDLL\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.DirectoryServices.Protocols" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdobeClasses\AdobeConnectDTO.cs" />
+    <Compile Include="AdobeClasses\AssetDTO.cs" />
+    <Compile Include="AdobeClasses\ClassListDTO.cs" />
+    <Compile Include="AdobeClasses\CMSViewFilesDTO.cs" />
+    <Compile Include="AdobeClasses\DemoProfPresentDTO.cs" />
+    <Compile Include="AdobeClasses\DownloadRequestDTO.cs" />
+    <Compile Include="AdobeClasses\ManagementPanelDTO.cs" />
+    <Compile Include="AdobeClasses\MPanelDTO.cs" />
+    <Compile Include="AdobeClasses\RecordsDTO.cs" />
+    <Compile Include="AdobeClasses\ReportDownloadReqDTO.cs" />
+    <Compile Include="AdobeClasses\SettingDTO.cs" />
+    <Compile Include="AdobeClasses\StuImg.cs" />
+    <Compile Include="AdobeClasses\TimeOfEachClass.cs" />
+    <Compile Include="CommonClasses\ActiveDirectoryDTO.cs" />
+    <Compile Include="CommonClasses\AppSmsDTO.cs" />
+    <Compile Include="CommonClasses\CommenicationInfoDTO.cs" />
+    <Compile Include="CommonClasses\EducationCalender.cs" />
+    <Compile Include="CommonClasses\EventEnum.cs" />
+    <Compile Include="CommonClasses\LoginDTO.cs" />
+    <Compile Include="CommonClasses\PaymentDTO.cs" />
+    <Compile Include="CommonClasses\PaymentRequest.cs" />
+    <Compile Include="CommonClasses\persianCharacters.cs" />
+    <Compile Include="CommonClasses\PersianDateExtensionMethod.cs" />
+    <Compile Include="CommonClasses\ProfessorDTO.cs" />
+    <Compile Include="CommonClasses\RoleEnums.cs" />
+    <Compile Include="CommonClasses\SignautreDTO.cs" />
+    <Compile Include="CommonClasses\StatusEnum.cs" />
+    <Compile Include="CommonClasses\TraceMessageDTO.cs" />
+    <Compile Include="CommonClasses\UserAccessSectionDTO.cs" />
+    <Compile Include="EmailClasses\Email_Class.cs" />
+    <Compile Include="EmailClasses\Email_ConnectDTO.cs" />
+    <Compile Include="EmailClasses\ProofText.cs" />
+    <Compile Include="EmailClasses\StudentDTO.cs" />
+    <Compile Include="EmailClasses\User_LoginDTO.cs" />
+    <Compile Include="Evaluation\AnswerOfQuestionDTO.cs" />
+    <Compile Include="Evaluation\QuestionDTO.cs" />
+    <Compile Include="Evaluation\StudentAnswerOfQuestionDTO.cs" />
+    <Compile Include="Evaluation\SubQuestionDTO.cs" />
+    <Compile Include="Helper\Extention.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AdobeClasses\UserLoginDTO.cs" />
+    <Compile Include="ResourceControlClasses\AccessStudentOperationModel.cs" />
+    <Compile Include="ResourceControlClasses\BaseInfo.cs" />
+    <Compile Include="ResourceControlClasses\Category.cs" />
+    <Compile Include="ResourceControlClasses\Course.cs" />
+    <Compile Include="ResourceControlClasses\CourseCounter.cs" />
+    <Compile Include="ResourceControlClasses\Daneshkade.cs" />
+    <Compile Include="ResourceControlClasses\DefenceInformation.cs" />
+    <Compile Include="ResourceControlClasses\InformationOstadForDefenceStudent.cs" />
+    <Compile Include="ResourceControlClasses\Location.cs" />
+    <Compile Include="ResourceControlClasses\mainViewModel.cs" />
+    <Compile Include="ResourceControlClasses\Option.cs" />
+    <Compile Include="ResourceControlClasses\RC_User.cs" />
+    <Compile Include="ResourceControlClasses\RefereeInformation.cs" />
+    <Compile Include="ResourceControlClasses\RequestDateTime.cs" />
+    <Compile Include="ResourceControlClasses\RequestFR.cs" />
+    <Compile Include="ResourceControlClasses\Req_Opt_Junc.cs" />
+    <Compile Include="ResourceControlClasses\Resource.cs" />
+    <Compile Include="ResourceControlClasses\ResourceControlEnums.cs" />
+    <Compile Include="ResourceControlClasses\Res_Opt_Junc.cs" />
+    <Compile Include="ResourceControlClasses\ScoreDefence.cs" />
+    <Compile Include="ResourceControlClasses\StatusDefenceTechnichal.cs" />
+    <Compile Include="ResourceControlClasses\StudentConditionViewModel.cs" />
+    <Compile Include="ResourceControlClasses\StudentDefenceRequest.cs" />
+    <Compile Include="ResourceControlClasses\Teacher.cs" />
+    <Compile Include="StudentInfo\CityDTO.cs" />
+    <Compile Include="StudentInfo\MilitryStatusDTO.cs" />
+    <Compile Include="StudentInfo\StateDTO.cs" />
+    <Compile Include="StudentInfo\StudentDTO.cs" />
+    <Compile Include="University\CooperationRequest\BasicInformation.cs" />
+    <Compile Include="University\Exam\ExamQuestionDto.cs" />
+    <Compile Include="University\Exam\ExamQuestionInfo.cs" />
+    <Compile Include="University\Exam\ExamStudentDTO.cs" />
+    <Compile Include="University\Exam\PdfDataModel.cs" />
+    <Compile Include="University\Exam\PollAnswerDTO.cs" />
+    <Compile Include="University\Exam\PollCommentDTO.cs" />
+    <Compile Include="University\Exam\PollDTO.cs" />
+    <Compile Include="University\Exam\PollOptionDTO.cs" />
+    <Compile Include="University\Exam\PollQuestionDTO.cs" />
+    <Compile Include="University\Faculty\EditInfo.cs" />
+    <Compile Include="University\Graduate\GraduateFormsDTO.cs" />
+    <Compile Include="University\Graduate\VahedReshteDTO.cs" />
+    <Compile Include="University\Request\ChangedInfoDTO.cs" />
+    <Compile Include="University\Request\EditProfPersonalInfoDTO.cs" />
+    <Compile Include="University\CooperationRequest\Hire.cs" />
+    <Compile Include="University\CooperationRequest\InfoFaculty.cs" />
+    <Compile Include="University\Education\BarnameHaftegiDTO.cs" />
+    <Compile Include="University\Education\ListClassDTO.cs" />
+    <Compile Include="University\Education\ListDaneshjuianAdamMojavezDTO.cs" />
+    <Compile Include="University\Education\ListDorusGhabuliDTO.cs" />
+    <Compile Include="University\Education\ListEshteghalBeTahsilDTO.cs" />
+    <Compile Include="University\Education\ListMoghayeratDTO.cs" />
+    <Compile Include="University\Education\ListNumberClassDTO.cs" />
+    <Compile Include="University\Education\RegisterOfStudentDTO.cs" />
+    <Compile Include="University\Exam\ExamDTO.cs" />
+    <Compile Include="University\Exam\ExaminerDTO.cs" />
+    <Compile Include="University\Faculty\ExamShowClockDateDTO.cs" />
+    <Compile Include="University\Faculty\FacultyDTO.cs" />
+    <Compile Include="University\Faculty\InfoPeople.cs" />
+    <Compile Include="University\Faculty\InsertToSida.cs" />
+    <Compile Include="University\Faculty\ListAsatidDarHarTermDTO.cs" />
+    <Compile Include="University\Faculty\ListHoursAndAbsenceDTO.cs" />
+    <Compile Include="University\Faculty\ListTadakholKlassDTO.cs" />
+    <Compile Include="University\Faculty\ListTadrisDTO.cs" />
+    <Compile Include="University\Faculty\PercentageStuProbationDTO.cs" />
+    <Compile Include="University\Faculty\ReferToMasterDTO.cs" />
+    <Compile Include="University\Faculty\TeacherEvalutionDTO.cs" />
+    <Compile Include="University\Graduate\DaneshnameArshadDTO.cs" />
+    <Compile Include="University\Request\CheckOutNaghs.cs" />
+    <Compile Include="University\Request\CheckOutPajoheshDTO.cs" />
+    <Compile Include="University\Request\CheckOutRefahEnum.cs" />
+    <Compile Include="University\Request\CheckOutStatusEnum.cs" />
+    <Compile Include="University\Request\CheckOutStudentLastUniInfo.cs" />
+    <Compile Include="University\Request\EditPersonalInformationDTO.cs" />
+    <Compile Include="University\Request\FeraghatTahsilDTO.cs" />
+    <Compile Include="University\Request\GovahiRequest.cs" />
+    <Compile Include="University\Request\MadarekReportDTO.cs" />
+    <Compile Include="University\Request\PaymentRequest.cs" />
+    <Compile Include="University\Request\ProfessorHokmDTO.cs" />
+    <Compile Include="University\Request\RecordViolationDTO.cs" />
+    <Compile Include="University\Request\RequestStudentCartDTO.cs" />
+    <Compile Include="University\Request\StudentCheckOutDebit.cs" />
+    <Compile Include="University\Request\StudentRequest.cs" />
+    <Compile Include="University\Students\CardsQuizTemporaryStudentsDTO.cs" />
+    <Compile Include="University\Students\ListStudentBasedOnIGRDDTO.cs" />
+    <Compile Include="University\Students\ListStudentsUnderWelfareDTO.cs" />
+    <Compile Include="University\Students\MilitaryReportDTO.cs" />
+    <Compile Include="University\Students\MilitaryStatusDTO.cs" />
+    <Compile Include="University\Students\ReportExcellentStuDTO.cs" />
+    <Compile Include="University\Support\PassProfessorDTO.cs" />
+    <Compile Include="University\Wallet\BanksEnum.cs" />
+    <Compile Include="University\Wallet\ConfirmPaymentDTO.cs" />
+    <Compile Include="University\Wallet\PaymentDTO.cs" />
+    <Compile Include="University\Wallet\PaymentStatusEnum.cs" />
+    <Compile Include="University\Wallet\PayRequestResultDTO.cs" />
+    <Compile Include="University\Wallet\PayTypeEnum.cs" />
+    <Compile Include="University\Wallet\TransactionDTO.cs" />
+    <Compile Include="University\Wallet\TransactionTypeEnum.cs" />
+    <Compile Include="University\WelfareAffairs\DigitParvande.cs" />
+    <Compile Include="University\WelfareAffairs\LoanDocInfoDTO.cs" />
+    <Compile Include="University\WelfareAffairs\LoanInfo.cs" />
+    <Compile Include="University\WelfareAffairs\PaymentRecord.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="InitialRegClasses\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

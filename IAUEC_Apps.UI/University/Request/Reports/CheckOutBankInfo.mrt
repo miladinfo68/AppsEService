@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <Connection1 Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>Connection1</Alias>
+        <ConnectionStringEncrypted>5X77K0ZKQ93iS72NeiUyP8NwYy1PTUKtzAh5gOFY4xuNyLXLYVbDneFbafhlXHd7gmqf42EKk81BRv3JTgixE8Uggc9LShGBwU/QmGFMYmPHWsEJx3GzhWFRrAhNTHcqwlpT609o091DXNGA6XT2J4Z4cYnJGEFtYU2wmEsYrC/VbN2JTUrzrWlr1exqJQ==</ConnectionStringEncrypted>
+        <Name>Connection1</Name>
+      </Connection1>
+    </Databases>
+    <DataSources isList="true" count="2">
+      <_x005B_Request_x005D___x005B_SP_GetBankAcountInfoCheckOut_x005D_ Ref="3" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>[Request].[SP_GetBankAcountInfoCheckOut]</Alias>
+        <Columns isList="true" count="7">
+          <value>ID,System.Int64</value>
+          <value>stcode,System.String</value>
+          <value>AcountNumber,System.String</value>
+          <value>AcountSheba,System.String</value>
+          <value>AcountOwnerName,System.String</value>
+          <value>PhoneNumber,System.String</value>
+          <value>Note,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <IsCloud>False</IsCloud>
+        <Name>[Request].[SP_GetBankAcountInfoCheckOut]</Name>
+        <NameInSource>Connection1</NameInSource>
+        <Parameters isList="true" count="1">
+          <value>_x0040_stcode,,22,11</value>
+        </Parameters>
+        <SqlCommand>[Request].[SP_GetBankAcountInfoCheckOut]</SqlCommand>
+        <Type>StoredProcedure</Type>
+      </_x005B_Request_x005D___x005B_SP_GetBankAcountInfoCheckOut_x005D_>
+      <_x005B_Request_x005D___x005B_SP_GetStudentInfoByStCode_x005D_ Ref="4" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>[Request].[SP_GetStudentInfoByStCode]</Alias>
+        <Columns isList="true" count="32">
+          <value>stcode,System.String</value>
+          <value>name,System.String</value>
+          <value>family,System.String</value>
+          <value>namep,System.String</value>
+          <value>dorpar,System.Byte</value>
+          <value>magh,System.String</value>
+          <value>idresh,System.Decimal</value>
+          <value>idd,System.String</value>
+          <value>idvazkol,System.Decimal</value>
+          <value>sabt_batakhir,System.Boolean</value>
+          <value>sal_vorod,System.String</value>
+          <value>idpazeresh,System.Decimal</value>
+          <value>payed,System.Decimal</value>
+          <value>nameresh,System.String</value>
+          <value>codebayegan,System.String</value>
+          <value>idd_meli,System.String</value>
+          <value>Expr1,System.String</value>
+          <value>name_dorpar,System.String</value>
+          <value>name_vazkol,System.String</value>
+          <value>sex,System.Byte</value>
+          <value>CheckOutPajooheshID,System.Int64</value>
+          <value>StudentRequestID,System.Int64</value>
+          <value>StCode1,System.String</value>
+          <value>Def_Date,System.String</value>
+          <value>Def_Point,System.String</value>
+          <value>Date_Paper_Cancel,System.String</value>
+          <value>HasPaper,System.Boolean</value>
+          <value>Date_Recieve_Doc_Accept,System.String</value>
+          <value>Date_Send_Doc_Edu,System.String</value>
+          <value>IsFinalize,System.Boolean</value>
+          <value>IsArchive,System.Boolean</value>
+          <value>IsDeleted,System.Boolean</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <IsCloud>False</IsCloud>
+        <Name>[Request].[SP_GetStudentInfoByStCode]</Name>
+        <NameInSource>Connection1</NameInSource>
+        <Parameters isList="true" count="1">
+          <value>_x0040_stcode,,22,11</value>
+        </Parameters>
+        <SqlCommand>[Request].[SP_GetStudentInfoByStCode]</SqlCommand>
+        <Type>StoredProcedure</Type>
+      </_x005B_Request_x005D___x005B_SP_GetStudentInfoByStCode_x005D_>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="5" type="Page" isKey="true">
+      <Border>All;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="2">
+        <ReportTitleBand1 Ref="6" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,12.8,2.6</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text1 Ref="7" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4,0.6,4.4,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,18,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>فرم عودت شهریه</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ReportTitleBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </ReportTitleBand1>
+        <DataBand1 Ref="8" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,3.8,12.8,15.4</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text4 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1,12,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,14,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="5" />
+              <Parent isRef="8" />
+              <Text>و شماره دانشجویی  {_Request___SP_GetStudentInfoByStCode_.stcode}  با توجه به مانده بستانکاری /</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+            <Text5 Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,2.4,12,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,14,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="5" />
+              <Parent isRef="8" />
+              <Text>انصراف ، درخواست عودت شهریه را به شماره حساب ذیل دارم </Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <Text2 Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.4,12,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,14,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="5" />
+              <Parent isRef="8" />
+              <Text>اینجانب {_Request___SP_GetStudentInfoByStCode_.name}{_Request___SP_GetStudentInfoByStCode_.family} فرزند {_Request___SP_GetStudentInfoByStCode_.namep} دارای کد ملی {_Request___SP_GetStudentInfoByStCode_.idd_meli}  
+
+</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <Text3 Ref="12" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.6,5,11.4,6.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,14,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="5" />
+              <Parent isRef="8" />
+              <Text>نام صاحب حساب : {_Request___SP_GetBankAcountInfoCheckOut_.AcountOwnerName}
+
+شماره حساب بانک ملی : {_Request___SP_GetBankAcountInfoCheckOut_.AcountNumber}
+
+شماره شبا حساب دیگر بانکها : {_Request___SP_GetBankAcountInfoCheckOut_.AcountSheba} 
+
+بانک  :   {_Request___SP_GetBankAcountInfoCheckOut_.Note}
+
+شماره تماس : {_Request___SP_GetBankAcountInfoCheckOut_.PhoneNumber}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>40f8aa610d6b4979a014dbee9024297c</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>21</PageHeight>
+      <PageWidth>14.8</PageWidth>
+      <PaperSize>A5</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="13" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="14" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>12/8/2015 5:37:26 PM</ReportChanged>
+  <ReportCreated>12/8/2015 4:32:03 PM</ReportCreated>
+  <ReportFile>C:\Users\m_taherzadeh\Desktop\CheckOutBankInfo.mrt</ReportFile>
+  <ReportGuid>c2f9f5fd3f0741a3b12f5ddb1a43d0ed</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2014.3.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+        #endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

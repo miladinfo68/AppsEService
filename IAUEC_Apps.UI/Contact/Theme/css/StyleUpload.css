@@ -1,0 +1,128 @@
+﻿.qsf-demo-canvas {
+    font-family:Tahoma;
+}
+     .qsf-demo-canvas .qsf-decoration {
+          width: 130px;
+          height: 55px;
+          background: url("img/qsf-demo-bg.png") 0 0 no-repeat;
+          position: absolute;
+          top: -20px;
+          left: 15px;
+     }
+ 
+     .qsf-demo-canvas h2 {
+          margin: 0;
+          padding: .25em 40px .25em 150px;
+          color: #ffffff;
+          background: #317f99;
+          text-transform: uppercase;
+     }
+ 
+     .qsf-demo-canvas .qsf-list {
+          margin: 0;
+          padding: 1em 0 1em 150px;
+          list-style: none;
+          background: #ced1d3;
+     }
+ 
+ 
+     /** Customize the RadUpload */
+     .qsf-demo-canvas .RadUpload {
+    padding: 1px 5px 1px 5px;
+}
+ 
+          .qsf-demo-canvas .ruInputs li {
+               position: relative;
+               line-height: 1.1;
+          }
+          .qsf-demo-canvas .ruInputs .ruRemove {
+    margin: 10px 0 0 10px;
+    padding: 0;
+    position: absolute;
+    right: 50%;
+    top: 0;
+    font-family: Tahoma;
+    font-size: small;
+    font-weight: bold;
+    color: #333333;
+}
+ 
+          /** Upload mini-control */
+          .qsf-demo-canvas .ruInputs li:first-child {
+               padding-top: 1em;
+               padding-bottom: 1em;
+          }
+ 
+          /** Validation error */
+          .qsf-demo-canvas .ruError {
+               padding: 5px 5px 5px 20px;
+               border: 1px solid #ef0000;
+               background: #f9e8e8;
+              font-family:Tahoma;
+              font-size:small;
+          }
+          .qsf-demo-canvas .ruError .ruFileWrap {
+               height: auto;
+               overflow: visible !important;
+               display: block;
+          }
+          .qsf-demo-canvas .ruError .ruUploadProgress {
+               margin-left: -18px;
+               display: block;
+          }
+          .qsf-demo-canvas .ruError .ruUploadFailure {
+               background-position: 46% 82%;
+          }
+          .qsf-demo-canvas .ruError .ruErrorMessage {
+               display: block;
+               font-variant: small-caps;
+               text-transform: lowercase;
+          }
+ 
+ 
+ 
+     /** Validation list */
+     .qsf-demo-canvas .qsf-results {
+          padding: 1em 150px;
+     }
+ 
+          /** Headings */
+          .qsf-demo-canvas .qsf-results h3 {
+               margin: 0;
+               padding: 1em 0 1em 40px;
+               font-size: 10px;
+               font-weight: normal;
+               text-transform: uppercase;
+               background-position: left center;
+               background-repeat: no-repeat;
+          }
+               .qsf-demo-canvas .qsf-success h3 {
+                    color: #328d0a;
+                    background-image: url("img/qsf-demo-success-bg.png");
+               }
+               .qsf-demo-canvas .qsf-error h3 {
+                    color: #ef0000;
+                    background-image: url("img/qsf-demo-error-bg.png");
+               }
+ 
+          /** list */
+          .qsf-demo-canvas .qsf-results .qsf-list {
+               padding: 10px;
+               background: none;
+          }
+               .qsf-demo-canvas .qsf-success .qsf-list {
+                    padding-left: 0px;
+               }
+               .qsf-demo-canvas .qsf-error .qsf-list {
+                    background-color: #f9e8e8;
+                    margin-bottom: 1em;
+               }
+ 
+ 
+          /* Error */
+          .qsf-demo-canvas .ruError .ruErrorMessage {
+               color: #ef0000;
+               font-variant: small-caps;
+               text-transform: lowercase;
+               padding-bottom: 0;
+          }

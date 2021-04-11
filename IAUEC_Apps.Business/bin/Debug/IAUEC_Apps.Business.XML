@@ -1,0 +1,2003 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IAUEC_Apps.Business</name>
+    </assembly>
+    <members>
+        <member name="M:IAUEC_Apps.Business.Adobe.ManagementPanelBusiness.Check_CustomerName(System.String)">
+            <summary>
+            یک عدد تصادفی ایجاد می کند، با طول درخواستی شما
+            طول عدد اگر کوچکتر از 6 و یا بزرگتر 30 باشد، متن تصادفی با طول 10 کاراکتر ایجاد می شود
+            </summary>
+            <param name="LengthofString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Adobe.ManagementPanelBusiness.ReadExcelFile(System.String)">
+            <summary>
+            خواندن فایل اکسل به شیوه مورد نیاز برای آدابی
+            </summary>
+            <param name="Path"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:IAUEC_Apps.Business.Adobe.SessionMonitoringBusiness.GetMeetingsOnline_WithFilter(System.Int64,System.Int64,System.Int64,System.Int64)" -->
+        <member name="M:IAUEC_Apps.Business.Adobe.SessionMonitoringBusiness.GetMeetingOnline_UrlLink2">
+            <summary>
+            For Test
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Adobe.TABusiness.GetAllTimeOfEachClass(System.Int32,System.String,System.String)">
+            <summary>
+            داده های نهایی را گرفته و 
+            ارفاق و میزان زمان حضور استادیار را مشخص میکند
+            </summary>
+            <param name="Leniency"></param>
+            <param name="Nimsal"></param>
+            <param name="Department"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Adobe.TABusiness.GetSortedDataTableByProfCodeClassCode(System.String,System.Single,System.String,System.String,System.String)">
+            <summary>
+             استفاده شده در کلاس اطلاعات بصورت جزئی
+             
+            </summary>
+            <param name="ProfCode"></param>
+            <param name="ClassCode"></param>
+            <param name="BeginDate"></param>
+            <param name="EndDate"></param>
+            <param name="tterm"></param>
+            <returns></returns>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Common.ActiveDirectoryBusiness">
+            <summary>
+            this Class 
+            All Act in Active Directory be in here
+            
+            </summary>
+            
+        </member>
+        <member name="M:IAUEC_Apps.Business.Common.CommonBusiness.sendSMS(System.Int32,System.String,System.String,System.Boolean@,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="userType">1:student 2:teacher</param>
+            <param name="userID"></param>
+            <param name="message"></param>
+            <param name="sentSMS"></param>
+            <param name="smsStatusText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Common.CommonBusiness.getEducationCalender(System.Int32)">
+            <summary>
+            تمام تاریخهای نوع ورودی برای تمام ترمها را دریافت میکند
+            </summary>
+            <param name="dateType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Common.CommonBusiness.getEducationCalender(System.String)">
+            <summary>
+            برای ترم ذکر شده تمام تاریخهای ثبت شده را می آورد
+            </summary>
+            <param name="term"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Common.CommonBusiness.getEducationCalender">
+            <summary>
+            تمام داده های جدول تقویم آموزشی را می آورد
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Common.CommonBusiness.getEducationCalender(System.String,System.Int32)">
+            <summary>
+            برای ترم ذکر شده روز ذکر شده را می آورد
+            </summary>
+            <param name="term"></param>
+            <param name="dateType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Common.CommonBusiness.ChangeTeacherPassword(System.Int64,System.String)">
+            <summary>
+            Changes Made To Convert Passwords
+            </summary>
+            <param name="AppID"></param>
+            <param name="Status"></param>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Common.EncryptionClass.#ctor(System.String)">
+            <summary>
+            Use this constructor if you are planning to perform encryption/
+            decryption with 256-bit key, derived using 1 password iteration,
+            hashing without salt, no initialization vector, electronic codebook
+            (ECB) mode, SHA-1 hashing algorithm, and 4-to-8 byte long salt.
+            </summary>
+            <param name="passPhrase">
+            Passphrase from which a pseudo-random password will be derived.
+            The derived password will be used to generate the encryption key.
+            Passphrase can be any string. In this example we assume that the
+            passphrase is an ASCII string. Passphrase value must be kept in
+            secret.
+            </param>
+            <remarks>
+            This constructor is not recommended because it does not use
+            initialization vector and uses the ECB cipher mode, which is less
+            secure than the CBC mode.
+            </remarks>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Common.EncryptionClass.#ctor(System.String,System.String)">
+            <summary>
+            Use this constructor if you are planning to perform encryption/
+            decryption with 256-bit key, derived using 1 password iteration,
+            hashing without salt, cipher block chaining (CBC) mode, SHA-1
+            hashing algorithm, and 4-to-8 byte long salt.
+            </summary>
+            <param name="passPhrase">
+            Passphrase from which a pseudo-random password will be derived.
+            The derived password will be used to generate the encryption key.
+            Passphrase can be any string. In this example we assume that the
+            passphrase is an ASCII string. Passphrase value must be kept in
+            secret.
+            </param>
+            <param name="initVector">
+            Initialization vector (IV). This value is required to encrypt the
+            first block of plaintext data. For RijndaelManaged class IV must be
+            exactly 16 ASCII characters long. IV value does not have to be kept
+            in secret.
+            </param>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Common.EncryptionClass.#ctor(System.String,System.String,System.Int32)">
+            <summary>
+            Use this constructor if you are planning to perform encryption/
+            decryption with 256-bit key, derived using 1 password iteration,
+            hashing without salt, cipher block chaining (CBC) mode, SHA-1 
+            hashing algorithm, and 0-to-8 byte long salt.
+            </summary>
+            <param name="passPhrase">
+            Passphrase from which a pseudo-random password will be derived.
+            The derived password will be used to generate the encryption key
+            Passphrase can be any string. In this example we assume that the
+            passphrase is an ASCII string. Passphrase value must be kept in
+            secret.
+            </param>
+            <param name="initVector">
+            Initialization vector (IV). This value is required to encrypt the
+            first block of plaintext data. For RijndaelManaged class IV must be
+            exactly 16 ASCII characters long. IV value does not have to be kept
+            in secret.
+            </param>
+            <param name="minSaltLen">
+            Min size (in bytes) of randomly generated salt which will be added at
+            the beginning of plain text before encryption is performed. When this
+            value is less than 4, the default min value will be used (currently 4
+            bytes).
+            </param>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Common.EncryptionClass.#ctor(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Use this constructor if you are planning to perform encryption/
+            decryption with 256-bit key, derived using 1 password iteration,
+            hashing without salt, cipher block chaining (CBC) mode, SHA-1
+            hashing algorithm. Use the minSaltLen and maxSaltLen parameters to
+            specify the size of randomly generated salt.
+            </summary>
+            <param name="passPhrase">
+            Passphrase from which a pseudo-random password will be derived.
+            The derived password will be used to generate the encryption key.
+            Passphrase can be any string. In this example we assume that the
+            passphrase is an ASCII string. Passphrase value must be kept in
+            secret.
+            </param>
+            <param name="initVector">
+            Initialization vector (IV). This value is required to encrypt the
+            first block of plaintext data. For RijndaelManaged class IV must be
+            exactly 16 ASCII characters long. IV value does not have to be kept
+            in secret.
+            </param>
+            <param name="minSaltLen">
+            Min size (in bytes) of randomly generated salt which will be added at
+            the beginning of plain text before encryption is performed. When this
+            value is less than 4, the default min value will be used (currently 4
+            bytes).
+            </param>
+            <param name="maxSaltLen">
+            Max size (in bytes) of randomly generated salt which will be added at
+            the beginning of plain text before encryption is performed. When this
+            value is negative or greater than 255, the default max value will be
+            used (currently 8 bytes). If max value is 0 (zero) or if it is smaller
+            than the specified min value (which can be adjusted to default value),
+            salt will not be used and plain text value will be encrypted as is.
+            In this case, salt will not be processed during decryption either.
+            </param>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Common.EncryptionClass.#ctor(System.String,System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Use this constructor if you are planning to perform encryption/
+            decryption using the key derived from 1 password iteration,
+            hashing without salt, cipher block chaining (CBC) mode, and
+            SHA-1 hashing algorithm.
+            </summary>
+            <param name="passPhrase">
+            Passphrase from which a pseudo-random password will be derived.
+            The derived password will be used to generate the encryption key.
+            Passphrase can be any string. In this example we assume that the
+            passphrase is an ASCII string. Passphrase value must be kept in
+            secret.
+            </param>
+            <param name="initVector">
+            Initialization vector (IV). This value is required to encrypt the
+            first block of plaintext data. For RijndaelManaged class IV must be
+            exactly 16 ASCII characters long. IV value does not have to be kept
+            in secret.
+            </param>
+            <param name="minSaltLen">
+            Min size (in bytes) of randomly generated salt which will be added at
+            the beginning of plain text before encryption is performed. When this
+            value is less than 4, the default min value will be used (currently 4
+            bytes).
+            </param>
+            <param name="maxSaltLen">
+            Max size (in bytes) of randomly generated salt which will be added at
+            the beginning of plain text before encryption is performed. When this
+            value is negative or greater than 255, the default max value will be 
+            used (currently 8 bytes). If max value is 0 (zero) or if it is smaller
+            than the specified min value (which can be adjusted to default value),
+            salt will not be used and plain text value will be encrypted as is.
+            In this case, salt will not be processed during decryption either.
+            </param>
+            <param name="keySize">
+            Size of symmetric key (in bits): 128, 192, or 256.
+            </param>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Common.EncryptionClass.#ctor(System.String,System.String,System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            Use this constructor if you are planning to perform encryption/
+            decryption using the key derived from 1 password iteration, hashing 
+            without salt, and cipher block chaining (CBC) mode.
+            </summary>
+            <param name="passPhrase">
+            Passphrase from which a pseudo-random password will be derived.
+            The derived password will be used to generate the encryption key.
+            Passphrase can be any string. In this example we assume that the
+            passphrase is an ASCII string. Passphrase value must be kept in
+            secret.
+            </param>
+            <param name="initVector">
+            Initialization vector (IV). This value is required to encrypt the
+            first block of plaintext data. For RijndaelManaged class IV must be
+            exactly 16 ASCII characters long. IV value does not have to be kept
+            in secret.
+            </param>
+            <param name="minSaltLen">
+            Min size (in bytes) of randomly generated salt which will be added at
+            the beginning of plain text before encryption is performed. When this
+            value is less than 4, the default min value will be used (currently 4
+            bytes).
+            </param>
+            <param name="maxSaltLen">
+            Max size (in bytes) of randomly generated salt which will be added at
+            the beginning of plain text before encryption is performed. When this
+            value is negative or greater than 255, the default max value will be
+            used (currently 8 bytes). If max value is 0 (zero) or if it is smaller
+            than the specified min value (which can be adjusted to default value),
+            salt will not be used and plain text value will be encrypted as is.
+            In this case, salt will not be processed during decryption either.
+            </param>
+            <param name="keySize">
+            Size of symmetric key (in bits): 128, 192, or 256.
+            </param>
+            <param name="hashAlgorithm">
+            Hashing algorithm: "MD5" or "SHA1". SHA1 is recommended.
+            </param>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Common.EncryptionClass.#ctor(System.String,System.String,System.Int32,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            Use this constructor if you are planning to perform encryption/
+            decryption using the key derived from 1 password iteration, and
+            cipher block chaining (CBC) mode.
+            </summary>
+            <param name="passPhrase">
+            Passphrase from which a pseudo-random password will be derived.
+            The derived password will be used to generate the encryption key.
+            Passphrase can be any string. In this example we assume that the
+            passphrase is an ASCII string. Passphrase value must be kept in
+            secret.
+            </param>
+            <param name="initVector">
+            Initialization vector (IV). This value is required to encrypt the
+            first block of plaintext data. For RijndaelManaged class IV must be
+            exactly 16 ASCII characters long. IV value does not have to be kept
+            in secret.
+            </param>
+            <param name="minSaltLen">
+            Min size (in bytes) of randomly generated salt which will be added at
+            the beginning of plain text before encryption is performed. When this
+            value is less than 4, the default min value will be used (currently 4
+            bytes).
+            </param>
+            <param name="maxSaltLen">
+            Max size (in bytes) of randomly generated salt which will be added at
+            the beginning of plain text before encryption is performed. When this
+            value is negative or greater than 255, the default max value will be
+            used (currently 8 bytes). If max value is 0 (zero) or if it is smaller
+            than the specified min value (which can be adjusted to default value),
+            salt will not be used and plain text value will be encrypted as is.
+            In this case, salt will not be processed during decryption either.
+            </param>
+            <param name="keySize">
+            Size of symmetric key (in bits): 128, 192, or 256.
+            </param>
+            <param name="hashAlgorithm">
+            Hashing algorithm: "MD5" or "SHA1". SHA1 is recommended.
+            </param>
+            <param name="saltValue">
+            Salt value used for password hashing during key generation. This is
+            not the same as the salt we will use during encryption. This parameter
+            can be any string.
+            </param>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Common.EncryptionClass.#ctor(System.String,System.String,System.Int32,System.Int32,System.Int32,System.String,System.String,System.Int32)">
+            <summary>
+            Use this constructor if you are planning to perform encryption/
+            decryption with the key derived from the explicitly specified
+            parameters.
+            </summary>
+            <param name="passPhrase">
+            Passphrase from which a pseudo-random password will be derived.
+            The derived password will be used to generate the encryption key
+            Passphrase can be any string. In this example we assume that the
+            passphrase is an ASCII string. Passphrase value must be kept in
+            secret.
+            </param>
+            <param name="initVector">
+            Initialization vector (IV). This value is required to encrypt the
+            first block of plaintext data. For RijndaelManaged class IV must be
+            exactly 16 ASCII characters long. IV value does not have to be kept
+            in secret.
+            </param>
+            <param name="minSaltLen">
+            Min size (in bytes) of randomly generated salt which will be added at
+            the beginning of plain text before encryption is performed. When this
+            value is less than 4, the default min value will be used (currently 4
+            bytes).
+            </param>
+            <param name="maxSaltLen">
+            Max size (in bytes) of randomly generated salt which will be added at
+            the beginning of plain text before encryption is performed. When this
+            value is negative or greater than 255, the default max value will be
+            used (currently 8 bytes). If max value is 0 (zero) or if it is smaller
+            than the specified min value (which can be adjusted to default value),
+            salt will not be used and plain text value will be encrypted as is.
+            In this case, salt will not be processed during decryption either.
+            </param>
+            <param name="keySize">
+            Size of symmetric key (in bits): 128, 192, or 256.
+            </param>
+            <param name="hashAlgorithm">
+            Hashing algorithm: "MD5" or "SHA1". SHA1 is recommended.
+            </param>
+            <param name="saltValue">
+            Salt value used for password hashing during key generation. This is
+            not the same as the salt we will use during encryption. This parameter
+            can be any string.
+            </param>
+            <param name="passwordIterations">
+            Number of iterations used to hash password. More iterations are
+            considered more secure but may take longer.
+            </param>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Common.EncryptionClass.Encrypt(System.String)">
+            <summary>
+            Encrypts a string value generating a base64-encoded string.
+            </summary>
+            <param name="plainText">
+            Plain text string to be encrypted.
+            </param>
+            <returns>
+            Cipher text formatted as a base64-encoded string.
+            </returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Common.EncryptionClass.Encrypt(System.Byte[])">
+            <summary>
+            Encrypts a byte array generating a base64-encoded string.
+            </summary>
+            <param name="plainTextBytes">
+            Plain text bytes to be encrypted.
+            </param>
+            <returns>
+            Cipher text formatted as a base64-encoded string.
+            </returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Common.EncryptionClass.EncryptToBytes(System.String)">
+            <summary>
+            Encrypts a string value generating a byte array of cipher text.
+            </summary>
+            <param name="plainText">
+            Plain text string to be encrypted.
+            </param>
+            <returns>
+            Cipher text formatted as a byte array.
+            </returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Common.EncryptionClass.EncryptToBytes(System.Byte[])">
+            <summary>
+            Encrypts a byte array generating a byte array of cipher text.
+            </summary>
+            <param name="plainTextBytes">
+            Plain text bytes to be encrypted.
+            </param>
+            <returns>
+            Cipher text formatted as a byte array.
+            </returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Common.EncryptionClass.Decrypt(System.String)">
+            <summary>
+            Decrypts a base64-encoded cipher text value generating a string result.
+            </summary>
+            <param name="cipherText">
+            Base64-encoded cipher text string to be decrypted.
+            </param>
+            <returns>
+            Decrypted string value.
+            </returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Common.EncryptionClass.Decrypt(System.Byte[])">
+            <summary>
+            Decrypts a byte array containing cipher text value and generates a
+            string result.
+            </summary>
+            <param name="cipherTextBytes">
+            Byte array containing encrypted data.
+            </param>
+            <returns>
+            Decrypted string value.
+            </returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Common.EncryptionClass.DecryptToBytes(System.String)">
+            <summary>
+            Decrypts a base64-encoded cipher text value and generates a byte array
+            of plain text data.
+            </summary>
+            <param name="cipherText">
+            Base64-encoded cipher text string to be decrypted.
+            </param>
+            <returns>
+            Byte array containing decrypted value.
+            </returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Common.EncryptionClass.DecryptToBytes(System.Byte[])">
+            <summary>
+            Decrypts a base64-encoded cipher text value and generates a byte array
+            of plain text data.
+            </summary>
+            <param name="cipherTextBytes">
+            Byte array containing encrypted data.
+            </param>
+            <returns>
+            Byte array containing decrypted value.
+            </returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Common.EncryptionClass.AddSalt(System.Byte[])">
+            <summary>
+            Adds an array of randomly generated bytes at the beginning of the
+            array holding original plain text value.
+            </summary>
+            <param name="plainTextBytes">
+            Byte array containing original plain text value.
+            </param>
+            <returns>
+            Either original array of plain text bytes (if salt is not used) or a
+            modified array containing a randomly generated salt added at the 
+            beginning of the plain text bytes. 
+            </returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Common.EncryptionClass.GenerateSalt">
+            <summary>
+            Generates an array holding cryptographically strong bytes.
+            </summary>
+            <returns>
+            Array of randomly generated bytes.
+            </returns>
+            <remarks>
+            Salt size will be defined at random or exactly as specified by the
+            minSlatLen and maxSaltLen parameters passed to the object constructor.
+            The first four bytes of the salt array will contain the salt length
+            split into four two-bit pieces.
+            </remarks>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Common.EncryptionClass.GenerateRandomNumber(System.Int32,System.Int32)">
+            <summary>
+            Generates random integer.
+            </summary>
+            <param name="minValue">
+            Min value (inclusive).
+            </param>
+            <param name="maxValue">
+            Max value (inclusive).
+            </param>
+            <returns>
+            Random integer value between the min and max values (inclusive).
+            </returns>
+            <remarks>
+            This methods overcomes the limitations of .NET Framework's Random
+            class, which - when initialized multiple times within a very short
+            period of time - can generate the same "random" number.
+            </remarks>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Email.Email_ClassBusiness.ChangePassEmail_AfterCreateEmail(System.String,System.String)">
+            <summary>
+            زمانیکه ایمیل ساخته شد ، در هنگام تایید ، نیاز است کمله عبور دانشجو،
+            به کلمه اصلی تغییر کند
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.CooperationRequest.CooperationRequestBusiness.getSignature(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="hrID">استاد: کد اچ آر  -   کاربر: هر عددی</param>
+            <param name="userLevel">استاد:1  -  سرپرست دانشگاه:77  - مسئول کارگزینی:11 -  کارشناس کارگزینی:12</param>
+            <returns></returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.CooperationRequest.CooperationRequestBusiness.UpdateOrInsertSignature(System.Int32,System.Int32,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="codeUser">کد کاربر یا کد استاد در سیدا</param>
+            <param name="userRole">برای استاد 1 و برای کاربر کد نقش</param>
+            <param name="signaturePath"></param>
+            <param name="hrID">برای کاربر برابر 0</param>
+            <returns></returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.GraduateAffair.GraduateFormsBusiness.getStudentInquiry(System.String,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="stcode"></param>
+            <param name="inquiryType">1:govahi 2:daneshname</param>
+            <returns></returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.GraduateAffair.GraduateFormsBusiness.getStudentInquiry(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="inquiryType">1:govahi 2:daneshname</param>
+            <returns></returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.EditPersonalInformationBusiness.GetStPersonalInf(System.String)">
+             <summary> این متد اطلاعات دانشجو را از دیتابیس می خواند
+            </summary>
+            <param name="stcode">شماره دانشجویی</param>
+             <returns>آدرس،موبایل،استان،شهرستان،کدپستی،تلفن،عکس پرسنلی</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.EditPersonalInformationBusiness.GetStEditRequest(System.String)">
+            <summary> درخواست های ویرایش را از دیتابیس می خواند
+            </summary>
+            <param name="stcode">شماره دانشجویی</param>
+            <returns>شماره دانشجویی،نوع ویرایش،نوع درخواست،وضعیت درخواست،نوع ویرایش،توضیحات رد درخواست</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.EditPersonalInformationBusiness.GetStcodesEditeRequest(System.String)">
+             <summary>درخواست ویرایش یک دانشجو را از دیتابیس می خواند
+            </summary>
+             <param name="stcode">شماره دانشجویی</param>
+             <returns>شماره دانشجویی،نام،نام خانوادگی</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.EditPersonalInformationBusiness.GetStudentRequestID(System.String,System.Int32,System.Int32)">
+             <summary> این متد شناسه درخواست دانشجو را بر اساس شماره دانشجویی، نوع و وضعیت درخواست از دیتابیس می خواند
+            </summary>
+            <param name="stcode">شماره دانشجویی</param>
+             <param name="RequestLogID">شناسه وضعیت درخواست</param>
+             <param name="RequestTypeID">شناسه نوع درخواست</param>
+             <returns>شناسه درخواست دانشجو</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.EditPersonalInformationBusiness.InsertImageIntoEditePerInfo(System.String,System.Int32,System.Byte[],System.Int32,System.Int32)">
+            <summary>چنانچه دانشجو عکس پرسنلی خود را ویرایش نماید، عکس دانشجو را در دیتابیس ذخیره می نماید
+            </summary>
+            <param name="stcode">شماره دانشجویی</param>
+            <param name="EditedID">شناسه نوع درخواست ویرایش</param>
+            <param name="PersonalImage">عکس پرسنلی</param>
+            <param name="RequestLogID">شناسه وضعیت درخواست</param>
+             <param name="StudentRequestID">شناسه درخواست دانشجو</param>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.EditPersonalInformationBusiness.InsertIntoEditPersonalInf(System.String,System.String,System.Int32,System.Int32,System.Int32)">
+             <summary> درخواست ویرایش دانشجو را در دیتابیس وارد می نماید
+             </summary>
+            <param name="stcode">شماره دانشجویی</param>
+              <param name="NewContent">عبارت صحیح</param>
+             <param name="EditedID">شناسه نوع درخواست ویرایش</param>
+             <param name="RequestLogID">شناسه وضعیت درخواست</param>
+             <param name="StudentRequestID">شناسه درخواست دانشجو</param>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.EditPersonalInformationBusiness.GetEditRequest">
+            <summary>شماره دانشجویی، دانشجویانی که درخواست ویرایش داشته اند را بر می گرداند
+            </summary>
+             <returns>نام،نام خانوادگی،شماره دانشجویی</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.EditPersonalInformationBusiness.GetSTudentEditRequest(System.String)">
+             <summary>کلیه اطلاعات دانشجو را از جدول درخواست ویرایش بر می گرداند
+            </summary>
+            <param name="stcode">شماره دانشجویی</param>
+             <returns>شناسه نوع ویرایش،نام نوع ویرایش،عبارت صحیح،عکس پرسنلی</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.EditPersonalInformationBusiness.GetStudentPic(System.String)">
+            <summary> عکس پرسنلی دانشجو که تصحیح شده است را از دیتابیس می خواند
+            </summary>
+            <param name="stcode">شماره دانشجویی</param>
+            <returns>عکس پرسنلی</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:IAUEC_Apps.Business.university.Request.EditPersonalInformationBusiness.UpdateIsOk(System.String,System.Int32,System.Int32,System.String)" -->
+        <member name="M:IAUEC_Apps.Business.university.Request.EditPersonalInformationBusiness.GetEditedIdOfStcode(System.String)">
+            <summary> عکس پرسنلی ویرایش شده  دانشجو را بر می گرداند</summary>
+             <param name="stcode">شماره دانشجویی</param>
+             <returns>عکس پرسنلی</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.EditPersonalInformationBusiness.updateEditedStuImage(System.String,System.Byte[])">
+             <summary> به روزرسانی می کند amozpic عکس قبلی دانشجو را در دیتابیس 
+             </summary>
+            <param name="stcode">شماره دانشجویی</param>
+            <param name="PersonalImage">عکس پرسنلی</param>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.EditPersonalInformationBusiness.UpdateEditedInfoFSF2(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.String)">
+             <summary>
+            را بروزرسانی می کند fsf2 اطلاعات جدول
+             </summary>
+             <param name="stcode">شماره دانشجویی</param>
+               <param name="tel">شماره تلفن</param>
+             <param name="address">آدرس</param>
+               <param name="codeposti">کدپستی</param>
+               <param name="Ostan">استان</param>
+               <param name="Shahrestan">شهرستان</param>
+               <param name="mobile">شماره موبایل</param>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.EditPersonalInformationBusiness.UpdateStudentEditeRequestLogID(System.String,System.Int32,System.Int32)">
+            <summary>
+            وضعیت درخواست ویرایش دانشجو را بروزرسانی می کند
+            </summary>
+             <param name="stcode">شماره دانشجویی</param>
+              <param name="RequestLogID">شناسه وضعیت درخواست</param>
+             <param name="RequestTypeID">شناسه نوع درخواست</param>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.EditPersonalInformationBusiness.GetStudentMobile(System.String)">
+            <summary>
+            شماره موبایل دانشجو را از دیتابیس می خواند
+            </summary>
+            <param name="stcode">شماره دانشجویی</param>
+              <returns>شماره موبایل</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.ProfessorRequestBusiness.updateHokmstatusForIsNotHeiat(System.Int32,System.Int32)">
+            <summary>
+            اطلاعات کاربر سیستم ثبت اطلاعات اساتید
+            </summary>
+            <param name="infoPeopleId"></param>
+            <returns></returns>
+        </member>
+        <member name="F:IAUEC_Apps.Business.university.Request.RequestStudentCartBusiness.CartDAO">
+             <summary>
+            ایجاد می نماید Request_StudentCartDAO یک شئ از کلاس 
+             </summary>
+        </member>
+        <member name="F:IAUEC_Apps.Business.university.Request.RequestStudentCartBusiness.regexZipCode">
+            <summary>
+            کد پستی باید به صورت عدد و 10 رقم باشد
+            </summary>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.RequestStudentCartBusiness.RandomNumber(System.Int32,System.Int32)">
+            <summary> این متد یک عدد رندوم از بازه تعیین شده تولید می نماید
+            </summary>
+             <param name="min">شروع بازه</param>
+            <param name="max">پایان بازه</param>
+            <returns>عدد تصادفی</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.RequestStudentCartBusiness.PersianCalander">
+            <summary>
+            این متد تاریخ را به صورت شمسی وارد می نماید
+            </summary>
+             <returns>تاریخ</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.RequestStudentCartBusiness.ValidateZipCode(System.String)">
+            <summary>
+            این متد اعتبار کدپستی را بررسی می کند 
+            </summary>
+             <param name="str">کدپستی</param>
+             <returns>پیغام</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.RequestStudentCartBusiness.GetstHasCartRequest(System.String)">
+             <summary>
+             این متد بررسی می کند که دانشجو قبلا درخواست ارسال کارت داشته یا خیر 
+             </summary>
+            <param name="stcode">شماره دانشجویی</param>
+             <returns>شماره دانشجویی</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.RequestStudentCartBusiness.GetRequestsStatus(System.String)">
+            <summary>
+            این متد وضعیت درخواست کارت دانشجو را نمایش می دهد
+            </summary>
+            <param name="stcode">شماره دانشجویی</param>
+             <returns>شماره دانشجویی</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.RequestStudentCartBusiness.GetStudentsInfo(System.String)">
+            <summary>
+            این متد اطلاعات دانشجو را بر می گرداند
+            </summary>
+            <param name="stcode">شماره دانشجویی</param>
+             <returns>نام،نام خانوادگی،شماره دانشجویی</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.RequestStudentCartBusiness.InsertInToStudentRequest(System.String,System.Int32,System.Int32,System.String,System.String,System.Int32)">
+            <summary>
+            این متد درخواست دانشجو را در دیتابیس ثبت می نماید
+            </summary>
+            <param name="stcode">شماره دانشجویی</param>
+             <param name="RequestTypeID">شناسه نوع درخواست</param>
+            <param name="RequestLogID">شناسه وضعیت درخواست</param>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.RequestStudentCartBusiness.InsertInToStudentLog(System.String,System.DateTime,System.String,System.Int32)">
+             <summary>
+             این متد تاریخچه عملیاتی که توسط دانشجو انجام شده است را در دیتابیس ثبت می نماید
+             </summary>
+             <param name="stcode">شماره دانشجویی</param>
+             <param name="LogDate">تاریخ عملیات</param>
+             <param name="LogTime">زمان عملیات</param>
+            <param name="LogTypeID">شناسه نوع عملیات</param>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.RequestStudentCartBusiness.UpdateAddres(System.String,System.String,System.String,System.String)">
+            <summary>
+            این متد آدرس دانشجو را بروزرسانی می نماید
+            </summary>
+            <param name="stcode">شماره دانشجویی</param>
+              <param name="newtel">شماره تلفن جدید.</param>
+             <param name="newaddress">آدرس جدید</param>
+             <param name="codeposti">کدپستی</param>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.RequestStudentCartBusiness.GetCartRequest(System.Int32)">
+             <summary>
+             این متد درخواست ارسال کارت یک دانشجو را بر می گرداند
+             </summary>
+            <returns>شماره دانشجویی,شناسه درخواست دانشجو, نام,نام خانوادگی,نام رشته,سال ورود,شناسه نوع درخواست 
+            </returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.RequestStudentCartBusiness.UpdateStudentRequestLogID(System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Updates the student request log identifier.
+            </summary>
+             <param name="stcode">شماره دانشجویی</param>
+            <param name="RequestLogID">شناسه وضعیت درخواست</param>
+            <param name="RequestTypeID">شناسه نوع درخواست</param>
+            <param name="StudentRequestID">شناسه درخواست دانشجو</param>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.RequestStudentCartBusiness.InsertIntoPayinterm(System.String,System.Int32,System.Int32,System.Decimal,System.String,System.String)">
+             <summary>
+            درج می نماید payinterm این متد مبلغ 2000 تومان در جدول 
+             </summary>
+             <param name="stcode">شماره دانشجویی</param>
+               <param name="serial_pay">شماره سریال پرداخت</param>
+              <param name="idtypepay">نوع پرداخت</param>
+                <param name="amount">مقدار</param>
+               <param name="datefish">تاریخ فیش</param>
+                 <param name="datesabt">تاریخ ثبت</param>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.RequestStudentCartBusiness.UpdateAddressm(System.String)">
+            <summary>
+            بروزرسانی می نمایدfsf2 را در جدول addressm فیلد 
+            </summary>
+            <param name="stcode">شماره دانشجویی</param>
+        </member>
+        <member name="F:IAUEC_Apps.Business.university.Request.RequestGovahiBusiness.GovahiDAO">
+             <summary>
+            ایجاد می نماید Request_GovahiDAO یک شئ از کلاس
+             </summary>
+        </member>
+        <member name="F:IAUEC_Apps.Business.university.Request.RequestGovahiBusiness.CartDAO">
+             <summary>
+            ایجاد می نماید Request_StudentCartDAO یک شئ از کلاس
+             </summary>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.RequestGovahiBusiness.GetBedehkar(System.String)">
+             <summary>
+            بر اساس کد دانشجویی، بدهی دانشجو را استخراج می نماید
+             </summary>
+              <param name="stcode">شماره دانشجویی</param>
+              <returns>مبلغ بدهی</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.RequestGovahiBusiness.GetStRegisterd(System.String)">
+            <summary>
+            بررسی می کند که دانشجو در این ترم ثبت نام داشته یا نه
+            </summary>
+            <param name="stcode">شماره دانشجویی</param>
+             <returns>شماره دانشجویی،ترم جاری</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.RequestGovahiBusiness.GetStRegisterd2(System.String)">
+            <summary>
+            بررسی می کند که دانشجو در این ترم ثبت نام داشته یا نه
+            </summary>
+            <param name="stcode">شماره دانشجویی</param>
+             <returns>شماره دانشجویی،ترم جاری</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.RequestGovahiBusiness.GetGovahiStatus(System.String)">
+             <summary>
+             وضعیت درخواست گواهی را از دیتابیس استخراج می نماید
+             </summary>
+             <param name="stcode">The stcode.</param>
+            <returns> شماره دانشجویی,وضعیت درخواست,نام ارائه ,شماره مرسوله پستی,شرح 
+            </returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.RequestGovahiBusiness.InsertGovahiIntoStrequest(System.String,System.String,System.String,System.String,System.Int32)">
+             <summary>
+            ثبت می نماید fgovahi اطلاعات درخواست گواهی را در جدول
+             </summary>
+             <param name="stcode">شماره دانشجویی</param>
+             <param name="date_sabt">تاریخ ثبت درخواست</param>
+             <param name="time_sabt">زمان ثبت درخواست</param>
+             <param name="sharh_ara_bekoja">محلی که گواهی برای آن درخواست می گردد </param>
+             <param name="TypeGovahi">نوع گواهی که در اینجا گواهی اشتغال به تحصیل می باشد</param>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.RequestGovahiBusiness.GetGovahiRequest(System.Int32,System.Int32)">
+             <summary>
+             این متد درخواست های گواهی را بر می گرداند
+             </summary>
+                <returns> شماره دانشجویی,نام,نام خانوادگی,شناسه درخواست,شناسه وضعیت درخواست,رشته,سال ورود,شماره مرسوله پستی,شناسه نوع درخواست
+            </returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Request.RequestGovahiBusiness.UpdateStudentPOstNumber(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            این متد کد رهگیری مرسوله پستی را در دیتابیس ذخیره می نماید
+            </summary>
+            <param name="stcode">شماره دانشجویی</param>
+            <param name="PostNumber">کد مرسوله پستی</param>
+            <param name="RequestTypeID">شناسه نوع درخواست</param>
+        </member>
+        <member name="F:IAUEC_Apps.Business.university.Exam.ExamBusiness.examDAO">
+             <summary>
+            ایجاد نموده ایم ExamDAO یک شئ از کلاس
+             </summary>
+        </member>
+        <member name="F:IAUEC_Apps.Business.university.Exam.ExamBusiness.Exam_Term">
+            <summary>
+            ////////
+            </summary>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.AssignSeatNumberToStudent(System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            این متد برای تخصیص شماره صندلی به کار می رود
+            </summary>
+            <param name="seat">شماره صندلی</param>
+            <param name="term">ترم جاری</param>
+            <param name="stcode">شماره دانشجویی</param>
+            <param name="did">کد درس</param>
+            <param name="city">The city.</param>
+            <param name="ExamPlace">محل آزمون</param>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.GetAllStudentByClassInDate(System.Int32)">
+            <summary>
+            این متد دانشجویان یک کلاس را بر اساس تاریخ بر می گرداند
+            </summary>
+            <param name="did">کد درس</param>
+            <param name="term">ترم</param>
+            <returns>کلاس</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.CheckSeatNumberByTerm(System.Int32,System.String,System.String,System.String)">
+            <summary>
+            این متد شماره صندلی را بر اساس ترم چک می کند که تکراری نباشد
+            </summary>
+            <param name="seat">صندلی</param>
+            <param name="term">ترم</param>
+            <param name="dateexam">تاریخ</param>
+            <param name="saatexam">ساعت</param>
+            <param name="city">شهر</param>
+            <returns></returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.GetAllClassInDate(System.String,System.String)">
+            <summary>
+            این متد تمام کلاس هایی که در یک تاریخ امتحان دارند را بر می گرداند
+            </summary>
+            <param name="dateexam">تاریخ</param>
+            <param name="saatexam">ساعت</param>
+            <returns>کد درس،ظرفیت</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_Exam_saatexam(System.Boolean)">
+            <summary>
+            این متد ساعت امتحان را بر می گرداند
+            </summary>
+            <returns>ساعت</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_Exam_dateexam(System.Boolean)">
+            <summary>
+            این متد تاریخ امتحان را بر می گرداند
+            </summary>
+            <returns>تاریخ</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_zarfiat_per_city(System.String,System.String,System.Int32)">
+            <summary>
+            بر اساس هر شهر ظرفیت را بر می گرداند
+            </summary>
+            <param name="saatexam">ساعت</param>
+            <param name="dateexam">تاریخ</param>
+            <param name="ID">شناسه</param>
+            <returns>ظرفیت</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_existcoursecode(System.Int32)">
+             <summary>
+            این متد برای تشخیص اینکه برای این کد درس کلاس تخصیص یافته به کار می رود
+             </summary>
+             <param name="courseCode">کددرس</param>
+             <returns>کد درس</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_ZarfiateBaghimande(System.String)">
+            <summary>
+            این متد ظرفیت باقیمانده را بر می گرداند
+            </summary>
+            <param name="did">کد درس</param>
+            <returns>ظرفیت باقیمانده</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_ExamPlaceName">
+             <summary>
+            این متد نام محل آزمون را بر می گرداند
+             </summary>
+             <returns>محل آزمون</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Insert_ExamClassSaved(System.String,System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            اطلاعات کلاس های تخصیص داده شده در جدول ذخیره می گردد
+            </summary>
+            <param name="did">کد درس</param>
+            <param name="ExamPlaceID">شناسه محل آزمون</param>
+            <param name="StartRange">رنج شروع بازه</param>
+            <param name="EndRange">رنج پایان بازه</param>
+            <param name="City_Name">نام شهر</param>
+            <returns></returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_EndRenge(System.Int32)">
+            <summary>
+            این متد بازه پایانی را بر می گرداند
+            </summary>
+            <param name="ExamPlaceID">شناسه محل آزمون</param>
+            <returns></returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_StartRange(System.Int32,System.String)">
+            <summary>
+            این متد شروع بازه را بر می گرداند
+            </summary>
+            <param name="ExamPlaceID">شناسه محل آزمون</param>
+            <returns>شروع بازه</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_SaatDateExam_perID(System.String)">
+            <summary>
+            این متد بر اساس کد درس ساعت و تاریخ امتحان را بر می گرداند
+            </summary>
+            <param name="did">کد درس</param>
+            <returns>تاریخ،ساعت</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_MaxEndRange(System.String,System.String,System.Int32)">
+            <summary>
+            این متد بیشترین بازه انتخاب شده را بر می گرداند
+            </summary>
+            <param name="saatexam">ساعت</param>
+            <param name="dateexam">تاریخ</param>
+            <param name="ExamPlaceId">شناسه محل آزمون</param>
+            <returns></returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Check_Noduplicate_did(System.String)">
+            <summary>
+            این متد برای چک کردن کد درس هایی که برای آنها کلاس تخصیص داده شده به کار می رود
+            </summary>
+            <param name="ClassID">شناسه کلاس آزمون</param>
+            <returns>کد کلاس</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_ExistClass(System.String)">
+            <summary>
+            این متد برای چک کردن کلاس می باشد 
+            </summary>
+            <param name="did">کد درس</param>
+            <returns>کد کلاس</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_did_detail(System.String)">
+            <summary>
+            جزئیات کلاس ها را بر می گرداند
+            </summary>
+            <param name="did">کد درس</param>
+            <returns></returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_Stcode(System.Int32,System.String,System.String)">
+            <summary>
+            شماره دانشجویی را بر می گرداند
+            </summary>
+            <param name="did">کد درس</param>
+            <param name="saatexam">ساعت</param>
+            <param name="dateexam">تاریخ</param>
+            <returns>شماره دانشجویی</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_tedad_daneshju(System.Int32,System.String,System.String)">
+            <summary>
+            تعداد دانشجو را بر می گرداند
+            </summary>
+            <param name="did">کد درس</param>
+            <param name="saatexam">ساعت</param>
+            <param name="dateexam">تاریخ</param>
+            <returns></returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_tedad_class(System.Int32)">
+            <summary>
+            تعداد کلاس را بر می گرداند
+            </summary>
+            <param name="did">کد درس</param>
+            <returns></returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_ExamClassSavedDetail(System.String)">
+            <summary>
+            کلاس های ذخیره شده را بر می گرداند
+            </summary>
+            <param name="did">کد درس</param>
+            <returns>مشخصات کلاس</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_No_DuplicateSeatNumber(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            شماره صندلی تکراری را چک می کند
+            </summary>
+            <param name="saatexam">ساعت</param>
+            <param name="dateexam">تاریخ</param>
+            <returns>شماره صندلی</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_ExamPlaceName(System.Int32)">
+            <summary>
+            نام محل آزمون را بر می گرداند
+            </summary>
+            <param name="did">کد درس</param>
+            <returns>نام محل آزمون</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Insert_ExamSeat(System.String,System.Int32,System.Int32,System.String)">
+            <summary>
+            شماره صندلی را وارد می کند
+            </summary>
+            <param name="StudentCode">شماره دانشجویی</param>
+            <param name="ClassID">شناسه کلاس</param>
+            <param name="seatnumber">شماره صندلی</param>
+            <param name="City">شهر</param>
+            <param name="ExamPlace">محل آزمون</param>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_ExamNameCity(System.Int32)">
+            <summary>
+            نام شهر آزمون را بر می گرداند
+            </summary>
+            <returns>نام شهر آزمون</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_ExamReports(System.String,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            گزارش آزمون را بر می گرداند
+            </summary>
+            <param name="Examdate">تاریخ آزمون</param>
+            <param name="ExamTime">ساعت آزمون</param>
+            <param name="ExamPlace">محل آزمون</param>
+            <returns>جزئیات آزمون</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_St_ExamPlace">
+            <summary>
+            نام محل آزمون دانشجو را بر می گرداند
+            </summary>
+            <returns>نام محل آزمون</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Update_Webmelli_Student_ExamPlace(System.String,System.Int32)">
+            <summary>
+            نام محل آزمون دانشجو را بروزرسانی می کند
+            </summary>
+            <param name="stcode">شماره دانشجویی</param>
+            <param name="Id_ExamPlace">کد محل آزمون</param>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_Student_CityName(System.String,System.Nullable{System.Boolean})">
+            <summary>
+            نام شهر دانشجو را بر می گرداند
+            </summary>
+            <param name="stcode">شماره دانشجویی</param>
+            <returns>نام شهر</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_ListClassCityByDate(System.Int32,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            نام شهر امتحان را بر اساس تاریخ بر می گرداند
+            </summary>
+            <param name="ExamDate">The exam date.</param>
+            <param name="ExamTime">The exam time.</param>
+            <returns></returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_Exam_Did_Interm(System.String)">
+            <summary>
+            کد درس امتحان دانشجو را بر می گرداند
+            </summary>
+            <returns>کد درس</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_Exam_Fresh">
+            <summary>
+            رشته امتحان را بر می گرداند
+            </summary>
+            <returns>رشته</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_Exam_Ostad(System.String)">
+            <summary>
+            نام استادها را استخراج می کند
+            </summary>
+            <returns>نام استاد،شناسه استاد</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_ExamReportsByParams(System.String,System.String,System.Int32,System.String,System.String,System.Int32,System.Int32,System.String)">
+            <summary>
+            بر اساس پارامترهایی گزارش می دهد
+            </summary>
+            <param name="Examdate">تاریخ آزمون</param>
+            <param name="ExamTime">زمان آزمون</param>
+            <param name="ExamPlace">محل آزمون</param>
+            <param name="Prof">نام استاد</param>
+            <param name="did">کد درس</param>
+            <param name="field">رشته</param>
+            <returns>گزارش آزمون</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.Get_ExamReportsByPlace(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            گزارش آزمون را بر اساس محل آزمون استخراج می کند
+            </summary>
+            <param name="ExamPlace">محل آزمون</param>
+            <returns>جزئیات آزمون</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.GetAllSansCoutCity(System.String,System.String)">
+             <summary>
+            تعداد سانس های آزمون یک شهر را بر می گرداند
+             </summary>
+             <returns>سانس آزمون</returns>
+        </member>
+        <member name="M:IAUEC_Apps.Business.university.Exam.ExamBusiness.GetExamPlaceBySeatAndCity(System.Int32,System.Int32)">
+            <summary>
+            چک کردن محل آزمون با صندلی و شهر
+            </summary>
+            <param name="SeatNumber">شماره صندلی</param>
+            <param name="term">ترم</param>
+            <param name="city">نام شهر</param>
+            <returns></returns>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpRefundRequestCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpSaleReferenceIdRequestCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpDynamicPayRequestCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpInquiryRequestCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpSettleRequestCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpVirtualPayRequestCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpChargePayRequestCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpCumulativeDynamicPayRequestCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpPayRequestCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpRefundInquiryRequestCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpReversalRequestCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpPosRefundRequestCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpRefundToPANRequestCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpVerifyRequestCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpRefundVerifyRequestCompleted">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpRefundRequest(System.Int64,System.String,System.String,System.Int64,System.Int64,System.Int64,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpRefundRequestAsync(System.Int64,System.String,System.String,System.Int64,System.Int64,System.Int64,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpRefundRequestAsync(System.Int64,System.String,System.String,System.Int64,System.Int64,System.Int64,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpSaleReferenceIdRequest(System.Int64,System.String,System.String,System.Int64,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpSaleReferenceIdRequestAsync(System.Int64,System.String,System.String,System.Int64,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpSaleReferenceIdRequestAsync(System.Int64,System.String,System.String,System.Int64,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpDynamicPayRequest(System.Int64,System.String,System.String,System.Int64,System.Int64,System.String,System.String,System.String,System.String,System.Int64,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpDynamicPayRequestAsync(System.Int64,System.String,System.String,System.Int64,System.Int64,System.String,System.String,System.String,System.String,System.Int64,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpDynamicPayRequestAsync(System.Int64,System.String,System.String,System.Int64,System.Int64,System.String,System.String,System.String,System.String,System.Int64,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpInquiryRequest(System.Int64,System.String,System.String,System.Int64,System.Int64,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpInquiryRequestAsync(System.Int64,System.String,System.String,System.Int64,System.Int64,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpInquiryRequestAsync(System.Int64,System.String,System.String,System.Int64,System.Int64,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpSettleRequest(System.Int64,System.String,System.String,System.Int64,System.Int64,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpSettleRequestAsync(System.Int64,System.String,System.String,System.Int64,System.Int64,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpSettleRequestAsync(System.Int64,System.String,System.String,System.Int64,System.Int64,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpVirtualPayRequest(System.Int64,System.String,System.String,System.Int64,System.Int64,System.String,System.String,System.String,System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpVirtualPayRequestAsync(System.Int64,System.String,System.String,System.Int64,System.Int64,System.String,System.String,System.String,System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpVirtualPayRequestAsync(System.Int64,System.String,System.String,System.Int64,System.Int64,System.String,System.String,System.String,System.String,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpChargePayRequest(System.Int64,System.String,System.String,System.Int64,System.Int64,System.String,System.String,System.String,System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpChargePayRequestAsync(System.Int64,System.String,System.String,System.Int64,System.Int64,System.String,System.String,System.String,System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpChargePayRequestAsync(System.Int64,System.String,System.String,System.Int64,System.Int64,System.String,System.String,System.String,System.String,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpCumulativeDynamicPayRequest(System.Int64,System.String,System.String,System.Int64,System.Int64,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpCumulativeDynamicPayRequestAsync(System.Int64,System.String,System.String,System.Int64,System.Int64,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpCumulativeDynamicPayRequestAsync(System.Int64,System.String,System.String,System.Int64,System.Int64,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpPayRequest(System.Int64,System.String,System.String,System.Int64,System.Int64,System.String,System.String,System.String,System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpPayRequestAsync(System.Int64,System.String,System.String,System.Int64,System.Int64,System.String,System.String,System.String,System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpPayRequestAsync(System.Int64,System.String,System.String,System.Int64,System.Int64,System.String,System.String,System.String,System.String,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpRefundInquiryRequest(System.Int64,System.String,System.String,System.Int64,System.Int64,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpRefundInquiryRequestAsync(System.Int64,System.String,System.String,System.Int64,System.Int64,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpRefundInquiryRequestAsync(System.Int64,System.String,System.String,System.Int64,System.Int64,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpReversalRequest(System.Int64,System.String,System.String,System.Int64,System.Int64,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpReversalRequestAsync(System.Int64,System.String,System.String,System.Int64,System.Int64,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpReversalRequestAsync(System.Int64,System.String,System.String,System.Int64,System.Int64,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpPosRefundRequest(System.String,System.String,System.Int64,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpPosRefundRequestAsync(System.String,System.String,System.Int64,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpPosRefundRequestAsync(System.String,System.String,System.Int64,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpRefundToPANRequest(System.String,System.String,System.Int64,System.Boolean,System.Int64,System.Int64,System.Boolean,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpRefundToPANRequestAsync(System.String,System.String,System.Int64,System.Boolean,System.Int64,System.Int64,System.Boolean,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpRefundToPANRequestAsync(System.String,System.String,System.Int64,System.Boolean,System.Int64,System.Int64,System.Boolean,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpVerifyRequest(System.Int64,System.String,System.String,System.Int64,System.Int64,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpVerifyRequestAsync(System.Int64,System.String,System.String,System.Int64,System.Int64,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpVerifyRequestAsync(System.Int64,System.String,System.String,System.Int64,System.Int64,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpRefundVerifyRequest(System.Int64,System.String,System.String,System.Int64,System.Int64,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpRefundVerifyRequestAsync(System.Int64,System.String,System.String,System.Int64,System.Int64,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.bpRefundVerifyRequestAsync(System.Int64,System.String,System.String,System.Int64,System.Int64,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.ir.shaparak.bpm1.PaymentGatewayImplService.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpRefundRequestCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpRefundRequestCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.ir.shaparak.bpm1.bpRefundRequestCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpSaleReferenceIdRequestCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpSaleReferenceIdRequestCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.ir.shaparak.bpm1.bpSaleReferenceIdRequestCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpDynamicPayRequestCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpDynamicPayRequestCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.ir.shaparak.bpm1.bpDynamicPayRequestCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpInquiryRequestCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpInquiryRequestCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.ir.shaparak.bpm1.bpInquiryRequestCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpSettleRequestCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpSettleRequestCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.ir.shaparak.bpm1.bpSettleRequestCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpVirtualPayRequestCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpVirtualPayRequestCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.ir.shaparak.bpm1.bpVirtualPayRequestCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpChargePayRequestCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpChargePayRequestCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.ir.shaparak.bpm1.bpChargePayRequestCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpCumulativeDynamicPayRequestCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpCumulativeDynamicPayRequestCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.ir.shaparak.bpm1.bpCumulativeDynamicPayRequestCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpPayRequestCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpPayRequestCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.ir.shaparak.bpm1.bpPayRequestCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpRefundInquiryRequestCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpRefundInquiryRequestCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.ir.shaparak.bpm1.bpRefundInquiryRequestCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpReversalRequestCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpReversalRequestCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.ir.shaparak.bpm1.bpReversalRequestCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpPosRefundRequestCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpPosRefundRequestCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.ir.shaparak.bpm1.bpPosRefundRequestCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpRefundToPANRequestCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpRefundToPANRequestCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.ir.shaparak.bpm1.bpRefundToPANRequestCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpVerifyRequestCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpVerifyRequestCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.ir.shaparak.bpm1.bpVerifyRequestCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpRefundVerifyRequestCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.ir.shaparak.bpm1.bpRefundVerifyRequestCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.ir.shaparak.bpm1.bpRefundVerifyRequestCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.rrrCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.GetCertificateId_sahemCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.ExecProcInOut1Completed">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.ExecProc4SelectCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.GetP_sidaCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.Fnsend_smsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.getip_vahed_digitCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.get_procCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.rrr_newCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.shenas_bankCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.send_data_to_graCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.send_data_to_icanCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.send_attach_to_icanCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.sendsmsgroupCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.mobile_login_mainCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.ctrl_pCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.Inquiry_from_uCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.InitKeyCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.DecryptPrimarykeyCompleted">
+            <remarks/>
+        </member>
+        <member name="E:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.ctrl_elecCompleted">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.rrr(System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.rrrAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.rrrAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.GetCertificateId_sahem(System.String@,System.String@,System.String@,System.String@,System.String@)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.GetCertificateId_sahemAsync(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.GetCertificateId_sahemAsync(System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.ExecProcInOut1(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.ExecProcInOut1Async(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.ExecProcInOut1Async(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.ExecProc4Select(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.ExecProc4SelectAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.ExecProc4SelectAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.GetP_sida(System.String,System.String@)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.GetP_sidaAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.GetP_sidaAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.Fnsend_sms(System.String@)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.Fnsend_smsAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.Fnsend_smsAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.getip_vahed_digit(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.getip_vahed_digitAsync(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.getip_vahed_digitAsync(System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.get_proc(System.String@,System.String@)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.get_procAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.get_procAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.rrr_new(System.String@)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.rrr_newAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.rrr_newAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.shenas_bank(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.shenas_bankAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.shenas_bankAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.send_data_to_gra(System.String@)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.send_data_to_graAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.send_data_to_graAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.send_data_to_ican(System.String@,System.String@)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.send_data_to_icanAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.send_data_to_icanAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.send_attach_to_ican(System.String,System.String@)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.send_attach_to_icanAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.send_attach_to_icanAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.sendsmsgroup(System.String@)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.sendsmsgroupAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.sendsmsgroupAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.mobile_login_main(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.mobile_login_mainAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.mobile_login_mainAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.ctrl_p(System.String@,System.String@,System.String@)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.ctrl_pAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.ctrl_pAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.Inquiry_from_u(System.String@)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.Inquiry_from_uAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.Inquiry_from_uAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.InitKey(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.InitKeyAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.InitKeyAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.DecryptPrimarykey(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.DecryptPrimarykeyAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.DecryptPrimarykeyAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.ctrl_elec(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.ctrl_elecAsync(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.ctrl_elecAsync(System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:IAUEC_Apps.Business.Isida4_webservice_main.Isida4_webservice_mainservice.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.rrrCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.rrrCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.rrrCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.rrrCompletedEventArgs.var1">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.rrrCompletedEventArgs.var2">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.rrrCompletedEventArgs.var3">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.rrrCompletedEventArgs.var4">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.rrrCompletedEventArgs.var5">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.rrrCompletedEventArgs.var6">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.rrrCompletedEventArgs.var7">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.rrrCompletedEventArgs.var8">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.rrrCompletedEventArgs.var9">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.rrrCompletedEventArgs.var10">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.GetCertificateId_sahemCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.GetCertificateId_sahemCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.GetCertificateId_sahemCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.GetCertificateId_sahemCompletedEventArgs.code">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.GetCertificateId_sahemCompletedEventArgs.date_">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.GetCertificateId_sahemCompletedEventArgs.time_">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.GetCertificateId_sahemCompletedEventArgs.type_s">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.GetCertificateId_sahemCompletedEventArgs.param">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.ExecProcInOut1CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.ExecProcInOut1CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.ExecProcInOut1CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.ExecProc4SelectCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.ExecProc4SelectCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.ExecProc4SelectCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.GetP_sidaCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.GetP_sidaCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.GetP_sidaCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.GetP_sidaCompletedEventArgs.ctrl">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.Fnsend_smsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.Fnsend_smsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.Fnsend_smsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.Fnsend_smsCompletedEventArgs.param">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.getip_vahed_digitCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.getip_vahed_digitCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.getip_vahed_digitCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.get_procCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.get_procCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.get_procCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.get_procCompletedEventArgs.param">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.get_procCompletedEventArgs.param_dif">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.rrr_newCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.rrr_newCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.rrr_newCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.rrr_newCompletedEventArgs.var1">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.shenas_bankCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.shenas_bankCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.shenas_bankCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.send_data_to_graCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.send_data_to_graCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.send_data_to_graCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.send_data_to_graCompletedEventArgs.param1">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.send_data_to_icanCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.send_data_to_icanCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.send_data_to_icanCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.send_data_to_icanCompletedEventArgs.param1">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.send_data_to_icanCompletedEventArgs.param2">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.send_attach_to_icanCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.send_attach_to_icanCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.send_attach_to_icanCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.send_attach_to_icanCompletedEventArgs.MainEC">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.sendsmsgroupCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.sendsmsgroupCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.sendsmsgroupCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.sendsmsgroupCompletedEventArgs.param">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.mobile_login_mainCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.mobile_login_mainCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.mobile_login_mainCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.ctrl_pCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.ctrl_pCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.ctrl_pCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.ctrl_pCompletedEventArgs.param1">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.ctrl_pCompletedEventArgs.param2">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.ctrl_pCompletedEventArgs.param3">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.Inquiry_from_uCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.Inquiry_from_uCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.Inquiry_from_uCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.Inquiry_from_uCompletedEventArgs.param1">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.InitKeyCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.InitKeyCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.InitKeyCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.DecryptPrimarykeyCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.DecryptPrimarykeyCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.DecryptPrimarykeyCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.ctrl_elecCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:IAUEC_Apps.Business.Isida4_webservice_main.ctrl_elecCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:IAUEC_Apps.Business.Isida4_webservice_main.ctrl_elecCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="M:ResourceControl.BLL.RequestHandler.IsConflictProfessor(System.Int32,System.String,System.Int64,System.Int64)">
+            <summary>
+            چک کردن این موضوع که استاد در آن ساعت خاص جلسه دفاع دیگری نداشته باشد
+            </summary>
+            <param name="professerId">
+            آیدی استاد</param>
+            <param name="requestDate">
+            تاریخ درخواستی</param>
+            <param name="startTime">
+            ساعت شروع</param>
+            <param name="endTime">
+            ساعت پایان</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

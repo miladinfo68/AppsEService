@@ -1,0 +1,1260 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <Connection1 Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>Connection1</Alias>
+        <ConnectionStringEncrypted>9GjPz0ZdAQnLTaG9yBiiY9Fq+4xFWZOca33tbGoB4Df0UmkL4w6pjEMC7QTqSaJ/wHr1K8ZMMc1sRqD0ZVwyF9Fa/cNOXZOFyxmMrEtx9mOLWmUjT0zzRUMa</ConnectionStringEncrypted>
+        <Name>Connection1</Name>
+      </Connection1>
+    </Databases>
+    <DataSources isList="true" count="1">
+      <_x005B_Resource_Control_x005D___x005B_GetDefenceSessionInformation_x005D_ Ref="3" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>[Resource_Control].[GetDefenceSessionInformation]</Alias>
+        <Columns isList="true" count="22">
+          <value>stcode,System.Decimal</value>
+          <value>StudentFullName,System.String</value>
+          <value>nameresh,System.String</value>
+          <value>jens,System.Int32</value>
+          <value>onvan_payan,System.String</value>
+          <value>fullNameMoshaver1,System.String</value>
+          <value>Moshaver1jensiat,System.Int32</value>
+          <value>fullNameRahnama1,System.String</value>
+          <value>Rahnama1jensiat,System.Int32</value>
+          <value>fullNameDavarIn,System.String</value>
+          <value>DavarINjensiat,System.Int32</value>
+          <value>fullNameDavarOUT,System.String</value>
+          <value>DavarOUTjensiat,System.Int32</value>
+          <value>RequestDate,System.String</value>
+          <value>name_modir,System.String</value>
+          <value>studentImg,System.Byte[]</value>
+          <value>osMosImg,System.Byte[]</value>
+          <value>osRahImg,System.Byte[]</value>
+          <value>osDavInImg,System.Byte[]</value>
+          <value>osDavOutImg,System.Byte[]</value>
+          <value>osModirGrooh,System.Byte[]</value>
+          <value>logo,System.Byte[]</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <IsCloud>False</IsCloud>
+        <Name>[Resource_Control].[GetDefenceSessionInformation]</Name>
+        <NameInSource>Connection1</NameInSource>
+        <Parameters isList="true" count="3">
+          <value>_x0040_requestId,,8,20</value>
+          <value>_x0040_stcode,,12,11</value>
+          <value>_x0040_defenceSessionDate,,8,1</value>
+        </Parameters>
+        <SqlCommand>[Resource_Control].[GetDefenceSessionInformation]</SqlCommand>
+        <Type>StoredProcedure</Type>
+      </_x005B_Resource_Control_x005D___x005B_GetDefenceSessionInformation_x005D_>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="4" type="Page" isKey="true">
+      <Border>All;Black;2;Double;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="76">
+        <Text1 Ref="5" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.4,0,11.2,2.8</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14,Bold</Font>
+          <Guid>fdab3d16dd9648c195141ebc92fba8c5</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>بسمه تعالی
+دانشگاه آزاد اسلامی واحد الکترونیکی
+صورتجلسه دفاع از پایان نامه کارشناسی ارشد</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text1>
+        <Image1 Ref="6" type="Image" isKey="true">
+          <AspectRatio>True</AspectRatio>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.6,0,3,3</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <DataColumn>_Resource_Control___GetDefenceSessionInformation_.studentImg</DataColumn>
+          <Guid>c9ed0a385205452aa9203c7efc4b5ca6</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Name>Image1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Stretch>True</Stretch>
+          <VertAlignment>Center</VertAlignment>
+        </Image1>
+        <Text2 Ref="7" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>16.4,3.6,3.2,0.8</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,15</Font>
+          <Guid>a32e06e70480450a9848b616099d5bfe</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text2</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>:شماره دانشجویی</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text2>
+        <Text4 Ref="8" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>9.4,3.6,3.4,0.8</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,15</Font>
+          <Guid>f7e784bf9ef54a2e91484c4ff9b04c8d</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text4</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>:نام و نام خانوادگی</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text4>
+        <Text3 Ref="9" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>17.4,4.8,2.2,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,15</Font>
+          <Guid>6aaad68c1259455fb659b8ed91645c39</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text3</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>:تاریخ دفاع</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text3>
+        <Text5 Ref="10" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>10,4.8,2.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,15</Font>
+          <Guid>dcd267f069da4d1d9d926ba2aeb36632</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text5</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>:رشته تحصیلی</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text5>
+        <Text7 Ref="11" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>12.2,9.2,7.4,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14,Bold</Font>
+          <Guid>f98cdb1640144185965469ca5535d22d</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text7</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>نام، نام خانوادگی و سمت اعضا هیأت داوری</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text7>
+        <Text8 Ref="12" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>6.6,9.2,3,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14,Bold</Font>
+          <Guid>5edba849eb2040579f96e315b298893e</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text8</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>محل امضا اعضا</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text8>
+        <Text9 Ref="13" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.6,9.2,2.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14,Bold</Font>
+          <Guid>b85a98b44f4e4a0d813e0cbb25752e24</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text9</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>تصویر اعضا</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text9>
+        <Image3 Ref="14" type="Image" isKey="true">
+          <AspectRatio>True</AspectRatio>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.2,10,2,2</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <DataColumn>_Resource_Control___GetDefenceSessionInformation_.osModirGrooh</DataColumn>
+          <Guid>b9a5de03e1a941e0b7f4de493766cdee</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Name>Image3</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Stretch>True</Stretch>
+          <VertAlignment>Center</VertAlignment>
+        </Image3>
+        <Image4 Ref="15" type="Image" isKey="true">
+          <AspectRatio>True</AspectRatio>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.2,12.4,2,2</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <DataColumn>_Resource_Control___GetDefenceSessionInformation_.osRahImg</DataColumn>
+          <Guid>77602804b17d4e2bb99d9ac0b7a24903</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Name>Image4</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Stretch>True</Stretch>
+          <VertAlignment>Center</VertAlignment>
+        </Image4>
+        <Image5 Ref="16" type="Image" isKey="true">
+          <AspectRatio>True</AspectRatio>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.2,14.8,2,2</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <DataColumn>_Resource_Control___GetDefenceSessionInformation_.osMosImg</DataColumn>
+          <Guid>1b7a314191cf440490ce43bdb219176e</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Name>Image5</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Stretch>True</Stretch>
+          <VertAlignment>Center</VertAlignment>
+        </Image5>
+        <Image6 Ref="17" type="Image" isKey="true">
+          <AspectRatio>True</AspectRatio>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.2,17.2,2,2</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <DataColumn>_Resource_Control___GetDefenceSessionInformation_.osDavInImg</DataColumn>
+          <Guid>8dc7670ea15b40b0aa3e3ce072cb55b9</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Name>Image6</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Stretch>True</Stretch>
+          <VertAlignment>Center</VertAlignment>
+        </Image6>
+        <Image7 Ref="18" type="Image" isKey="true">
+          <AspectRatio>True</AspectRatio>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.2,19.6,2,2</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <DataColumn>_Resource_Control___GetDefenceSessionInformation_.osDavOutImg</DataColumn>
+          <Guid>83c76665f2744be39377a5cf94cfd38a</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Name>Image7</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Stretch>True</Stretch>
+          <VertAlignment>Center</VertAlignment>
+        </Image7>
+        <Text17 Ref="19" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>12.4,26.2,3.8,0.8</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14,Bold</Font>
+          <Guid>64acfbec1f8b4622912c5020016858c4</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text17</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>تأیید معاونت پژوهشی</Text>
+          <TextBrush>Black</TextBrush>
+          <VertAlignment>Center</VertAlignment>
+        </Text17>
+        <Text18 Ref="20" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.2,26.2,1.8,0.8</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14,Bold</Font>
+          <Guid>0bac139a082c448988cdc07f687036a1</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text18</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>مهر واحد</Text>
+          <TextBrush>Black</TextBrush>
+          <VertAlignment>Center</VertAlignment>
+        </Text18>
+        <Text29 Ref="21" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>19.2,10.2,0.4,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14,Bold</Font>
+          <Guid>79d850d6e30a454990b8ffa35c7cf516</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text29</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>-1</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text29>
+        <Text30 Ref="22" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>18.4,10.2,0.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14,Bold</Font>
+          <Guid>7453d58ed0604fa39a0cb082353c5b60</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text30</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>دکتر</Text>
+          <TextBrush>Black</TextBrush>
+          <VertAlignment>Center</VertAlignment>
+        </Text30>
+        <Text31 Ref="23" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>12.8,11,6.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14,Bold</Font>
+          <Guid>a447a9b518b94c4088d6cd959c34fa00</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text31</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>سمت: مدیرگروه تخصصی </Text>
+          <TextBrush>Black</TextBrush>
+          <VertAlignment>Center</VertAlignment>
+        </Text31>
+        <Text32 Ref="24" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>19.2,12.6,0.4,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14,Bold</Font>
+          <Guid>5b662c996e6544eabd305c71c5083d39</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text32</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>-2</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text32>
+        <Text33 Ref="25" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>18.4,12.6,0.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14,Bold</Font>
+          <Guid>6d9773bb7c114e63853cd647439f530f</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text33</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>دکتر</Text>
+          <TextBrush>Black</TextBrush>
+          <VertAlignment>Center</VertAlignment>
+        </Text33>
+        <Text34 Ref="26" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>13,13.4,6.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14,Bold</Font>
+          <Guid>95729f1e724a4917a9e417bacb96a2b3</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text34</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>سمت: استاد راهنما </Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text34>
+        <Text35 Ref="27" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>19.2,15,0.4,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14,Bold</Font>
+          <Guid>1775f6fb3e4941768e688c10367126f3</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text35</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>-3</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text35>
+        <Text36 Ref="28" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>18.4,15,0.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14,Bold</Font>
+          <Guid>e00f43b43b9f4fe191ef6c88261131da</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text36</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>دکتر</Text>
+          <TextBrush>Black</TextBrush>
+          <VertAlignment>Center</VertAlignment>
+        </Text36>
+        <Text37 Ref="29" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>12.8,15.8,6.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14,Bold</Font>
+          <Guid>536d7307d54141a28822ef8cba3b0b3e</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text37</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>سمت: استاد مشاور </Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text37>
+        <Text38 Ref="30" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>19.2,17.4,0.4,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14,Bold</Font>
+          <Guid>f46b3f70b4c8485dad67d27a222036d2</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text38</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>-4</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text38>
+        <Text39 Ref="31" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>18.4,17.4,0.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14,Bold</Font>
+          <Guid>7ca7170555ed4bb6a08a9072a3319d88</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text39</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>دکتر</Text>
+          <TextBrush>Black</TextBrush>
+          <VertAlignment>Center</VertAlignment>
+        </Text39>
+        <Text40 Ref="32" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>16,18.2,3.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14,Bold</Font>
+          <Guid>f86b67d910154902bc3ef9bdf3d7654b</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text40</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>سمت: استاد داور </Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text40>
+        <Text41 Ref="33" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>19.2,19.8,0.4,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14,Bold</Font>
+          <Guid>591eaa12287644ea84b9b2d13988a612</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text41</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>-5</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text41>
+        <Text42 Ref="34" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>18.4,19.8,0.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14,Bold</Font>
+          <Guid>0ee5a265ff324df2a45340805240a321</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text42</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>دکتر</Text>
+          <TextBrush>Black</TextBrush>
+          <VertAlignment>Center</VertAlignment>
+        </Text42>
+        <Text43 Ref="35" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>15.8,20.6,3.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14,Bold</Font>
+          <Guid>3ca47eec74314c74a6db2adf76537a40</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text43</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>سمت: استاد داور </Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text43>
+        <Text46 Ref="36" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>13.2,3.6,3.2,0.8</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,15,Bold</Font>
+          <Guid>4e3737b25db14430be78a527fc8b5845</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text46</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>{_Resource_Control___GetDefenceSessionInformation_.stcode}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>DataColumn</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text46>
+        <Text47 Ref="37" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.6,3.6,8.6,0.8</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,15,Bold</Font>
+          <Guid>12636414b24c4c64b65901b747694b69</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text47</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>{_Resource_Control___GetDefenceSessionInformation_.StudentFullName}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>DataColumn</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text47>
+        <Text48 Ref="38" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>12.8,4.8,4.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,15,Bold</Font>
+          <Guid>da5be6c1833f4f54b804ebf72611a0be</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text48</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>{_Resource_Control___GetDefenceSessionInformation_.RequestDate}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>DataColumn</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text48>
+        <Text49 Ref="39" type="Text" isKey="true">
+          <AllowHtmlTags>True</AllowHtmlTags>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.6,4.8,9.2,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,15,Bold</Font>
+          <Guid>3b9e6681d72948988cc9e20ec328c0f6</Guid>
+          <HorAlignment>Width</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text49</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>{_Resource_Control___GetDefenceSessionInformation_.nameresh}</Text>
+          <TextBrush>Black</TextBrush>
+          <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=False, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+          <TextQuality>Wysiwyg</TextQuality>
+          <Type>DataColumn</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text49>
+        <Text50 Ref="40" type="Text" isKey="true">
+          <AllowHtmlTags>True</AllowHtmlTags>
+          <Brush>Transparent</Brush>
+          <CanGrow>True</CanGrow>
+          <ClientRectangle>0.8,5.8,15.8,1.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,15,Bold,Point,False,0</Font>
+          <Guid>3c80c87eed1042508fa0354f1ec6c17a</Guid>
+          <HorAlignment>Width</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text50</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>{_Resource_Control___GetDefenceSessionInformation_.onvan_payan}</Text>
+          <TextBrush>Black</TextBrush>
+          <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+          <TextQuality>Wysiwyg</TextQuality>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text50>
+        <Text51 Ref="41" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>9.6,10.2,8.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14,Bold</Font>
+          <Guid>7f053996538e4c3d991c4fb74263ed80</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text51</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>{_Resource_Control___GetDefenceSessionInformation_.name_modir}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>DataColumn</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text51>
+        <Text52 Ref="42" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>9.6,12.6,8.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14,Bold</Font>
+          <Guid>0bb9eef6dcdb4cfeaf6e52e5c6015d72</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text52</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>{_Resource_Control___GetDefenceSessionInformation_.fullNameRahnama1}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>DataColumn</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text52>
+        <Text53 Ref="43" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>9.6,15,8.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14,Bold</Font>
+          <Guid>841cace6dd03482392901d568c0789fe</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text53</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>{_Resource_Control___GetDefenceSessionInformation_.fullNameMoshaver1}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>DataColumn</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text53>
+        <Text54 Ref="44" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>9.6,17.4,8.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14,Bold</Font>
+          <Guid>5c7a28084a6e4b6f957463076532ecc4</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text54</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>{_Resource_Control___GetDefenceSessionInformation_.fullNameDavarIn}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>DataColumn</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text54>
+        <Text55 Ref="45" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>9.6,19.8,8.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14,Bold</Font>
+          <Guid>47cae1e0afed43c6ae9c0cc09c0ab673</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text55</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>{_Resource_Control___GetDefenceSessionInformation_.fullNameDavarOUT}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>DataColumn</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text55>
+        <Image13 Ref="46" type="Image" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.6,0,3,3</ClientRectangle>
+          <Conditions isList="true" count="1">
+            <value>_Resource_Control___GetDefenceSessionInformation_.studentImg,IsNotNull,,,Expression,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+          </Conditions>
+          <Name>Image13</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </Image13>
+        <Image14 Ref="47" type="Image" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.2,10,2,2</ClientRectangle>
+          <Conditions isList="true" count="1">
+            <value>_Resource_Control___GetDefenceSessionInformation_.osModirGrooh,IsNotNull,,,Expression,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+          </Conditions>
+          <Guid>110a27984d454bbea774a2b9fe939cd0</Guid>
+          <Name>Image14</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Stretch>True</Stretch>
+        </Image14>
+        <Image15 Ref="48" type="Image" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.2,12.4,2,2</ClientRectangle>
+          <Conditions isList="true" count="1">
+            <value>_Resource_Control___GetDefenceSessionInformation_.osRahImg,IsNotNull,,,Expression,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+          </Conditions>
+          <Guid>3aa165afa82b46b2862a6b129077fa09</Guid>
+          <Name>Image15</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Stretch>True</Stretch>
+        </Image15>
+        <Image16 Ref="49" type="Image" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.2,14.8,2,2</ClientRectangle>
+          <Conditions isList="true" count="1">
+            <value>_Resource_Control___GetDefenceSessionInformation_.osMosImg,IsNotNull,,,Expression,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+          </Conditions>
+          <Guid>4203e260e624406096eb3d1302807aa2</Guid>
+          <Name>Image16</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Stretch>True</Stretch>
+        </Image16>
+        <Image17 Ref="50" type="Image" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.2,17.2,2,2</ClientRectangle>
+          <Conditions isList="true" count="1">
+            <value>_Resource_Control___GetDefenceSessionInformation_.osDavInImg,IsNotNull,,,Expression,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+          </Conditions>
+          <Guid>17d146f38c21405a8727a01d34ffb2c6</Guid>
+          <Name>Image17</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Stretch>True</Stretch>
+        </Image17>
+        <Image18 Ref="51" type="Image" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.2,19.6,2,2</ClientRectangle>
+          <Conditions isList="true" count="1">
+            <value>_Resource_Control___GetDefenceSessionInformation_.osDavOutImg,IsNotNull,,,Expression,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+          </Conditions>
+          <Guid>a974e6c31c8948ebb405e43b0ccc73d1</Guid>
+          <Name>Image18</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Stretch>True</Stretch>
+        </Image18>
+        <Text10 Ref="52" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <CanGrow>True</CanGrow>
+          <ClientRectangle>16.4,5.8,3.2,1.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,15</Font>
+          <Guid>e2c686cdb6de4e88b9bf50051eb24a01</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text10</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>:عنوان پایان نامه</Text>
+          <TextBrush>Black</TextBrush>
+          <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text10>
+        <Text11 Ref="53" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>15,7.6,4.6,1</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,15</Font>
+          <Guid>a13916d3ed4846f98a7a683af4ccca8f</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text11</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>نمره از 18 به حروف</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text11>
+        <Text13 Ref="54" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>9,7.6,6,1</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,15</Font>
+          <Guid>fe816fd878ae4abb915071d24d4ba6c3</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text13</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>.......................................................................</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text13>
+        <Text14 Ref="55" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>6.6,7.6,2.2,1</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,15</Font>
+          <Guid>26ce7c23356f4106ae07785b2ad882ae</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text14</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>و به عدد </Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text14>
+        <Text12 Ref="56" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>7,22.4,12.6,1</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14</Font>
+          <Guid>66374eb409084ddc96779d4c8d5cdba7</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text12</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>(نمره حاصل از ارزشیابی مقاله/مقالات دانشجو برابر ضوابط (از سقف 2 نمره</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text12>
+        <Text15 Ref="57" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.2,22.4,2.8,1</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14</Font>
+          <Guid>49aa12467d12439b868131fe0eb5a4a2</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text15</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>.......................................................................</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text15>
+        <Text6 Ref="58" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.6,7.6,6,1</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,15</Font>
+          <Guid>5a101f68fbb14302905fac703c09b24c</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text6</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>.......................................................................</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text6>
+        <Text16 Ref="59" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.6,22.4,3.6,1</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14</Font>
+          <Guid>59ec915b280145878fdf4eded6e6c8e3</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text16</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>محاسبه و نمره نهایی</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text16>
+        <Text19 Ref="60" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>10.6,23.4,9,1</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14</Font>
+          <Guid>36e87498a9a240b69be374edf97e182a</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text19</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>دفاع از پایان نامه (مجموع نمره دفاع و مقاله) با درجه</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text19>
+        <Text21 Ref="61" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>5,23.4,1.6,1</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14</Font>
+          <Guid>edb8ac567e174798a029caeec35d24fa</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text21</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>و به عدد </Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text21>
+        <Text23 Ref="62" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>18,24.4,1.6,1</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14</Font>
+          <Guid>83339274562246499cdc2ebed1698646</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text23</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>با حروف </Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text23>
+        <Text20 Ref="63" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>6.6,23.4,4,1</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14</Font>
+          <Guid>79cae81d79364ef7afd232a76198a778</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text20</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>.......................................................................</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text20>
+        <Text24 Ref="64" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.8,23.4,4.2,1</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14</Font>
+          <Guid>8278bd1a73f4437d85f5658c304a2867</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text24</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>.......................................................................</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text24>
+        <Text25 Ref="65" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>12.8,24.4,5.2,1</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14</Font>
+          <Guid>81512a45c0e24947a33833e2b928e97b</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text25</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>.......................................................................</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text25>
+        <Text22 Ref="66" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>10.2,24.4,2.6,1</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14</Font>
+          <Guid>8bbac1337ca44d4497e29f4036307a12</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text22</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>.تعیین گردید</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text22>
+        <Image2 Ref="67" type="Image" isKey="true">
+          <AspectRatio>True</AspectRatio>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>15.6,0,4,3</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <HorAlignment>Center</HorAlignment>
+          <Image>iVBORw0KGgoAAAANSUhEUgAAAJYAAADgCAYAAADhep8+AAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACHDwAAjA8AAP1SAACBQAAAfXkAAOmLAAA85QAAGcxzPIV3AAAKL2lDQ1BJQ0MgUHJvZmlsZQAASMedlndUVNcWh8+9d3qhzTACUobeu8AA0nuTXkVhmBlgKAMOMzSxIaICEUVEmiJIUMSA0VAkVkSxEBRUsAckCCgxGEVULG9G1ouurLz38vL746xv7bP3ufvsvc9aFwCSpy+XlwZLAZDKE/CDPJzpEZFRdOwAgAEeYIApAExWRrpfsHsIEMnLzYWeIXICXwQB8HpYvAJw09AzgE4H/5+kWel8geiYABGbszkZLBEXiDglS5Auts+KmBqXLGYYJWa+KEERy4k5YZENPvsssqOY2ak8tojFOaezU9li7hXxtkwhR8SIr4gLM7mcLBHfErFGijCVK+I34thUDjMDABRJbBdwWIkiNhExiR8S5CLi5QDgSAlfcdxXLOBkC8SXcklLz+FzExIFdB2WLt3U2ppB9+RkpXAEAsMAJiuZyWfTXdJS05m8HAAW7/xZMuLa0kVFtjS1trQ0NDMy/apQ/3Xzb0rc20V6Gfi5ZxCt/4vtr/zSGgBgzIlqs/OLLa4KgM4tAMjd+2LTOACApKhvHde/ug9NPC+JAkG6jbFxVlaWEZfDMhIX9A/9T4e/oa++ZyQ+7o/y0F058UxhioAurhsrLSVNyKdnpDNZHLrhn4f4Hwf+dR4GQZx4Dp/DE0WEiaaMy0sQtZvH5gq4aTw6l/efmvgPw/6kxbkWidL4EVBjjIDUdSpAfu0HKAoRINH7xV3/o2+++DAgfnnhKpOLc//vN/1nwaXiJYOb8DnOJSiEzhLyMxf3xM8SoAEBSAIqkAfKQB3oAENgBqyALXAEbsAb+IMQEAlWAxZIBKmAD7JAHtgECkEx2An2gGpQBxpBM2gFx0EnOAXOg0vgGrgBboP7YBRMgGdgFrwGCxAEYSEyRIHkIRVIE9KHzCAGZA+5Qb5QEBQJxUIJEA8SQnnQZqgYKoOqoXqoGfoeOgmdh65Ag9BdaAyahn6H3sEITIKpsBKsBRvDDNgJ9oFD4FVwArwGzoUL4B1wJdwAH4U74PPwNfg2PAo/g+cQgBARGqKKGCIMxAXxR6KQeISPrEeKkAqkAWlFupE+5CYyiswgb1EYFAVFRxmibFGeqFAUC7UGtR5VgqpGHUZ1oHpRN1FjqFnURzQZrYjWR9ugvdAR6AR0FroQXYFuQrejL6JvoyfQrzEYDA2jjbHCeGIiMUmYtZgSzD5MG+YcZhAzjpnDYrHyWH2sHdYfy8QKsIXYKuxR7FnsEHYC+wZHxKngzHDuuCgcD5ePq8AdwZ3BDeEmcQt4Kbwm3gbvj2fjc/Cl+EZ8N/46fgK/QJAmaBPsCCGEJMImQiWhlXCR8IDwkkgkqhGtiYFELnEjsZJ4jHiZOEZ8S5Ih6ZFcSNEkIWkH6RDpHOku6SWZTNYiO5KjyALyDnIz+QL5EfmNBEXCSMJLgi2xQaJGokNiSOK5JF5SU9JJcrVkrmSF5AnJ65IzUngpLSkXKabUeqkaqZNSI1Jz0hRpU2l/6VTpEukj0lekp2SwMloybjJsmQKZgzIXZMYpCEWd4kJhUTZTGikXKRNUDFWb6kVNohZTv6MOUGdlZWSXyYbJZsvWyJ6WHaUhNC2aFy2FVko7ThumvVuitMRpCWfJ9iWtS4aWzMstlXOU48gVybXJ3ZZ7J0+Xd5NPlt8l3yn/UAGloKcQqJClsF/hosLMUupS26WspUVLjy+9pwgr6ikGKa5VPKjYrzinpKzkoZSuVKV0QWlGmabsqJykXK58RnlahaJir8JVKVc5q/KULkt3oqfQK+m99FlVRVVPVaFqveqA6oKatlqoWr5am9pDdYI6Qz1evVy9R31WQ0XDTyNPo0XjniZek6GZqLlXs09zXktbK1xrq1an1pS2nLaXdq52i/YDHbKOg84anQadW7oYXYZusu4+3Rt6sJ6FXqJejd51fVjfUp+rv09/0ABtYG3AM2gwGDEkGToZZhq2GI4Z0Yx8jfKNOo2eG2sYRxnvMu4z/mhiYZJi0mhy31TG1Ns037Tb9HczPTOWWY3ZLXOyubv5BvMu8xfL9Jdxlu1fdseCYuFnsdWix+KDpZUl37LVctpKwyrWqtZqhEFlBDBKGJet0dbO1husT1m/tbG0Edgct/nN1tA22faI7dRy7eWc5Y3Lx+3U7Jh29Xaj9nT7WPsD9qMOqg5MhwaHx47qjmzHJsdJJ12nJKejTs+dTZz5zu3O8y42Lutczrkirh6uRa4DbjJuoW7Vbo/c1dwT3FvcZz0sPNZ6nPNEe/p47vIc8VLyYnk1e816W3mv8+71IfkE+1T7PPbV8+X7dvvBft5+u/0erNBcwVvR6Q/8vfx3+z8M0A5YE/BjICYwILAm8EmQaVBeUF8wJTgm+Ejw6xDnkNKQ+6E6ocLQnjDJsOiw5rD5cNfwsvDRCOOIdRHXIhUiuZFdUdiosKimqLmVbiv3rJyItogujB5epb0qe9WV1QqrU1afjpGMYcaciEXHhsceiX3P9Gc2MOfivOJq42ZZLqy9rGdsR3Y5e5pjxynjTMbbxZfFTyXYJexOmE50SKxInOG6cKu5L5I8k+qS5pP9kw8lf0oJT2lLxaXGpp7kyfCSeb1pymnZaYPp+umF6aNrbNbsWTPL9+E3ZUAZqzK6BFTRz1S/UEe4RTiWaZ9Zk/kmKyzrRLZ0Ni+7P0cvZ3vOZK577rdrUWtZa3vyVPM25Y2tc1pXvx5aH7e+Z4P6hoINExs9Nh7eRNiUvOmnfJP8svxXm8M3dxcoFWwsGN/isaWlUKKQXziy1XZr3TbUNu62ge3m26u2fyxiF10tNimuKH5fwiq5+o3pN5XffNoRv2Og1LJ0/07MTt7O4V0Ouw6XSZfllo3v9tvdUU4vLyp/tSdmz5WKZRV1ewl7hXtHK30ru6o0qnZWva9OrL5d41zTVqtYu712fh9739B+x/2tdUp1xXXvDnAP3Kn3qO9o0GqoOIg5mHnwSWNYY9+3jG+bmxSaips+HOIdGj0cdLi32aq5+YjikdIWuEXYMn00+uiN71y/62o1bK1vo7UVHwPHhMeefh/7/fBxn+M9JxgnWn/Q/KG2ndJe1AF15HTMdiZ2jnZFdg2e9D7Z023b3f6j0Y+HTqmeqjkte7r0DOFMwZlPZ3PPzp1LPzdzPuH8eE9Mz/0LERdu9Qb2Dlz0uXj5kvulC31OfWcv210+dcXmysmrjKud1yyvdfRb9Lf/ZPFT+4DlQMd1q+tdN6xvdA8uHzwz5DB0/qbrzUu3vG5du73i9uBw6PCdkeiR0TvsO1N3U+6+uJd5b+H+xgfoB0UPpR5WPFJ81PCz7s9to5ajp8dcx/ofBz++P84af/ZLxi/vJwqekJ9UTKpMNk+ZTZ2adp++8XTl04ln6c8WZgp/lf619rnO8x9+c/ytfzZiduIF/8Wn30teyr889GrZq565gLlHr1NfL8wXvZF/c/gt423fu/B3kwtZ77HvKz/ofuj+6PPxwafUT5/+BQOY8/xvJtwPAAAACXBIWXMAAC4iAAAuIgGq4t2SAAAm/UlEQVR4Xu1dB5gb1bnFKY8Q0l8KgRBSIASbQGjBYNMxMcU2xeu6u1rNSGtsWOy1vVUaDSVAAhgwBIghoQewSUIoD1MMi+vaW6QZ7QKJkwcvlIQEAqE+Xlz0zj+6Wq+kX200M9Kae77vfLsa3Tb3Ht37375LqVAj5u/8evw74qPERwSq3r8vyn65+OgsGpf1fVLVjA8DmvFOMDJQJx5L7OQIhGMNKPd3iYlEYpR47Bwa2/o+r2rmtkDETBAR0T0+PfYF8bXEToa57fEvBjTzvlR5o0LZOrV5w27ia+fQEBrYeyiSocjMF1UtNk44kdhJ0Kgb41Fx/CWzvH36pj2EE+eg6vGDMiMiohbbokYM7Ti96xPCqcQIhY4yREVxIdVOXFkHws+OEU6dgz9kjGcjS1EzVjeEevYWziVGGBr1wW+igljDlq1gMBQ9Wjh3DqixTuMiy+AbaB6nCC8SIwQBLX4Wyu2fTHmmUdWNicKLc0DvYBoXWTaN7ahOr/PpXZ8SXiWqFGSMq1r85yi37dnlyDBsThVenYMaifnZyHIzGtCN7wnvElWGRj3+fVQCBlNuOalGTJ/w7hwQ8HmZERXBd9RwrFYEIVElwA++Hk3fe0x55SVssLkiCOcQ0OMLuciKombc2qj3fVoEJVEhLLrS2B1lcTtbRsVQNxeIoJyDqhntbGRFEtXooCvdVYmiEAybP0DT9xxXNsVS1cxWEZxzQNUZ5iIrhUjY+zAAG0SQEh5BCRsKKoYPuDIpiZrZKYJ0Dk4IK0W85G21i4zdRdASLmGePvgZ/Jjv5MrAFqtdWERqGtXwwAEieAmHEQjHxqDMnuXy3jZHgrCIqLneDURis0UUEg4hEEavL1J6r68g3RCWqsXLMt7zUjN+IQdUy0dz84bdYKDfwuaxA3THeEdXk4vMOcb75CJC+6DFeMjHaHa+OkdVNy4Q0TkHJRILcpE5S+NNdIsniyglioSix8+EzfovPk+dpKGKKJ0DzRPxkTlLVLfbYHddTks4RNQSOdDYaK3qvQKmRHFzfWVSDRtni6idg6Kbx3KRuUX8Ap9SO+JfE9FLZGCePriHGjGe4fLOLdICQBG9cwiGBr7LReYmIa5XgroLa4BGOMQKz79yeeYmac2WSIJzoF4bfiEfchG6Ss34P1WLnb/LLi4s5B9xSIwKRsz5ENUWNq/c5Xs1KxIfFwlxFnihfiZCr3jXR3kiOzmKbtzD5IsnRKXSI5LiPBD4pVykHtKgJlkk5yODhnB0P+R9nMkPz4j4LxHJcR6BkPFtRFL+ZGYZxK/2zaBmniqStNMjEDbOCGjmW1xeeEVaPKCE+vcRSXIHimaehMJ9g0uAV0T822DYh3Rd/5hI1k4HXU98LKgZEXpXLg885D8ULXaCSJa7oBHySlfNRIjrd8rPnv+sSNZOg+TmYONB7p09pkGtlEiWNyBjElX0b5nEeEvNfFYJm/uLZI140Fp0ND3Ps+/qISHs+yu3tCmRGIUEoLresfW+IoQNgur6dJGqEQvk5SS8y9vsO3pEanrJzKiK4R1kxpRKZwi4Fc1zhysHV7gMshUDuhmmQmXeyzMi/rdR+1fXXK1YWPYnLsFeEpmzvFF/dcSMd1njUxHzN9y7eEm0On+s2MJL6qmIf1mo+oYvQVyPcwn3mFHXu8cOwBq+0QyTSb+31MyVhU4OcrUHjtrggUa9L+98EQ37q5HYkkDEmxn3nNTMv4PHiGRVHYJa/DjUEq+zafeKGu1aN66oqVmRd6qGfqQozxXio+MYhYTQ/v5/BPX4yeJZTigRow5uKzqYas0zhs2ASFLVQI3E56D5+zebZo9Ig57FLAtX9NgpEN8bsF//Kh45C1I1InhXJGwrLVUuVD2i63w4/Lw8/IUqQWTKNdVwzBKtnwqEjeu5NHpJiOovAa3/MJEsFmT2oOUJofxSHYo3XOkpikVlmasbHqDBPOGEhU8f3APu1mX485yoIR6r5AmE1gl5EfOJzHR5TfzI1pyrG18VyWJB+YSyzhygfceVHneNPvgfUHpW9U29CdplK5yxaGp6dFc0S64t8i+amvlsJSax6XAU2Ch/YNPkJTXzF3SWrEgWC+uAPc3I6t1T0+mKAd+0dPOuCDzXOiDaajRTOM2JoGbOq7xtYbwR1KLHiSS5DppnE7Ypmx5PCFsTPFckKSfoABcSEB+G+b+FRgVsoYCwiNsD4dhSqtmEFxaiN/R3xr93REYr4ZjrW/1p80Glf0hIw2vo1R0rksSCygxu89t+FRRWiusUvX9P4Y1Fsvvq7lalwkRXO2Jc6obdYBm+tMmBjdc7Ig39cy8ZyHt855zO2F7Iiw2c/zRWgbDohf5Gmy+EVxa0GhS/5ns5/97SWNG85CXHjpmmUX8UQuUn5yPGrwutuFX1geOpRuP9Z9AtYZHRZ7XVXKQMIa4tEE5z/i6qNYlNO6z5U3o9ItLQXainVAzouGrUgj1cHJ4xeeJxS958Ry2taMZiiKX4tfOa+Z47vcL0caziqZn3KS3r8q6ZopUJcFfZVZIR88+0ZEUkqWTM0QdHI39e5ML2ioj/zUIH0M7WN34uEImv4PznJTogroxjERCBvZWj6OYXKjRaU4WMqew6JGReoSacQ7LnV9kfBpq05+aEo/uJJLGgSWbbeayZr4pgnAeq+T+zkRZDzXw7qBnniKBYJFdOxh5m/XtF2BJB3ZghklQQ1EUvxURwgxDLg4VW0qqReA3E9w7nvxiSIEVQzgPCKtx7yEcx6Zlv+7zVo6LdQB5tG+eITgpNY8BOyQfYhxGjo+Lp1MyL89k+yM9PwM1VcF9uOteKIJ0HMvJ+JsKSCXvm6ULGsvULs3Gyr5Ok8+q5mX+ad0TabuT8eEX8QN+FAZ63BRCdCUe24aPM3LlWjhAIGz/jIrVD/NpeUbT4USJoFv5w9GC80Aucf69IPyaf/uLQ2V3UhUct9QDn1itSR6PQNFpQHzga6XyV82+PsctF0M4DmTydj9QmYZvQNA+CzlmVoyC/DBE+xfr3ipqxOtV843/7x1k7QNRUT6r64JeszGGRGAVbqgl55uiIP7UgIgLncd5lz/0nInF8jRUy4c58g3lUqCjQa5FhFbFnUJjbaQkxpQU9wJWcG/eJd9eMq/Odn1B7pbE78vJu3r99Isz3aXWGiMYdWHfqaMb/cgkokwW3z6MJ8LkUdxpnNj+TmFj768S4M65NHHLChYkDj27fMnq0bs2B4v+1Bx+rJcZOvDJx8vRbE1PPW4mMj7HhOMgPaOGklQk54NY2fPyoPgiEo87focOBrheDip2fSNbMt/Aik0Q0LFQ99iO4cXzxoBKOJiYpv0kcfvKlidFjW9J5ZMvWfY7zWXbWAWNb1mZ+T0I7ZdYdCV/7Jjbscoh3fUnR44dbL58DyLcpcOfCiX7GawHdHCui8QaBS2gjgMPHPYMQ7Db88i7Jtw5bvTT+Nbhby/m3wynB3yd+eLyeJpY0FhBWigeO60j8ePZdlki5eEpnfHW+3nNyf4E7QzMId9Cnx74lovIWtNIQiXBlVw6avcfIphNRZcFaeFjm8Eft4nWJsadexYokjUUKK8VDT7w4Ma3pSTbOYokaaDmt2rVeloG/I/oV1CiurEilvC+0Mth1iAG4X3AJLJ/G/wS0eM612cHO575ONRzvNz+nBB5I/AA1DCeMLJYoLItHtVq1F94hK+5ChKi25aupglr0CLjJurPZEWrmja4dsGYHqI7pdjDnVylYxjp/Wi9lANyU1EslQ/vEmlt4MeSiHWEJUgfA39nHpiUP38s14RvQYo0QleMnK+IHuoVOCxTRVBcC+sAZSKTt+ah8xIv/MvOSATpSiXObi1TAR52+hBVAXpYhLOIREy5L1LdtZNOUi7RWynpJAboNFT+yWzm3ZVMz367o2RdIwK357B7CnPDAwRCBO9V0xOhDjTOO0tCox8/E5+IWqYHUYzvilMvZgi/IMoVFPPSEixJ1LevZtHFErfQ35PeU5Ltah9m6dEyn8T+FRvEb9T98GfHfLD46i6H1WJr5Yj67hyC2fG3MfgnHWFIviETFDiMUSweERTzk+AsTda0b2DRWiBsKHXk+zJ5zZ19hU9PmXdFbSE4T5LF7UrDuddFi9w17iYqwoaOnPFERHRIWkXqMvhKbRXdo/Hr4HCgHJWIGIaqUPfeBK0uTab0PIknrgVH1mPdypQQtPTYvtNtzK5dKqD9x5I9/xhZwSXRQWMQjJlye8IdKNugdIZWhGolr+WofEhzZtOn+zC2070E4cQ7U/R0e0Y4Ijd5CJ7sE9Pg0JIzfr+YSka7EuElL2YItmQ4Li0i9RUojl3YX+V5AN/NOz8zRn/8W2bLZfo3truwkR4K+kR1ZkhDN63R4hHDKQtH7D4e7Vzj/bpDm8bgCtUUXhEWkNHJpd4kvBXXzUKswckANGRPhLufyc1euoKEDbbnIhnErDPvOfNuwab8h3Gxi/DrKyYEH2IK0TZeERTyz8UH2HZwkasZuunvHKgQGYtWuRs0k5z/FxgJHWNkCbXbgIsskEvdgviozeXWKeQfn1wnSyoQDj25nC9E2XRQWjf7PXrSGfRcnCHvqtny2ES2HQUtS1D4DVR/cV3hzDsUKy6Jm/Cn/2AitFzebIcLi97UVQRoApV4XV4Bl0UVhEQ+fcJmDE9dJUg8evbq8I+l+GnMsYYNM5YUFJo31eN6DvdRQ7HiI0LHls8eddSNbcGXTZWERT5r+K/ad7BA/2JcLbWOje6PhrrTpsGoQluB29Cauz3dQCPU28esq26g/s/EhtsAcoQfCGj22NVFz/hPsu5VG4yVa+WBlLgPdOgDEuIH3m5+uCEvco8NGWIj4ZaynwydEUFlAzaZz/oolzcMddEyIKSyH6ImwWhKHnHBRwh/qZ9+xWCbHqHg0hHr2hhvbW/gaQvkPGLEFWqLCRVY8jdfoCCMRXBrQbLbyforj+MnXsQXlGD0SFvGkaeU1iXQmg5WpGaDd2sjnslb90sYWEZxzSO5SLm8EnYx1GIuLaEReBCtm7c0Bzn0xPPvcR9gCcpQeCmvMUa2JGQu62HctipphDp8Noc2seN6C5+UtaYJ/mqYTwToHOm0GwnBqHdAjNHMPkU0Hu5nviyI1G3mXFDtFD4VF/NEpP6WCZN+5OBobaNOLEo6difx9lHdTGlH277py2gzBCSPbSU6YeTtbMI7TY2ERJ6m/Zd+5UkTZv2CJwA1A/U9zkVaCtF59zNFtbKE4zgoIi3b+lGvIO0tjlSUCN6CGjWv4SL3nMVOuZwvEFVZAWETaUsa9eyWohmNLLBG4ATrUi4vUa86Y/xRbEK6xQsKi7WSlLml2i6oWn2CJwA3QKlJEUvHm8KjTbKxbL4cVEhbxpGm/ZPPAWxqrXFnkNxzi6OaliKwi5yjQfj2uAFxlBYVFE+r1bd1sXrhOOs8M5k++/Y2OQ43EatAF9fzyy6NPv5otAFdZQWERyx00tUOU7b8Knb/lGujMS3RDY1zC3ODMBV1sxrvOCgvrwHHtCV97D5snLjHqyrxgKbBGziPe3JPj2uqFQqywsIjJXdV8vjhJNWIsc2Vtu10EIwN1qmaWflx3kaTe0ZijPBq3ymQVCOvgYyPU5WfzxiG+U2iZU8Xg16Oj0TQOMokum3ReFZfhnrAKhEWkU3G4vCmbmjlQzhn3noBOlUNvwvHjFGknMZfZnrBKhDX21CvZvCmD1LP/Vb7TFKsOdLsWEu3IqccVGWIYzioRFpGmsrg8KpVktpD5YhXWSEMgHBvjRNNY8ukwTrOKhHXKrDvZPCqJaProlgqrkEYqqJqlnSLsCxZBVTOsCVkukz1jFQnrsBMvYfOpSFpNn5O3nVUcYvF+yb3GGQueZjPYU1aRsIizFq5m86oA36HrWazC2NlAPQ+1xJN9K9obFDzgyMVb9p3YZI3tjB67eA3nxktSnnB5lZuGQZthrELYWUEDqrC7lvEZkM1xZ1zDZq5XhKj+dOARLUOnFu83tnmvA45sWcm59YpHnXYVm1fZpFtkzZsKnSqzU0GNDEzHSxc8QvqgY8Js5nrBA8Yu/r/9D2/J+qXvc5z+KXz/x0z3XpEmpgudLU9zfbQ8WST5owW6MAA9lF4uY4h0YBqXsV6RaiaR1CyMPnJxO+fHK9K8KZdnRJgbPXTWhkjqRxO0gRK/rmvBrGU4ni/oy+SRLXeIZGbhgLGLVNaPR6RTnzPzC3m4Da3AknwbhD9yULWBSbAJ0o7QOWfeSjZTvSKawueQNHZnCr5bxvnxihNr784Qlfl6UItX7oDaagbttEU1vmaHsB5lM9VbLm4SyRvCmKPaj0Bt9iHv3htOmHHbDlFFjGfm/CT3TnMJgC6ZREZdQtV6VYxhjV28HbXTrd8/cuGEMWMXj4PddeEBY1ve4916R2sZjWZsRU11Yb7rYSQyAFvBp4Si6AFVaKlMlZN2gBe6EUyCAX6NP6Zq3tEjH3cSHnbSJdZwg6s7Z3ZWBLQBS1iUgeMmXctm8EeRPxjfaZ1amMwbKaySkRKWlYHhWOKYyR5uUK1S0sBozfmP7zDapbBKx3BhJTPRqPzymQqSaqrMg9mksGwgU1gpnua7z7qyjcv8nZW0bIg72kgKywZyCYt4ztxHrV8wVwg7G+m6lroW/v4dKSwbyCcsIh1hTYveuMLYWUidlnx3HUph2UAhYREp08c7da1JlfGUmXTSTP7D16SwbKAYYSVpWPNmdMQiV0AjjdTEn3Xuw8x7ZlMKywaKF1aSU897rKJrt5zg4Sf/BE38Wvb9OEph2UCpwiLSJZOOXCNXAdLxAXQNHvdeuSiFZQN2hEWkkXo6U4orvGokDXpOUuydNyqFZQN2hZXiWXMervohCZrzS03P2KEUlg2UKywi7Rqm20y5Qq00qekr+xYKKazS4YSwiHSrVjVNBdE1cnSfIpfWUimFZQNOCSvFamgaj5hwWUm9vkKUwrIBp4VFrG1Zb936wBW6u2y1jnt0/E5CKazS4YawiFavcfqvmMJ3hwcfG06cM/e/2LSUSyksG3BLWCmejcJ2e0CVjg1385x2KSwbcFtYxLrW7sTYiVewoiiHdKTlxLpSz1conVJYNuCFsIi0gJCuFnFqjRedPDh9/lNsXE5TCssGvBJWirTklw6Q5cSSYqHDdY8964a8y1ycphSWDXgtLCKdFZHvggJaQUFTMJnPk2NTv2PDdJNSWDZQCWElSctwfp2ndoK4xu0Ql9NjU6VQCssGKiesJKddsCpxyPEXDhPUDlLNRTyx5pdun72el1JYNlBpYREbOnoS45gVqgeND1kj+ZwfLymFZQPVIKwUT6u/d6hp/NEpl1sj+Jw7rymFZQPVJCzitKYnt508/dZtTk/LlEMpLBuoKmHRqS6RqI8O4VAj5r9ZNxWgFJYNVIuwVM3cEojEhi4vUiMGnZ1aFeKSwrKBKhHW1iBzVJAajs6iWoxx7ymlsGyg0sJCTbUtoMUbRXKyENTNeXTcNefXK0ph2UAV1FgtIik5gWaxg/HnGaWwbKCiwtLiV4tkFARqtuvYMDygFJYNVEpYqIV+r+uJj4lkFETNisTHyQ8XltuUwrKBygjL6KtdZOwuklA0lJbnP4uay7NL11OUwrKBCgjrH0qofx8RfckIhIxvUxgZYbpKKSwb8FJY1riUbpwoorYNKmiE59kwhBSWDXgrrLgmoi0baE51Lg43KIVlA94Jy1hVirFeCHSYf0Azuvi4nKUUlg14ISwY3K8HdPMbIkrH0KgPfhM9xTe5OJ2kFJYNeCIs3ZwlonMcdE0uF6eTlMKyAQ+E9YCIyi2Mgu3m6viWFJYNuCks9AL/pej9e4qoXAPdZgZ76x0uDU5QCssGXBWWFjtfROM6lIg5n0uDE5TCsgG3hEUj5HR1nYjGdaDH+YlAJF7Szf3FUgrLBtwRlrFd0WIniCg8QzAUP9mNJTZSWDbghrBoslgE7zlQUz7MpakcSmHZgOPC0swtfj06WgTvORTdONDpVadSWDbgtLCCkfhtIuiKAem4KzNd5VAKywacFJYaMT+k1Qci6IqhIRzdj2pOLo12KIVlA84Ky6h4bZUCmkPHai0pLBtwUFhblbC5vwi24iA7j27oZ9JZMqWwbMApYaG2ul8EWTVA0/w7Lq2lUgrLBhwS1vagZhwpgqwaNOrGeCatJVMKywacEBaanG4RXJUhMQpG/CYuzaVQCssGHBFWOOrasphyoerxspfVSGHZQNnC0oy/NS7r+6QIrurQtHTzrqi1/s6mvUhKYdlAucJSNPMyEVTVAk31T7m0F0spLBsoU1hb5+jPf0sEVbVQ9cF9IS7bk9NSWDZQjrBQWE+KYKoeasR8inuHYiiFZQPl1VjxofOsqh10mBv/DoUphWUDdoVFy46bl7y0mwim6jFPH/wMath3uXcpRCksG7AtLK165gWLBXqwt3PvUohSWDZgW1h67HgRxIgBerAnce9SiFJYNmBHWGgGX6GdyCKIEQNrXbxm/I17p3yUwrIBW8LSjGuF9xEHOwe4SWHZgB1hBfXo0cL7iENAM4/h3ikfpbBsoHRhGS/puu7Y4R5eg7akQVyv8u/GUwrLBkoW1ghuBlMotTmUwrKBUoWlhMxjhdcRC9rzyL1bLkph2UBpwjJeo0NmhdcRC+odWkcrse+YTSksGyhJWJp5q/A24lHKYKkUlg2UKKwpwtuIR0CLncW+I0MpLBsoVlhoOt5v1Ps+LbyNeFhHe0eMD7l3zaQUlg0ULayI8YjwstMA7/Qo966ZlMKygaKbQt04V3hJQ1PTo7v6Q/2PKKH+++ubV+0lHo8IBDW6AIp51wxKYdlAMcJCM7gt16H/SrhvyAj2h3ovFI9dRc28FZ+pa1nNCp1Dzbyuz+DPqOSnHUheRlB4ZakUlg0UJayIOSicp0EJbTpWDcesWyLUcHTjrPa1XxRflQRF6z9KaVn3WfFxCIHQxm8rWuwWJRx7Qg31X4t4Wvwdm27wh/permtZdxq5qWlc8Xl/Z8+6uvlPHGB5YlC3+JmQ+DcLCPO51HvmohSWDRTZFF4pnFuoX7zuu/5w/+NKOLoJzeCFdW3d4+2e4e5b3LUHasT3AmHjCfHIgtLRe4KqGW9npkUJ979Q27Z+6HYLX8emdnre0L7xKvFoCBNn3/W5+pZ1k33t3TmFhR/Nksw4MimFZQNFCWvYNSX17RtPUTr77vN1rP++eFQWVC3WSnHgb1Q8Qo9t3Z4Q7X3+zr6zICQF//9cCRvX17d119bUrPgP4cwCnoXhd/vsBU/6aIOqeLzLrMVPj5s+f+XZ/o7eWG3tndaFUDMWrzrIN7/rC5YDgaBOpwAy7zyMUlg2UFBYmvFOjT5oFWZD64YfoGl6rba9a1/LswOYubDvy6iZ7m4I9Q2JlzoEw0WSC1PV5V/yd/T8ftaCVeehuXy3oWPjT+j5zIVd35+1qKsDwozWta7+seW2efluEOjLeNYzfBKdhlAQ/wfsuwtKYdlAEcL6L+EUhnp/8ooRum0+HH0azeGl/s7een+oe/ysRev3aWraDEFkG8nFgMRbu2j9V/0d0dFWMxjqnw4hzFe06E9Q8D8n8aFzcAWcDoXf0N59BaUHorLOwkJa7q6Z98getYtXX9TQ2fswmsBLhdNd6lvWz0y67X8pc5FiIBLPO+wghWUDhYSFAr1AOB0Fe+oPnJsU4XY7BPcWBPECajYTf9fBhnksoJkr8f9KGPqPqRGi+ZgSivZBoCbcvwh/b1Bzxodpvq9q0Rj83uRr605bDg276l743TJ74VOTYcCvmb7wye9NO++hQ33tG29UIKzhAqKeJGq0m+rau6eLR0NA+hZwcacohWUDBYUVHhjqbVGvzx+OLoJInoIQ3ij7hGJLiMbbCOvPEM4a/IVQoleAF6id/ZOUcM/+NXq6TZUC2Vpnz33kO3UtXYeLRxYgvnb0Gs3JLb/P6mXmQiAcG8OmT1AKywbyCQu1wcu7JHLZOolRZAjXt64dg57ZSf5w37SGjt45sGEWQCTNEM1CBUQN1Ywm6gJ/Z38j/q9RtP6TGtp7jlBC6/fx6V2fonD87T1+EegQpjZv2E1t789py/lau4Mzz38orQNR37auFs3zCzNanki7DWNm40NfFv/ywDvSu3J5QJTCsoH8wjLvEM7yQm3e8KVCq0rRk/yZ+DcNvsWb9lBC/UN2XApqKDp3uEGfjsQoNGuDo2v0odps9qK1x6OmenV2y1NppwrCkB9f37YhID7mRECL51ztIIVlA3mFpcdrhbMs1C56fHcag6L/fZ0bW/L14mhoArXYKvExDUpn/7loAh8UH4eAZ/3+to0Hi49pmDrn4b0goj+KjxDVqtGw/16ra1s7XjwaAmrQlXWtG3yzFnf9cOrU5Tk32ObbKS2FZQO5hIWmYVuws/frwlkW0OzNqu/oPoiaETR1j4vHLNCzW6zmuFQAzeUvYMD/Rny0MFvf+DmK39fRx46V0ag7jHWrlptxwaqvocb7b9RK9daXGUAnYXDaoq4D0UO8f+LEpdRrZUH3KZLNx+eFFFbJyFljaeazwslwDDV3VMtMbX54r1rUKjDmu8RjFhDOzTDI2evlIKC7EdavxEcLsxetGU1pqFu45nviURoa2ja1QVhLqNZUQn099e3dF4mv0lDfut7f0N69YmrT8q+ghntTPM4JpOX5rHwApbBsIE9TeL1wkgUyrJVw/3vUY/OHaRwrmtWUEXwdveNoqgfCuhtN1QrxOA2I5y4aShAfLdR2rD+Q0jB7wUq2xoSY7qhrW9fU0NnzcEPHJrID05phCO7bENITSOOLs5u6voEOxqkNnb3/FF8DfLNN7yzePY1SWDaQu8aKnyWcZKGubf0hihazCkoJ97Xg/9utL4YBzVMTarKHqBCVcOz2lHhQwIHhCwbR/EBY0aFLyKkTMHv+U/uj47AlNeJPnQPrSwGIphfN72YI7O+zm58YO7FpRxMHo34pBPUm4rlr1txHrEnx2YtW+/yh3r/S/3UtTx8Hu2vdzIXZPUVVN87m8kIKywZyCGvree3P/adwkoWGcO9pEIplPENAF0MYT1tfAP6OjaP94ehNaN7ehOjOpGewc+5CYbehsA+l8Gm1QqrWgCh/q4R6T6H/afhBDfdfSVNH8P9netYQ7t4PTdSHCDNpQ0F4iPNdEg+E+yfwQ/B9iOxRf6hnBf5/vr7lmbSbx+paV/vw3AoPglxJafB3bLrP+nIYIHiaXso6G14KywZyCGtoQpgDhHQamr8N9D9EsZQGSiGi+1DYSyGU11A4m4f36Mgeo7ErahJTcfjaNx5G38HPo6kRcjXU67OGGTp6J8DtEnoGQVl7ACGMv9Dnyco9eyL87VPPf9C6WmXK/Ae+AFG9iBppDbiKPtPz4SBh4bvuM85Y9mmE+4YVHmo78XUaEHYslcYUpbBsgBOWGolZhZoLDaGe6ag1bqH/YZTfNuRPM/5F9pHlaAdGoem6N/m352SIzDqjStF6qVYZRXYYOaImEGFFEe4+YB310iz7TDOsbVoQ1mvkbnbLKtR6RmLm+Y9ZPcbZTY9+Az2+oRqTg691g9rQ0WM1xbRuCzXm60jTc9aXGUCn5arU+6QohWUDrLA0Y5L4mgUKeT6atSlJ+6m/n5o2mkekmkY4SYO/I/oV8S/VUDMQ/paZC7vSbBzUKDMhutXiowUl3HMIen8LqEeJ5vRhejZr0drDKI0I548Qx02ogV6tb9vYbHnIAdhdF89qXjXUPDZ09lzd0L7xuuSndNC7Z+eHFFbJyFyPRDtXGtv6Pi++ZmCNW918RuNDn1Y6ey9H00W1UdGAIC5StOhy8dGCGoodjwJ9C83rTPHIAgS8zFrlAPf17d2T6VnNvBV7wO3QeBPcvDu1eXmacZ+JWS2rhyaeaZEgNYPTFz62t3iUhrmXx7+IjsO/h+fJ8PVoEkXCpw/SCs6hjESh5T2pr6GjewLcvA7+Awb827627iJPTabaLarD3yv1nRusTRfWWqhw7ErEu5VqvcxVqHh2j5WmsDVUMTREgJrRWuaCsLbUta71iccFQW5Rs75c27o2bw2E/PjlsPz4cHiNK1EC1Ijpo3XtaIrupP124jELsoWsWiccfQi2VlHHGZFxDnHcABHd4NM3WdNABBj8EFrsOn+474zMNVKE2Z29X0dTeGrmpeVUW9a1rDmjtrn4BYfT5zzwLV/buoZiVj1Y55VG4rfB3hpQdbNqb92QkJCQkJCQkHAKMPi/2dhYvZdCSVQBGn/635+n27nEx4JQ9fhB6KXdLT5KSGSD5uVoArrYja6qPnA8eq5Pkz/xSEIiHbSAMBAx1wX02A/Fo7ygO3toZ0+Tvvlz4pGERDrodnnUVL2NWvwo8SgnEonEKAjwIlUz70wtoZGQyIISjp0JoUTnhJ/dTzzKidorjd1hT90TiMTaxCMJiUxY26si4PqAZr7F2UlBPa4khWS20OeAFr+aNjhYX0pIcAhGzPkQTJui9+8Z1OI3c9M3gYixDm4eV8LGDJr0pdWcasS4RnwtIZGOc3XjqzC+m8THnBjeO4RNda+iGefAYE87PklCYgioiVQY69aJLxZy7qzeAbhfHQybk+lMBfGoKDTqg1n7CiV2UqDWWRIIGSei0L8JG+rmoBY9QnyVE3D3Bo1ZKWHT2tVMzaP1RR7QilM1bCwTHyV2NtCwADV/4iMJazlsp82ofbqCkfgcPEpuooBoFP35oTMW6AgkRYudTm5QY/2TREjPldCz+8DvnZajPKBaEfEspf/pIBNaZ2Z9IbFzQA2bAVUftNZJJbetG7eATwS1gaGaqnFZ3ydhR/0F4vk5fQ5cQofMJs8ChcG+mVZxWg4BRTePTYksBXpGfwPhZ+mUmAcgqoUw9idCgJdZO30i5l/xf9bRkRIjFGSAp2oNMWWzHQJqtb4chuR35gAJonaRNV7VD0HNndMZ2yt5As0OkIgQ5pARPyccpe1gd1uj8RAc/q6wruTV49OoJ5kc1Teew7N5wovESEdA6z9MjcSSRxIlR82vRO2RtdGBRt8him5qMiG86wJhs0F8lYUgeodBLX46/e+/dPNXEGYXRHkj/m6HgLarkbg1JEFnXOl61ydUvf8gxLlR1dM3uUqMYFAPEDWPtauZDvZA4d8LURyndsS/FgwNfJeeUw2F5+c1hAb2pvts4D7vGvvkevPEKL8e/w7cLlO16ISgZp6K/69RIub84beRUZxB3ZxXj5pPPJLYGUAFDtHQBoTNqIneh6h+KmqXd8CHhDMLqFV8aApvlWurJArCsrE082ISEcR1gbUJNRyrRXNVkxo6IKjh/gPwfd69ixISEhISEhISEhISEhISErmxyy7/DxldA6OriBUKAAAAAElFTkSuQmCC</Image>
+          <Name>Image2</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Stretch>True</Stretch>
+          <VertAlignment>Center</VertAlignment>
+        </Image2>
+        <HorizontalLinePrimitive1 Ref="68" type="HorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>4.4,3,11.2,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="69" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>4eaea35b64034cc4b2b096d58f54779a</Guid>
+          <Name>HorizontalLinePrimitive1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <StartCap Ref="70" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </HorizontalLinePrimitive1>
+        <HorizontalLinePrimitive5 Ref="71" type="HorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>0.4,12.2,19.2,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="72" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>e80c0bbe59f8481ba79126c50f79585f</Guid>
+          <Name>HorizontalLinePrimitive5</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <StartCap Ref="73" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </HorizontalLinePrimitive5>
+        <HorizontalLinePrimitive6 Ref="74" type="HorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>0.4,14.6,19.2,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="75" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>66974e2ec57143269d5de085b310df49</Guid>
+          <Name>HorizontalLinePrimitive6</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <StartCap Ref="76" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </HorizontalLinePrimitive6>
+        <HorizontalLinePrimitive7 Ref="77" type="HorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>0.4,17,19.2,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="78" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>d57686774d5e40dbbc02bdc96bd6fecb</Guid>
+          <Name>HorizontalLinePrimitive7</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <StartCap Ref="79" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </HorizontalLinePrimitive7>
+        <HorizontalLinePrimitive8 Ref="80" type="HorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>0.4,19.4,19.2,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="81" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>380e99cf7dfe45338a27f66fce3e7961</Guid>
+          <Name>HorizontalLinePrimitive8</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <StartCap Ref="82" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </HorizontalLinePrimitive8>
+        <HorizontalLinePrimitive10 Ref="83" type="HorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>0.4,9.8,19.2,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="84" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>6a8f2886323c4a04910dccbb1eb363b0</Guid>
+          <Name>HorizontalLinePrimitive10</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <StartCap Ref="85" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </HorizontalLinePrimitive10>
+        <HorizontalLinePrimitive2 Ref="86" type="HorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>0.4,21.8,19.2,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="87" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>60afb9081aef456ba91c503f517aeccd</Guid>
+          <Name>HorizontalLinePrimitive2</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <StartCap Ref="88" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </HorizontalLinePrimitive2>
+        <VerticalLinePrimitive1 Ref="89" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>12.6,9.8,0.0254,12</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="90" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>596e23931caa475c91bb5aa8cb43346d</Guid>
+          <Name>VerticalLinePrimitive1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <StartCap Ref="91" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive1>
+        <StartPointPrimitive1 Ref="92" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>12.6,9.8,0,0</ClientRectangle>
+          <Name>StartPointPrimitive1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <ReferenceToGuid>596e23931caa475c91bb5aa8cb43346d</ReferenceToGuid>
+        </StartPointPrimitive1>
+        <EndPointPrimitive1 Ref="93" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>12.6,21.8,0,0</ClientRectangle>
+          <Name>EndPointPrimitive1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <ReferenceToGuid>596e23931caa475c91bb5aa8cb43346d</ReferenceToGuid>
+        </EndPointPrimitive1>
+        <VerticalLinePrimitive2 Ref="94" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>4,9.8,0.0254,12</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="95" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>a7eb0ece73694c51a45a513176001d3b</Guid>
+          <Name>VerticalLinePrimitive2</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <StartCap Ref="96" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive2>
+        <StartPointPrimitive2 Ref="97" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>4,9.8,0,0</ClientRectangle>
+          <Name>StartPointPrimitive2</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <ReferenceToGuid>a7eb0ece73694c51a45a513176001d3b</ReferenceToGuid>
+        </StartPointPrimitive2>
+        <EndPointPrimitive2 Ref="98" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>4,21.8,0,0</ClientRectangle>
+          <Name>EndPointPrimitive2</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <ReferenceToGuid>a7eb0ece73694c51a45a513176001d3b</ReferenceToGuid>
+        </EndPointPrimitive2>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>8534bd13db5e4423ad475205376365c8</Guid>
+      <Margins>0.5,0.5,0.3,0.8</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+      <RightToLeft>True</RightToLeft>
+      <Watermark Ref="99" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="100" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>8/25/2019 1:14:25 PM</ReportChanged>
+  <ReportCreated>10/3/2018 3:39:54 PM</ReportCreated>
+  <ReportFile>E:\aa_University_Project\eServices\IAUEC_Apps.UI\ResourceControl\report\QuantityDefenceSession.mrt</ReportFile>
+  <ReportGuid>f21ec49508cb4d24becfd7fdf1fc486d</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2014.3.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="1">
+    <Style1 Ref="101" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>All;Black;2;Solid;False;2;Black</Border>
+      <Brush>Transparent</Brush>
+      <Conditions isList="true" count="0" />
+      <Description />
+      <Font>Microsoft Sans Serif,11,Bold</Font>
+      <HorAlignment>Right</HorAlignment>
+      <Name>Style1</Name>
+      <TextBrush>EmptyBrush</TextBrush>
+    </Style1>
+  </Styles>
+</StiSerializer>

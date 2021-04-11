@@ -1,0 +1,160 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="StudentLoanCMS.master.cs" Inherits="IAUEC_Apps.UI.University.WelfareAffairs.MasterPages.StudentLoanCMS" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <!-- Bootstrap core CSS -->
+
+    <link href="../../../CommonUI/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="../../../CommonUI/fonts/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../../../CommonUI/css/animate.min.css" rel="stylesheet" />
+
+    <!-- Custom styling plus plugins -->
+    <link href="css/custom.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../../../CommonUI/css/maps/jquery-jvectormap-2.0.1.css" />
+    <link href="../../../CommonUI/css/icheck/flat/green.css" rel="stylesheet" />
+    <link href="../../../CommonUI/css/floatexamples.css" rel="stylesheet" type="text/css" />
+
+    <script src="../../../CommonUI/js/jquery.min.js"></script>
+
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="HeaderplaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="nav-md">
+    <form id="form1" runat="server">
+        <div class="container body">
+
+
+            <div class="main_container">
+
+                <div class="col-md-3 left_col">
+                    <div class="left_col scroll-view">
+                        <div class="navbar nav_title" style="border: 0;">
+                            <%--<a id="a_card" runat="server" visible="false" class="site_title"><i class="fa fa-credit-card "></i><span>کارت دانشجویی</span></a>
+                            <a id="a_eshteghal" runat="server" visible="false" class="site_title"><i class="fa fa-file-text  "></i><span>گواهی اشتغال به تحصیل</span></a>
+                            <a id="a_Edit" runat="server" visible="false" class="site_title"><i class="fa fa-pencil-square-o"></i><span>ویرایش اطلاعات فردی</span></a>
+                            <a id="a_tasvieh" runat="server" visible="false" class="site_title"><i class="fa fa-pencil-square-o"></i><span>تسویه حساب غیر حضوری</span></a>
+                            <a id="a_Exam" runat="server" visible="false" class="site_title"><i class="fa fa-pencil-square-o"></i><span>امتحانات</span></a>--%>
+                        </div>
+                        <div class="clearfix"></div>
+                        <br />
+
+                        <!-- sidebar menu -->
+                        <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+
+                            <div class="menu_section">
+
+                                <ul class="nav side-menu">
+                                    <%--<li><a id="a1" runat="server" href="~/University/Exam/Content/sup_exam.pdf">راهنمای مراقبین <span class="fa fa-hand-o-left"></span></a></li>
+                                    <li><a id="a2" runat="server" href="~/University/Exam/Content/forms.rar">دانلود فرمها <span class="fa fa-hand-o-left"></span></a></li>--%>
+                                    <asp:Literal ID="lstreportMenu" runat="server"></asp:Literal>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- top navigation -->
+                <div class="top_nav">
+
+                    <div class="nav_menu">
+                        <nav class="" role="navigation">
+                            <div class="nav toggle">
+                                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                            </div>
+
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="">
+                                    <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        <img src="../../../CommonUI/images/img.jpg" alt="" width="50px" height="50px" /><span style="font-size: 16px" id="usernamelbl" runat="server"></span>
+                                        <span class=" fa fa-angle-down"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
+                                        <li><a id="changePass" runat="server" onserverclick="changePass_ServerClick"><i class="fa fa-key pull-right"></i>تغییر رمز عبور</a>
+                                        </li>
+                                        <li>
+                                            <a id="Returnhome" runat="server" onserverclick="Returnhome_ServerClick">
+
+                                                <i class="fa fa-home pull-right"></i>بازگشت به صفحه اول
+                                            </a>
+                                        </li>
+
+                                        <li><a id="Logout" runat="server" onserverclick="Logout_ServerClick"><i class="fa fa-sign-out pull-right"></i>خروج از سامانه</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+                <!-- /top navigation -->
+
+
+                <!-- page content -->
+                <div class="right_col" role="main">
+
+                    <!-- top tiles -->
+
+                    <!-- /top tiles -->
+                    <asp:ScriptManager ID="ScriptManager1" runat="server">
+                    </asp:ScriptManager>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="dashboard_graph">
+                                <div class="profile_title">
+                                    <asp:ContentPlaceHolder ID="PageTitle" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </div>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+                    <!-- footer content -->
+
+
+                    <!-- /footer content -->
+                </div>
+                <!-- /page content -->
+
+
+            </div>
+
+        </div>
+        <div id="custom_notifications" class="custom-notifications dsp_none">
+            <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
+            </ul>
+            <div class="clearfix"></div>
+            <div id="notif-group" class="tabbed_notifications"></div>
+        </div>
+
+        <script src="../../../CommonUI/js/bootstrap.min.js"></script>
+        <script src="../../../CommonUI/js/custom.js"></script>
+    </form>
+</body>
+</html>

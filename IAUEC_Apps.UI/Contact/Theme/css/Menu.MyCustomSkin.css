@@ -1,0 +1,334 @@
+.RadMenu_MyCustomSkin
+{
+	color: black;
+	font: tahoma;
+	line-height: 34px;
+}
+
+.RadMenu_MyCustomSkin .rmRootGroup
+{
+	padding: 1px !important;
+	background: #25a0da;
+}
+
+.RadMenu_MyCustomSkin .rmGroup
+{
+	margin: 0;
+	padding: 0;
+	padding: 0 !important;
+	border: 1px solid #cdcdcd;
+	background: white;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+@media \0screen\,screen\9
+{
+	.RadMenu_MyCustomSkin .RadMenu .rmRoundedCorners ul.rmGroup,
+	.RadMenu_MyCustomSkin .rmRoundedCorners ul.rmGroup
+	{
+		border: 1px solid #cdcdcd;
+	}
+}
+
+.RadMenu_MyCustomSkin .rmRootGroup .rmItem
+{
+	margin: 0 0 0 1px;
+}
+
+.RadMenu_MyCustomSkin .rmRootGroup .rmFirst
+{
+	margin-left: 0;
+}
+
+.RadMenu_MyCustomSkin .rmGroup .rmItem
+{
+	margin: 0;
+}
+
+.RadMenu_MyCustomSkin .rmRootLink
+{
+	padding: 0 10px !important;
+	border: 1px solid #25a0da;
+	color: white;
+	text-decoration: none;
+	text-transform: lowercase;
+}
+
+.RadMenu_MyCustomSkin .rmRootLink .rmText
+{
+	padding: 0 !important;
+}
+
+.RadMenu_MyCustomSkin .rmRootLink:hover
+{
+	border-color: white;
+}
+
+:root .RadMenu_MyCustomSkin .rmRootLink:hover
+{
+	border-color: rgba(255, 255, 255, 0.5);
+}
+
+.RadMenu_MyCustomSkin .rmRootLink.rmFocused
+{
+	border-color: white;
+}
+
+.RadMenu_MyCustomSkin .rmRootLink.rmDisabled, .RadMenu_MyCustomSkin .rmRootLink.rmDisabled:hover
+{
+	border-color: transparent;
+	color: #8aceec;
+}
+
+.RadMenu_MyCustomSkin .rmGroup .rmLeftImage
+{
+	margin-top: 10px !important;
+}
+
+.RadMenu_MyCustomSkin .rmGroup .rmLink
+{
+	color: black;
+	text-decoration: none;
+}
+
+.RadMenu_MyCustomSkin .rmGroup .rmLink:hover
+{
+	background-color: #dbeddc;
+}
+
+.RadMenu_MyCustomSkin .rmGroup .rmLink.rmSelected,
+.RadMenu_MyCustomSkin .rmGroup .rmLink.rmFocused
+{
+	color: #fff;
+	background-color: #84ad88;
+}
+
+.RadMenu_MyCustomSkin .rmGroup .rmLink.rmDisabled, .RadMenu_MyCustomSkin .rmGroup .rmLink.rmDisabled:hover
+{
+	color: #c5c5c5;
+	background-color: transparent;
+}
+
+.RadMenu_MyCustomSkin .rmRootGroup .rmGroup .rmText.rmExpandTop, .RadMenu_MyCustomSkin .rmRootGroup .rmGroup .rmText.rmExpandDown, .RadMenu_MyCustomSkin .rmRootGroup .rmGroup .rmText.rmExpandRight, .RadMenu_MyCustomSkin .rmRootGroup .rmGroup .rmText.rmExpandLeft
+{
+	*background-image: url('Common/rmArrows.png');
+	background-repeat: no-repeat;
+}
+
+.RadMenu_MyCustomSkin .rmRootGroup .rmGroup .rmText.rmExpandTop:before, .RadMenu_MyCustomSkin .rmRootGroup .rmGroup .rmText.rmExpandDown:before, .RadMenu_MyCustomSkin .rmRootGroup .rmGroup .rmText.rmExpandRight:before, .RadMenu_MyCustomSkin .rmRootGroup .rmGroup .rmText.rmExpandLeft:before
+{
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 12px;
+	background-image: url('Common/radActionsSprite.png');
+}
+
+.RadMenu_MyCustomSkin .rmRootGroup .rmGroup .rmText.rmExpandTop:before
+{
+	right: 10px;
+	background-position: -20px -20px;
+}
+
+.RadMenu_MyCustomSkin .rmRootGroup .rmGroup .rmText.rmExpandDown:before
+{
+	right: 10px;
+	background-position: -20px -70px;
+}
+
+.RadMenu_MyCustomSkin .rmRootGroup .rmGroup .rmText.rmExpandRight:before
+{
+	right: 10px;
+	background-position: -20px -170px;
+}
+
+.RadMenu_MyCustomSkin .rmRootGroup .rmGroup .rmText.rmExpandLeft:before
+{
+	left: 10px;
+	background-position: -20px -120px;
+}
+
+.RadMenu_MyCustomSkin .rmRootGroup .rmGroup .rmText.rmExpandTop
+{
+	background-position: right -7px;
+}
+
+.RadMenu_MyCustomSkin .rmRootGroup .rmGroup .rmText.rmExpandDown
+{
+	background-position: right -57px;
+}
+
+.RadMenu_MyCustomSkin .rmRootGroup .rmGroup .rmText.rmExpandRight
+{
+	background-position: right -157px;
+}
+
+.RadMenu_MyCustomSkin .rmRootGroup .rmGroup .rmText.rmExpandLeft
+{
+	background-position: right -107px;
+}
+
+.RadMenu_MyCustomSkin .rmSeparator
+{
+	overflow: hidden;
+}
+
+.RadMenu_MyCustomSkin .rmSeparator .rmText
+{
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.RadMenu_MyCustomSkin .rmRootGroup .rmSeparator .rmText
+{
+	background-color: white;
+}
+
+.RadMenu_MyCustomSkin .rmGroup .rmSeparator .rmText
+{
+	background-color: #cdcdcd;
+}
+
+.RadMenu_MyCustomSkin .rmHorizontal .rmSeparator
+{
+	padding: 8px 0 !important;
+	width: 1px !important;
+	height: 16px !important;
+}
+
+.RadMenu_MyCustomSkin .rmHorizontal .rmSeparator .rmText
+{
+	width: 1px !important;
+	height: 18px !important;
+}
+
+.RadMenu_MyCustomSkin .rmVertical .rmSeparator
+{
+	padding: 1px 10px !important;
+	width: auto !important;
+	height: 1px !important;
+}
+
+.RadMenu_MyCustomSkin .rmVertical .rmSeparator .rmText
+{
+	width: auto !important;
+	height: 1px !important;
+}
+
+.RadMenu_MyCustomSkin .rmLeftArrow,
+.RadMenu_MyCustomSkin .rmRightArrow,
+.RadMenu_MyCustomSkin .rmTopArrow,
+.RadMenu_MyCustomSkin .rmBottomArrow
+{
+	background-color: #f9f9f9;
+	background-image: url('Common/rmArrows.png');
+	background-repeat: no-repeat;
+}
+
+.RadMenu_MyCustomSkin .rmLeftArrow:hover,
+.RadMenu_MyCustomSkin .rmRightArrow:hover,
+.RadMenu_MyCustomSkin .rmTopArrow:hover,
+.RadMenu_MyCustomSkin .rmBottomArrow:hover
+{
+	background-color: #e8e8e8;
+}
+
+.RadMenu_MyCustomSkin .rmLeftArrow,
+.RadMenu_MyCustomSkin .rmRightArrow
+{
+	width: 16px !important;
+	height: 34px !important;
+}
+
+.RadMenu_MyCustomSkin .rmLeftArrow
+{
+	border-right: 1px solid #cdcdcd;
+	background-position: center -108px;
+}
+
+.RadMenu_MyCustomSkin .rmRightArrow
+{
+	border-left: 1px solid #cdcdcd;
+	background-position: center -158px;
+}
+
+.RadMenu_MyCustomSkin .rmTopArrow,
+.RadMenu_MyCustomSkin .rmBottomArrow
+{
+	width: 100%;
+	height: 16px !important;
+}
+
+.RadMenu_MyCustomSkin .rmTopArrow
+{
+	border-bottom: 1px solid #cdcdcd;
+	background-position: center -17px !important;
+}
+
+.RadMenu_MyCustomSkin .rmBottomArrow
+{
+	border-top: 1px solid #cdcdcd;
+	background-position: center -67px !important;
+}
+
+.RadMenu_MyCustomSkin .rmTopFix,
+.RadMenu_MyCustomSkin .rmTopLeft,
+.RadMenu_MyCustomSkin .rmTopRight,
+.RadMenu_MyCustomSkin .rmBottomFix,
+.RadMenu_MyCustomSkin .rmBottomLeft,
+.RadMenu_MyCustomSkin .rmBottomRight
+{
+	display: none;
+}
+
+/* RTL mode */
+.RadMenu_MyCustomSkin_rtl .rmRootGroup .rmGroup .rmText.rmExpandTop:before
+{
+	left: 10px;
+}
+
+.RadMenu_MyCustomSkin_rtl .rmRootGroup .rmGroup .rmText.rmExpandDown:before
+{
+	left: 10px;
+}
+
+.RadMenu_MyCustomSkin_rtl .rmRootGroup .rmGroup .rmText.rmExpandRight:before
+{
+	left: 10px;
+}
+
+.RadMenu_MyCustomSkin_rtl .rmRootGroup .rmGroup .rmText.rmExpandTop
+{
+	background-position: left -7px;
+}
+
+.RadMenu_MyCustomSkin_rtl .rmRootGroup .rmGroup .rmText.rmExpandDown
+{
+	background-position: left -57px;
+}
+
+.RadMenu_MyCustomSkin_rtl .rmRootGroup .rmGroup .rmText.rmExpandRight
+{
+	background-position: left -157px;
+}
+
+.RadMenu_MyCustomSkin_rtl .rmRootGroup .rmGroup .rmText.rmExpandLeft
+{
+	background-position: left -107px;
+}
+
+.RadMenu_MyCustomSkin .rmHorizontal .rmRootLink .rmToggle
+{
+	margin-left: 0;
+	height: 34px;
+	position: relative;
+	right: -4px;
+}
+
+.RadMenu_MyCustomSkin .rmHorizontal .rmRootLink .rmIcon
+{
+	background-image: url('Common/rmArrows.png');
+	background-position: center -468px;
+}

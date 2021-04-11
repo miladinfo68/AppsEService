@@ -1,0 +1,162 @@
+﻿  @font-face {
+    font-family:'Yekan';/*تعریف یک نام برای فونت*/
+    src:url('Yekan.eot');/*اکسپلورر 9 به بعد*/
+    src:local('Yekan'),/*بررسی نصب بودن فونت در سیستم کاربر*/
+        local('Yekan'),/*برای برخی از مرورگرها مانند سافاری*/
+        url('Yekan.eot?#iefix') format('embedded-opentype'),/*هک برای اکسپلورر 8 و ماقبل*/
+        url('YekanWeb-Regular.woff') format('woff'),/*مرورگر های جدید*/
+        url('Yekan.ttf') format('truetype'),/*تمام مرورگرها به جزء اکسپلورر*/
+        url('Yekan.svg#Yekan') format('svg');/*نسخه های قدیمی سیستم عامل iOS*/
+    font-style:normal;
+    font-weight:normal;
+}  
+
+.tbl {
+        
+        margin: 0px auto;
+        /*margin-top: 20px;*/
+        font-size: 13px;
+        box-shadow: 3px 3px 3px #adadad;
+        border: solid 1px #C3C0C0;
+        font-family:  Yekan;
+        max-width:1039px;
+        overflow:scroll;
+    }
+    fil-parent{
+        width:1059px;
+        overflow:scroll;
+    }
+
+    .tbl td {
+        direction:rtl !important;       
+        
+        text-align:right !important;       
+    }
+    th {
+     text-align:  center !important;
+     font-size:110% !important; 
+    }
+    text-color-black{
+        color:black;
+    }
+
+    report-padding{
+        padding:0px;
+    }
+    h1,h2,h3,h4,h5,h6,.site_title{
+        font-family: B Titr;
+    }
+    input{
+        margin-left:5px;
+    }
+   
+    .radio label, .checkbox label {
+        margin-right: 20px;
+        font-weight: bold;
+    }
+
+    td[colspan="2"] {
+        text-align: center;
+    }
+
+   
+
+    .rtl {
+        text-align: right !important;
+        direction: rtl !important;
+    }
+  
+    p~span{
+        font-family:'B Yekan';
+        
+    }
+
+    .col-sm-3 > p{
+        
+    }
+
+    .modal
+{
+    position: fixed;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: Black;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+    -moz-opacity: 0.7;
+}
+.center
+{
+    z-index: 1000;
+    margin: 300px auto;
+    padding: 10px;
+    width: 200px;
+    background-color: White;
+    border-radius: 5px;
+    filter: alpha(opacity=100);
+    opacity: 1;
+    -moz-opacity: 1;
+}
+.center img
+{
+    height: 46px;
+    width: 46px;
+}
+
+td .rcbInner{
+    height:36px !important;
+    border-top: 1px solid #cccccc !important;
+    border-right: 1px solid #cccccc !important;
+    border-bottom: 1px solid #cccccc !important;
+    border-left:none !important;
+    color:#555555 !important;
+}
+
+td .rcbActionButton{
+    height:36px !important;
+    background-color:white !important;
+    background-image:none;
+    border-top: 1px solid #cccccc !important;
+    border-left: 1px solid #cccccc !important;
+    border-bottom: 1px solid #cccccc !important;
+    border-right:none !important;  
+}
+
+td .RadComboBox_Default .rcbActionButton{
+    background-image:none !important;
+}
+
+td .RadComboBox_Default .rcbInput{
+    height:32px !important;
+    font-family:Yekan,'B Yekan' !important;
+    font-size:14px !important;
+    font-weight:bold !important;
+    padding-right:11px !important; 
+    color:#555555 !important;
+}
+    
+.rcbItem,.rcbHovered{
+    font-family:Yekan,'B Yekan' !important;
+    font-size:13px !important;
+    font-weight:bold !important;
+    color:#555555 !important;
+}
+
+td .RadComboBoxDropDown_Default .rcbHovered{
+    background-color:#2fa4e7 !important;
+    color:white !important;
+    font-family:Yekan,'B Yekan' !important;
+    font-weight:bold !important;
+}
+
+.form-control{
+    padding:0px !important;
+}
+
+.riSingle .riTextBox{
+    border-radius: 0;
+    line-height: 30px;
+    width: 100%;
+}

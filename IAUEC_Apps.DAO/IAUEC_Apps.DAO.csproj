@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C73C31E-6D1D-43F8-9ED1-A530BFE45419}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IAUEC_Apps.DAO</RootNamespace>
+    <AssemblyName>IAUEC_Apps.DAO</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml">
+      <HintPath>D:\servicedll\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>D:\servicedll\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="MyConnections">
+      <HintPath>D:\serviceDLL\MyConnections.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.DirectoryServices.Protocols" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adobe\AdobeMasterDAO.cs" />
+    <Compile Include="Adobe\AssetDAO.cs" />
+    <Compile Include="Adobe\ClassDAO.cs" />
+    <Compile Include="Adobe\DownloadRequestDAO.cs" />
+    <Compile Include="Adobe\ManagementPanelDAO.cs" />
+    <Compile Include="Adobe\ProfPresentDAO.cs" />
+    <Compile Include="Adobe\SessionMonitoringDAO.cs" />
+    <Compile Include="Adobe\SettingDAO.cs" />
+    <Compile Include="Adobe\TADAO.cs" />
+    <Compile Include="CommonDAO\AppsUserAccess.cs" />
+    <Compile Include="CommonDAO\gameDAO.cs" />
+    <Compile Include="CommonDAO\LoginDAO.cs" />
+    <Compile Include="Adobe\PaymentDAO.cs" />
+    <Compile Include="Adobe\ProfessorPresentDAO.cs" />
+    <Compile Include="Adobe\ProfessorPresentDetailsDAO.cs" />
+    <Compile Include="Adobe\RecordsDAO.cs" />
+    <Compile Include="Adobe\StuPresentDAO.cs" />
+    <Compile Include="CommonDAO\CommonDAO.cs" />
+    <Compile Include="CommonDAO\UniversityDAO.cs" />
+    <Compile Include="CommonDAO\UserAccessSection.cs" />
+    <Compile Include="CommonDAO\StudentDAO.cs" />
+    <Compile Include="ConatctDAO\ConatctUnreadPersonalDAO.cs" />
+    <Compile Include="ConatctDAO\ContactDAO.cs" />
+    <Compile Include="ConatctDAO\ContactUnreadGroupDAO.cs" />
+    <Compile Include="ConatctDAO\CountMessagUnreadGroupDAO.cs" />
+    <Compile Include="ConatctDAO\CountMessagUnreadPersonalDAO.cs" />
+    <Compile Include="ConatctDAO\DeleteMessageDAO.cs" />
+    <Compile Include="ConatctDAO\MessageGroupDAO.cs" />
+    <Compile Include="ConatctDAO\MessagePersonalDAO.cs" />
+    <Compile Include="ConatctDAO\MsgUnreadOstadDAO.cs" />
+    <Compile Include="ConatctDAO\MsgUnReadStudentDAO.cs" />
+    <Compile Include="ConverterDAO.cs" />
+    <Compile Include="Email\Email_ClassDAO.cs" />
+    <Compile Include="Email\Email_ConnectDAO.cs" />
+    <Compile Include="Email\ProofTextDAO.cs" />
+    <Compile Include="Email\StudentDAO.cs" />
+    <Compile Include="Email\UserLoginDAO.cs" />
+    <Compile Include="Evaluation\EvaluationDAO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceControl\AccessStudentOperationDBA.cs" />
+    <Compile Include="ResourceControl\CategoryDBAccess.cs" />
+    <Compile Include="ResourceControl\CourseDBAccess.cs" />
+    <Compile Include="ResourceControl\DaneshKadeDBAccess.cs" />
+    <Compile Include="ResourceControl\LocationDBAccess.cs" />
+    <Compile Include="ResourceControl\OptionDBAccess.cs" />
+    <Compile Include="ResourceControl\RC_UserDBAccess.cs" />
+    <Compile Include="ResourceControl\RequestDateTimeDBAccess.cs" />
+    <Compile Include="ResourceControl\RequestDBAccess.cs" />
+    <Compile Include="ResourceControl\Req_Opt_JuncDBAccess.cs" />
+    <Compile Include="ResourceControl\ResourceControlUtility.cs" />
+    <Compile Include="ResourceControl\ResourceDBAccess.cs" />
+    <Compile Include="ResourceControl\Res_Opt_JuncDBAccess.cs" />
+    <Compile Include="ResourceControl\ShortTermDBAccess.cs" />
+    <Compile Include="ResourceControl\SqlDBHelper.cs" />
+    <Compile Include="ResourceControl\SqlDBHelper_ShortCourcse.cs" />
+    <Compile Include="ResourceControl\SqlDBHelper_SIDA.cs" />
+    <Compile Include="ConatctDAO\SendSmsContactDAO.cs" />
+    <Compile Include="StudentInfo\StudentInformationDAO.cs" />
+    <Compile Include="University\CooperationRequest\CooperationRequestDAO.cs" />
+    <Compile Include="University\Education\EducationReportDAO.cs" />
+    <Compile Include="University\Exam\dataTable.cs" />
+    <Compile Include="University\Exam\ExamDAO.cs" />
+    <Compile Include="University\Exam\ExamShowClockDAO.cs" />
+    <Compile Include="University\Exam\RequestDistributionOfStudentDAO.cs" />
+    <Compile Include="University\Faculty\CooperationRequestFaculty.cs" />
+    <Compile Include="University\Faculty\FacultyReportDAO.cs" />
+    <Compile Include="University\GraduateAffair\GraduateFormsDAO.cs" />
+    <Compile Include="University\GraduateAffair\GraduateReportDAO.cs" />
+    <Compile Include="University\GraduateAffair\VahedReshteDAO.cs" />
+    <Compile Include="University\Request\CheckOutDebitDAO.cs" />
+    <Compile Include="University\Request\CheckOutMaliDAO.cs" />
+    <Compile Include="University\Request\CheckOutMashmoolanDAO.cs" />
+    <Compile Include="University\Request\CheckOutNaghsDAO.cs" />
+    <Compile Include="University\Request\CheckOutPajooheshDAO.cs" />
+    <Compile Include="University\Request\CheckOutReportByTypeDAO.cs" />
+    <Compile Include="University\Request\CheckOutRequestDAO.cs" />
+    <Compile Include="University\Request\FeraghatTahsilDAO.cs" />
+    <Compile Include="University\Request\MadarekReportDAO.cs" />
+    <Compile Include="University\Request\PaymentRequestDAO.cs" />
+    <Compile Include="University\Request\ProfessorRequestDAO.cs" />
+    <Compile Include="University\Request\RecordViolationDAO.cs" />
+    <Compile Include="University\Request\RequestStudentEditInfDAO.cs" />
+    <Compile Include="University\Request\Request_GovahiDAO.cs" />
+    <Compile Include="University\Request\Request_StudentCartDAO.cs" />
+    <Compile Include="University\Research\ResearchDAO.cs" />
+    <Compile Include="University\Students\CardQuizTemporaryStudentsDAO.cs" />
+    <Compile Include="University\Students\InformationRationDAO.cs" />
+    <Compile Include="University\Students\ListStudentsBasedOnIGRDDAO.cs" />
+    <Compile Include="University\Students\MilitaryReportDAO.cs" />
+    <Compile Include="University\Students\MilitaryStatusDAO.cs" />
+    <Compile Include="University\Students\PaymentStatusAndEnrollment.cs" />
+    <Compile Include="University\Students\ReportExcellentStuDAO.cs" />
+    <Compile Include="University\Support\PassProfessorDAO.cs" />
+    <Compile Include="University\Support\ResetPasswordDAO.cs" />
+    <Compile Include="University\Wallet\WalletDAO.cs" />
+    <Compile Include="University\WelfareAffairs\WelfareAffairsDAO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="InitialReg\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IAUEC_Apps.DAC\IAUEC_Apps.DAC.csproj">
+      <Project>{cd796342-5fbc-4ec5-a449-2fc349133290}</Project>
+      <Name>IAUEC_Apps.DAC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IAUEC_Apps.DTO\IAUEC_Apps.DTO.csproj">
+      <Project>{33f96cef-f280-4c54-92f0-4b124f1ae61d}</Project>
+      <Name>IAUEC_Apps.DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,282 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="IAUEC_Apps.UI.Adobe.MastePage.MasterPage" %>
+<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>دانشگاه آزاد اسلامی</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/bootstrap-rtl.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap-progressbar-3.1.1-rtl.css">
+    <link rel="stylesheet" href="../css/jquery-jvectormap-rtl.css">
+    <link href="../css/style-rtl.css" rel="stylesheet">
+    <link href="../css/responsive-rtl.css" rel="stylesheet">
+ 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; text-align:center; position: relative;'> <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg" border="0" height="42" width="820" alt="" /></a></div><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="js/html5.js"></script><![endif]-->
+<!--[if lt IE 9]><link rel="stylesheet" href="css/ie_style.css" type="text/css" media="screen"><![endif]-->
+
+   
+    <asp:ContentPlaceHolder ID="HeaderplaceHolder" runat="server"></asp:ContentPlaceHolder>
+      <script language="javascript" type="text/javascript">
+          function postRefId(refIdValue) {
+              var form = document.createElement("form");
+              form.setAttribute("method", "POST");
+              form.setAttribute("action", "<%= PgwSite %>");
+             form.setAttribute("target", "_self");
+             var hiddenField = document.createElement("input");
+             hiddenField.setAttribute("name", "RefId");
+             hiddenField.setAttribute("value", refIdValue);
+             form.appendChild(hiddenField);
+             document.body.appendChild(form);
+             form.submit();
+             document.body.removeChild(form);
+         }
+    </script>
+</head>
+<body >
+  <script type="text/javascript">
+      function submitform() {
+          document.forms["form1"].submit();
+      }
+</script>
+    <form id="form1" runat="server" method="post">
+         <input type="hidden" runat="server" id="LogStatus"  name="LogStatus"  style="width: 200px;" />
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+      </asp:ScriptManager>
+     <telerik:RadWindowManager ID="rdw1" runat="server" Height="400px" 
+       Width="570px">
+    </telerik:RadWindowManager>
+
+<nav class="navigation">
+<div class="container-fluid">
+<!--Logo text start-->
+<div class="header-logo">
+    <a title="">
+        <h1>دانشگاه آزاد اسلامی واحد الکترونیکی</h1>
+    </a>
+</div>
+<!--Logo text End-->
+<div class="top-navigation">
+<!--Collapse navigation menu icon start -->
+
+
+
+<!--Collapse navigation menu icon end -->
+<!--Top Navigation Start-->
+
+<ul>
+   <li>
+        <a href="../Pages/learning.pdf" target="_blank">
+          
+            <i class="fa fa-info-circle"><span style="font-family:Tahoma;font-size:small">دریافت فایل راهنما</span> </i>
+        </a>
+    </li>
+    
+    <li class="dropdown">
+        <!--Email drop down start-->
+        <a class="dropdown-toggle" data-toggle="dropdown" href="../Pages/ConfirmCheckList.aspx">
+            <span class="fa fa-shopping-cart"></span>
+            <span class="badge badge-red" id="ShoppingCounter" runat="server"></span>
+        </a>
+
+        
+        <!--Email drop down end-->
+    </li>
+    <li>
+        <a>
+            <asp:Button ID="btn_home" OnClick="btn_home_Click" runat="server" BackColor="Transparent" BorderStyle="None" Text="صفحه اصلی" Font-Names="Tahoma" Font-Size="Small" CausesValidation="False" />
+          <i class="fa fa-home"></i>
+             </a>
+    </li>
+    
+    
+    <li>
+        <a>
+            <asp:Button ID="exitButton" runat="server"  BackColor="Transparent" BorderStyle="None" OnClick="exitButton_Click" Text="خروج" Font-Names="Tahoma" Font-Size="Small" />
+            <i class="fa fa-power-off"></i>
+        </a>
+    </li>
+
+</ul>
+<!--Top Navigation End-->
+</div>
+</div>
+</nav>
+<!--Navigation Top Bar End-->
+<section id="main-container">
+
+<!--Left navigation section start-->
+<section id="left-navigation">
+<!--Left navigation user details start-->
+<div class="user-image">
+    <telerik:RadBinaryImage ID="PersonalImg" runat="server" Height="150px" ResizeMode="Fit" Width="124px"   />
+    <div class="user-online-status"> </div>
+</div>
+
+<!--Left navigation user details end-->
+
+<!--Phone Navigation Menu icon start-->
+<div class="phone-nav-box">
+    
+    
+    <div class="clearfix"></div>
+</div>
+<!--Phone Navigation Menu icon start-->
+
+<!--Left navigation start-->
+<ul class="mainNav">
+<li class="active">
+    <a class="active">
+        <i class="active fa fa-user"></i> نام:<span id="stName" runat="server" ></span>
+    </a>
+</li>
+    <li class="active">
+    <a class="active">
+        <i class="active fa fa-user"></i>نام خانوادگی: <span id="stLastName" runat="server"></span>
+    </a>
+</li>
+    <li class="active">
+    <a class="active">
+        <i class="active fa fa-book"></i>رشته: <span id="stField" runat="server"></span>
+    </a>
+</li>
+    <li>
+        
+            <i class="fa fa-shopping-cart"></i>
+            <span class="badge badge-red">لیست درخواست ها</span>
+     
+    </li>
+    <li>
+          <telerik:RadAjaxLoadingPanel ID="RadAjaxLoadingPanel1" runat="server">
+    </telerik:RadAjaxLoadingPanel>
+    <telerik:RadAjaxPanel ID="RadAjaxPanel1" runat="server" LoadingPanelID="RadAjaxLoadingPanel1">
+       <asp:Label ID="Label1" runat="server" Visible="false"></asp:Label>
+         <telerik:RadGrid ID="grdShopping" AllowPaging="true" PageSize="20" runat="server" AutoGenerateColumns="False" CellSpacing="0" GridLines="None" Skin="Sunset"  >
+            <MasterTableView ShowFooter="True" DataKeyNames="RequestID" NoMasterRecordsText="تعداد درخواست:0">
+                <HeaderStyle Font-Size="X-Small" />
+                <RowIndicatorColumn Visible="False">
+                </RowIndicatorColumn>
+                <ExpandCollapseColumn Created="True">
+                </ExpandCollapseColumn>
+                <Columns>
+                    <%-- <telerik:GridButtonColumn ConfirmText="درخواست حذف شود?" ButtonType="ImageButton"
+                                    CommandName="Delete" Text="حذف درخواست" UniqueName="DeleteColumn">
+                                    <HeaderStyle Width="20px"></HeaderStyle>
+                                    <ItemStyle HorizontalAlign="Center" ></ItemStyle>
+                                </telerik:GridButtonColumn>--%>
+                    <telerik:GridBoundColumn DataField="AssetClassCode" HeaderText="مشخصه کلاس">
+                    </telerik:GridBoundColumn>
+                    <telerik:GridBoundColumn DataField="FileDate" HeaderText="جلسه">
+                    </telerik:GridBoundColumn>
+                    <telerik:GridCalculatedColumn Aggregate="Sum" DataFields="Fee" DataFormatString="{0:N0}" DataType="System.Double" Expression="{0}" FooterText="جمع کل : " HeaderText="مبلغ" ItemStyle-Font-Bold="true" UniqueName="SumPrice">
+                        <ItemStyle Font-Bold="True" />
+                    </telerik:GridCalculatedColumn>
+                </Columns>
+            </MasterTableView>
+        </telerik:RadGrid>
+        
+   
+  </telerik:RadAjaxPanel>
+        
+    </li>
+    <li style="text-align: center">
+      <asp:Button ID="Paybtn" runat="server" Text="پرداخت" CssClass="alarmPay" Font-Names="Tahoma" Font-Size="Small" Visible="false" OnClick="Paybtn_Click" />
+    </li>
+    <li>
+        
+            <i class="fa fa-shopping-cart"></i>
+            <span class="badge badge-red">دسترسی ها</span>
+     
+    </li>
+    <li>
+    <a class="active" href="../../adobe/Pages/ClassList.aspx">
+        <i class="active fa fa-pencil"></i>درخواست جدید
+    </a>
+</li>
+     <li id="dnlNav" runat="server" visible="false">
+    <a class="active" href="../../adobe/Pages/DownloadFile.aspx">
+        <i class="active fa fa-download"></i>دریافت فایل ها
+    </a>
+</li>
+    <li id="lstPayment" runat="server" >
+    <a class="active" href="../../adobe/Pages/PaymentList.aspx">
+        <i class="active fa fa-file-text-o"></i>لیست پرداخت ها
+    </a>
+</li>
+    <li id="Li1" runat="server" >
+    <a class="active" href="../Pages/Archive.aspx">
+        <i class="active fa fa-file-text-o"></i>آرشیو
+    </a>
+</li>
+   <%--  <li id="email" runat="server" >
+    <a class="active" href="../../EmailReg/Pages/login.aspx">
+        <i class="active fa fa-envelope"></i>ورود به سیستم درخواست ایمیل
+    </a>
+</li>--%>
+</ul>
+    
+<!--Left navigation end-->
+</section>
+<!--Left navigation section end-->
+
+
+<!--Page main section start-->
+<section id="min-wrapper">
+<div id="main-content">
+<div class="container-fluid">
+<div class="row">
+    <div class="col-md-12">
+        <!--Top header start-->
+       
+    
+        <h3 class="ls-top-header" >سامانه خدمات الکترونیکی</h3>
+        <!--Top header end -->
+
+        <!--Top breadcrumb start --> 
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-home"></i></a></li><li class="active">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
+        
+       
+        </asp:ContentPlaceHolder></li>
+        </ol>
+        <!--Top breadcrumb start -->
+    </div>
+</div>
+<!-- Main Content Element  Start-->
+<div class="row">
+    <div class="col-md-12">
+
+                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                  
+    </div>
+
+    
+</div>
+
+
+
+
+</div>
+
+    </div>
+
+</section>
+<!--Page main section end -->
+<!--Right hidden  section start-->
+
+<!--Right hidden  section end -->
+
+</section>
+
+</form>
+   
+</body>
+</html>
+
+   

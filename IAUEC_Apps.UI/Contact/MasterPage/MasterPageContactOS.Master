@@ -1,0 +1,317 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPageContactOS.master.cs" Inherits="IAUEC_Apps.UI.Contact.MasterPage.MasterPageContactOS" %>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="/Contact/Theme/css/bootstrap.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+ <link href="/Contact/Theme/fonts/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="/Contact/css/custom.css" rel="stylesheet" />
+    <link href="/Contact/css/messsages.css" rel="stylesheet" />
+    <style type="text/css">
+        #sidebar-menu span.fa {
+            margin-top: 15px;
+            /*font-size: 15px !important;*/
+        }
+
+        #table-rowSt {
+            cursor: pointer;
+        }
+    </style>
+
+
+
+
+
+
+    <script src="/Contact/Theme/js/jquery.min.js"></script>
+    <script src="/Contact/Theme/js/bootstrap.min.js"></script>
+
+
+    <!--[if lt IE 9]>
+        <script src="../assets/js/ie8-responsive-file-warning.js"></script>
+        <![endif]-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <script src="/Contact/Script/ConvertDate.js"></script>
+
+    <%-- <script src="../Script/SoundRecorder.js"></script>--%>
+    <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
+
+    <asp:ContentPlaceHolder ID="HeaderplaceHolder" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body class="nav-md">
+    <div class="modal fade" id="exampleModal" tabindex="-1" style="opacity: 0.9; color: black; direction: rtl; text-align: right; font-size: 20PX" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    درحال توسعه...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">تایید</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <form id="form1" runat="server">
+        <asp:Label runat="server" ID="user" CssClass="hidden"></asp:Label>
+        <input type="hidden" runat="server" id="LogStatus" name="LogStatus" style="width: 200px;" />
+        <div class="container body">
+            <telerik:RadScriptManager ID="RadScriptManager1" runat="server"></telerik:RadScriptManager>
+
+            <div class="main_container">
+
+                <div class="col-md-3 left_col">
+                    <div class="left_col scroll-view">
+                        <div class="navbar nav_title" style="border: 0;">
+                            <a id="a_loan" runat="server" visible="true" class="site_title"><span style="margin-left:3px;margin-right:3px">امورپژوهشی</span> <i class="fa fa-card "></i></a>
+                        </div>
+                        <div class="clearfix"></div>
+                        <br />
+
+                        <!-- sidebar menu -->
+                        <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                            <div class="menu_section">
+                                <ul class="nav side-menu">
+                                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                                        <div class="menu_section">
+                                            <ul class="nav side-menu">
+
+                                                <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+                                                <li>
+                                                    <a runat="server" id="nav_StudentAndTheacherChatting" onserverclick="nav_StudentAndTheacherChatting_ServerClick">گفتگو با دانشجویان 
+                                                        <span class="fa fa-hand-o-left"></span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a runat="server" id="nav_PortalResearch" onserverclick="nav_PortalResearch_ServerClick">پرتال پژوهش
+                                                        <span class="fa fa-hand-o-left"></span>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a runat="server" id="nav_AudioAndVideoCommunication" 
+                                                        data-toggle="modal" data-target="#exampleModal">ارتباط صوتی و تصویری
+                                                        <span class="fa fa-hand-o-left"></span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a runat="server" id="nav_DefenceMeetingConcordance"  onserverclick="nav_DefenceMeetingConcordance_ServerClick">هماهنگی جلسات دفاع
+                                                        <span class="fa fa-hand-o-left"></span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a runat="server" id="nav_SendMessageToTeacher"  data-toggle="modal" data-target="#exampleModal">ارسال پیام به استاد 
+                                                        <span class="fa fa-hand-o-left"></span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a runat="server" id="nav_OnlineDefensePlayback" onserverclick="nav_OnlineDefensePlayback_ServerClick">برگزاری دفاع‌های آنلاین
+                                                        <span class="fa fa-hand-o-left"></span>
+                                                    </a>
+                                                </li>
+                                                                                                <li>
+                                                    <a runat="server" id="nav_AcceptScore" onserverclick="nav_AcceptScore_ServerClick">تاییدیه نمره دفاع
+                                                        <span class="fa fa-hand-o-left"></span>
+                                                    </a>
+                                                </li>
+                                                                                                                                                <li>
+                                                    <a runat="server" id="navTestDefence" onserverclick="navTestDefence_ServerClick">جلسات دفاع آنلاین آزمایشی
+                                                        <span class="fa fa-hand-o-left"></span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /sidebar menu -->
+                    </div>
+                </div>
+
+                <!-- top navigation -->
+                <div class="top_nav">
+
+                    <div class="nav_menu">
+                        <nav class="" role="navigation">
+                            <div class="nav toggle">
+                                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                            </div>
+
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="">
+                                    <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        <telerik:RadBinaryImage ID="PersonalImage" runat="server" VisibleWithoutSource="False" Style="width: 50px; height: 50px" />
+                                        <span style="font-size: 16px" id="stName" runat="server"></span>
+                                        <span class=" fa fa-angle-down"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
+                                        <li>
+                                            <a id="Returnhome" runat="server" onserverclick="Returnhome_ServerClick">
+                                                <i class="fa fa-home pull-right"></i>بازگشت به صفحه اول
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a id="Logout" runat="server" onserverclick="Logout_ServerClick">
+                                                <i class="fa fa-sign-out pull-right"></i>خروج از سامانه
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+
+
+
+
+                                <li>
+
+
+                                    <ul class="nav navbar-nav" style="float: right">
+                                        <!-- Messages: style can be found in dropdown.less-->
+                                        <li>
+                                            <div class="btn-group">
+                                                <div class="dropdown dropdownMsg">
+                                                    <button class="btn btn-primary dropdown-toggle btnMsgAlert" type="button" id="menu1" style="margin: 12px" data-toggle="dropdown">
+                                                        <span class="badge badge-light badgeMsg"><%= ((Session["CountUnRead"]==null||Session["CountUnRead"].ToString()=="0")?"0":Session["CountUnRead"]) %></span>
+                                                        <span style="margin-right: 2px; font-size: 12px">پیام ها خوانده نشده 
+                                                        </span>
+                                                        <i class="fa fa-envelope-o"></i>
+
+
+                                                    </button>
+                                                    <ul class="dropdown-menu dropDownNotif " role="menu" aria-labelledby="menu1">
+                                                        <%
+                                                            var dtContactUnread = Session["ContactUnread"] as System.Data.DataTable;
+                                                            if (dtContactUnread != null && dtContactUnread.Rows.Count > 0)
+                                                            {
+                                                                for (int i = 0; i < dtContactUnread.Rows.Count; ++i)
+                                                                { %>
+
+
+                                                        <li class="text-right " role="presentation"><a class="menuMsg" role="menuitem" tabindex="-1"
+                                                            href='<%=string.Format("/Contact/ContactOstad/ContactByStudent.aspx?Flag_Grp={0}&IdGrpOrPerson={1}",
+                                                            dtContactUnread.Rows[i]["Flag_Grp"].ToString(),
+                                                            (dtContactUnread.Rows[i]["IdGrpOrPerson"]!=null && dtContactUnread.Rows[i]["IdGrpOrPerson"].ToString().Trim()!=""?
+                                                            dtContactUnread.Rows[i]["IdGrpOrPerson"].ToString().Trim():"-1")
+                                                                                         ) %>'>
+                                                            <div class="senderId hidden"><%: dtContactUnread.Rows[i]["IdGrpOrPerson"] %></div>
+                                                            <div class="Flag_GrpB hidden"><%: dtContactUnread.Rows[i]["Flag_Grp"] %></div>
+                                                            <%if (dtContactUnread.Rows[i]["Flag_Grp"].ToString().Trim() == "True")
+                                                                { %>
+                                                            <div class="notifMsg">
+
+                                                                <i class="fa fa-envelope"></i><span style="padding-left: 3px; padding-right: 3px">تعداد پیام</span>    <span style="padding-left: 3px"><%: dtContactUnread.Rows[i]["CountGroup"]  %></span><span>-</span>
+                                                                <i class="fa fa-users"></i><span style="padding-left: 3px">گروه </span><span><%: dtContactUnread.Rows[i]["fullName"]  %></span>
+                                                            </div>
+                                                            <%}
+                                                                else if (dtContactUnread.Rows[i]["Flag_Grp"].ToString().Trim() == "False")
+                                                                { %>
+                                                            <div class="notifMsg">
+
+                                                                <i class="fa fa-envelope"></i><span style="padding-left: 3px; padding-right: 3px">تعداد پیام</span>    <span style="padding-left: 3px"><%: dtContactUnread.Rows[i]["CountGroup"]  %></span><span>-</span>
+                                                                <i class="fa fa-user"></i><span style="padding-left: 3px">شخص </span><span><%: dtContactUnread.Rows[i]["fullName"]  %></span>
+                                                            </div>
+                                                            <%}%>
+
+                                                        </a></li>
+
+
+                                                        <%  }
+                                                            }%>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+
+
+                        </nav>
+                    </div>
+
+                </div>
+                <!-- /top navigation -->
+
+
+                <!-- page content -->
+                <div class="right_col" role="main">
+
+                    <!-- top tiles -->
+
+                    <!-- /top tiles -->
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="dashboard_graph" dir="rtl">
+                                <div class="profile_title">
+                                    <asp:ContentPlaceHolder ID="head" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </div>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+                    <!-- footer content -->
+
+
+                    <!-- /footer content -->
+                </div>
+                <!-- /page content -->
+
+            </div>
+
+        </div>
+        <div id="custom_notifications" class="custom-notifications dsp_none">
+            <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
+            </ul>
+            <div class="clearfix"></div>
+            <div id="notif-group" class="tabbed_notifications"></div>
+        </div>
+
+        <%--    <script src="../../../CommonUI/js/custom.js"></script>--%>
+        <script src="/Contact/Script/recorder.js"></script>
+    </form>
+    <%-- <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>--%>
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+﻿.circles {
+    margin-bottom: -10px;
+}
+
+.circle {
+    width: 100px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    line-height: 1.2;
+}
+
+    .circle canvas {
+        vertical-align: top;
+    }
+
+    .circle strong {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        line-height: 40px;
+        font-size: 30px;
+    }
+
+        .circle strong i {
+            font-style: normal;
+            font-size: 0.6em;
+            font-weight: normal;
+        }
+
+    .circle span {
+        display: block;
+        color: #aaa;
+        margin-top: 12px;
+    }
+.DefenceSubject {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px !important;
+}
+img {
+    margin-left: 2px;
+}
+
+#myProgress {
+    width: 100%;
+    background-color: #dedede;
+    border-radius: 5px;
+    /*border: 1px solid;*/
+}
+
+#myBar {
+    width: 1%;
+    height: 20px;
+    background-color: green;
+    border-radius: 5px;
+}
+
+.tableBorder {
+    border: 2px solid #73879c !important;
+    background-color: #1a82c3 !important;
+    color: aliceblue !important;
+}
+
+    .tableBorder th {
+        border: 1px solid #73879c;
+    }
+
+.backColortable {
+    background-color: #1A82C3;
+}
+
+.table-hover {
+    background-color: #c5dbf3 !important;
+}
+
+    .table-hover > tbody > tr:not(.tableBorder):hover {
+        background-color: #038677 !important;
+        color: whitesmoke;
+    }
+.tableBorder {
+    border: 2px solid whitesmoke;
+}
+
+    .tableBorder th {
+        border: 1px solid whitesmoke;
+    }
+
+.backColortable {
+    background-color: #1A82C3;
+}
+
+a.pcalBtn {
+    position: relative;
+    margin-right: -22px;
+    vertical-align: middle;
+}
+
+.RadPicker .rcSelect {
+    left: 1px;
+}
+
+.rcTimePopup {
+    border-right: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+}
+
+.RadInput .RadInput_Default .RadInputRTL .RadInputRTL_Default {
+    border-right: 1px solid #cdcdcd;
+}
+
+.RadPicker .RadInput > input {
+    float: right !important;
+}
+
+.RadPicker .riTextBox {
+    padding-left: 4.286em !important;
+    text-align: center !important;
+}
+
+.radWindow {
+    text-align: center;
+}
+.pcalWrapper {
+    position: relative;
+}
+
+    .pcalWrapper > input {
+        padding-right: 30px;
+    }
+
+    /*.pcalBtn.disabled {
+            pointer-events: none;
+            cursor: default;
+        }*/
+
+    .pcalWrapper > a.pcalBtn {
+        position: absolute;
+        right: 7px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+.btnStudentPanel, .btnProfpannel {
+    clear: both;
+    float: right;
+    color: white;
+    background-color: green;
+    margin-right: 10px;
+}
+
+.lblHeaders {
+    float: right;
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+.lblShowErrorMessage {
+    /*float:right;           
+            padding-right:20px;*/
+    font-size: 20px;
+    color: red;
+}
+
+.msgWar {
+    color: blue;
+    font-size: 20px;
+}
+
+.pnl_First {
+    direction: rtl;
+    text-align: center;
+}

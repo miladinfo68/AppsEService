@@ -1,0 +1,9 @@
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DTO\bin\Debug\IAUEC_Apps.DTO.XML
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DTO\bin\Debug\IAUEC_Apps.DTO.dll
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DTO\bin\Debug\IAUEC_Apps.DTO.pdb
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DTO\bin\Debug\DocumentFormat.OpenXml.dll
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DTO\obj\Debug\IAUEC_Apps.DTO.csproj.CoreCompileInputs.cache
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DTO\obj\Debug\IAUEC_Apps.DTO.csproj.CopyComplete
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DTO\obj\Debug\IAUEC_Apps.DTO.dll
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DTO\obj\Debug\IAUEC_Apps.DTO.pdb
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.DTO\obj\Debug\IAUEC_Apps.DTO.csprojAssemblyReference.cache

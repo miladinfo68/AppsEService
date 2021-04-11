@@ -1,0 +1,184 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FacultyMasterPage.master.cs" Inherits="IAUEC_Apps.UI.University.Faculty.MasterPages.FacultyMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta charset="utf-8"/>
+    <link href="../../Theme/css/bootstrap-rtl.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../../Theme/css/bootstrap-progressbar-3.1.1-rtl.css"/>
+    <link rel="stylesheet" href="../../Theme/css/jquery-jvectormap-rtl.css"/>
+    <link href="../../Theme/css/style-rtl.css" rel="stylesheet"/>
+    <link href="../../Theme/css/responsive-rtl.css" rel="stylesheet"/>
+    <link href="../../Theme/css/style.css" rel="stylesheet" />
+
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; text-align:center; position: relative;'> <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg" border="0" height="42" width="820" alt="" /></a></div><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="js/html5.js"></script><![endif]-->
+<!--[if lt IE 9]><link rel="stylesheet" href="css/ie_style.css" type="text/css" media="screen"><![endif]-->
+
+   
+    <asp:ContentPlaceHolder ID="HeaderplaceHolder" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+       <nav class="navigation">
+<div class="container-fluid">
+<!--Logo text start-->
+<div class="header-logo">
+    <a href="#" title="">
+        <h1>دانشگاه آزاد اسلامی واحد الکترونیکی</h1>
+    </a>
+</div>
+
+<div class="top-navigation">
+<ul>
+   
+    
+    <li class="dropdown">
+      
+    </li>
+    
+    
+    <li>
+        <a>
+            <asp:Button ID="btn_home"  runat="server" BackColor="Transparent" BorderStyle="None" Text="صفحه اصلی" Font-Names="Tahoma" Font-Size="Small" CausesValidation="False" />
+          <i class="fa fa-home"></i>
+             </a>
+    </li>
+    <li>
+        <a>
+            <asp:Button ID="exitButton" runat="server"  BackColor="Transparent" BorderStyle="None"  Text="خروج" Font-Names="Tahoma" Font-Size="Small" CausesValidation="False" />
+            <i class="fa fa-power-off"></i>
+        </a>
+    </li>
+    <li>
+        <a>
+            <asp:Button ID="btn_changePassword" runat="server" BackColor="Transparent" BorderStyle="None" Text="تغییر رمز عبور"  Font-Names="Tahoma" Font-Size="Small"  />
+            <i class="fa fa-key"></i></a>
+       
+    </li>
+</ul>
+
+</div>
+</div>
+</nav>
+
+<section id="main-container">
+
+<!--Left navigation section start-->
+<section id="left-navigation">
+<!--Left navigation user details start-->
+<div class="user-image">
+    <img src="../../Theme/images/AzadLogo.png" />
+    <div class="user-online-status"> </div>
+</div>
+
+<!--Left navigation user details end-->
+
+<!--Phone Navigation Menu icon start-->
+<div class="phone-nav-box">
+    
+    
+    <div class="clearfix"></div>
+</div>
+<!--Phone Navigation Menu icon start-->
+
+<!--Left navigation start-->
+<ul class="mainNav">
+<li class="active">
+    <a class="active">
+        <i class="active fa fa-user"></i> نام:<span id="stName" runat="server" ></span>
+    </a>
+</li>
+
+    
+    
+    <li>
+        
+            <i class="fa fa-shopping-cart"></i>
+            <span class="badge badge-red">دسترسی ها</span>
+     
+    </li>
+<asp:ListView ID="lstmenu" runat="server" >
+        <ItemTemplate>
+
+    <li>
+        <a class="active" href='../CMS/<%#Eval("MenuLink") %>?id=<%#Eval("linkCode") %>'>
+            <i class='<%#Eval("icon") %>'></i><%#Eval("MenuName") %>
+        </a>
+    </li>
+      </ItemTemplate>
+    </asp:ListView>
+</ul>
+    
+<!--Left navigation end-->
+</section>
+<!--Left navigation section end-->
+
+
+<!--Page main section start-->
+<section id="min-wrapper">
+<div id="main-content">
+<div class="container-fluid">
+<div class="row">
+    <div class="col-md-12">
+        <!--Top header start-->
+       
+    
+        <h3 class="ls-top-header" >سامانه خدمات الکترونیکی<asp:ScriptManager ID="ScriptManager2" runat="server">
+            </asp:ScriptManager>
+        </h3>
+        <!--Top header end -->
+
+        <!--Top breadcrumb start --> 
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-home"></i></a></li><li class="active">
+        <asp:ContentPlaceHolder ID="PageTitle" runat="server"></asp:ContentPlaceHolder></li>
+        </ol>
+        <!--Top breadcrumb start -->
+    </div>
+</div>
+<!-- Main Content Element  Start-->
+<div class="row">
+    <div class="col-md-12">
+        <div class="memberBox">
+            
+           
+            <div class="memberBox-details">
+                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                         <p>
+                             <br />
+                         </p>
+                         <p>
+                         </p>
+                         <p>
+                         </p>
+        
+        </asp:ContentPlaceHolder>
+                  </div>
+        </div>
+    </div>
+
+    
+</div>
+
+
+
+
+</div>
+
+    </div>
+
+</section>
+<!--Page main section end -->
+<!--Right hidden  section start-->
+
+<!--Right hidden  section end -->
+
+</section>
+    </div>
+    </form>
+</body>
+</html>

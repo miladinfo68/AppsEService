@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'BTitrBold';
+    src: url('btitrbd.eot');
+    src: url('btitrbd.eot') format('embedded-opentype'),
+         url('btitrbd.woff') format('woff'),
+         url('btitrbd.ttf') format('truetype'),
+         url('btitrbd.svg#BTitrBold') format('svg');
+}

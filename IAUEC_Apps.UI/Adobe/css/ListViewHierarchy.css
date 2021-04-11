@@ -1,0 +1,74 @@
+﻿.wrapper {
+    width: 100%;
+    border: 1px solid #C85353;
+    font-family: tahoma;
+    font-size: 12px;
+    line-height: 16px;
+}
+ 
+.products {
+    empty-cells: show;
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+    text-align : center;
+    font-weight: bold;
+    color: #000000;
+}
+.products th {
+    background-color: #963130;
+    padding: 5px;
+    border-bottom: 1px solid #F2D9D9;
+    color: #FFFFFF;
+    text-align: center;
+    width: 100%;
+   
+  
+}
+.products td
+{
+     border: 1px solid #F2D9D9;
+     border-style: none none solid none;
+     padding: 4px 7px 3px 7px;
+     font-weight: bold;
+}
+.products th.expand,
+.products td.expand
+{
+     width: 20px;
+     padding:0 0 0 3px;
+}
+.products tr td.expand {
+    border-color: #F2D9D9;
+    
+}
+.products tr.expanded td, .orders td.expand {
+    background-color: #E4ABAB;
+    
+}
+.products tr td.expand img
+{
+     cursor: pointer;
+}
+.orders td
+{
+     padding:0;
+     width:auto;
+}
+.orders table
+{
+     table-layout:fixed;
+     border-collapse:collapse;
+     width:100%;
+}
+.orders table td
+{
+     width:130px;
+     padding: 4px 7px 3px 7px;
+     padding:3px 3px 3px 7px;
+}
+ 
+.orders table tr:last-child td
+{
+     border-bottom:none;
+}

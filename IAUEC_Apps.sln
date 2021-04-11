@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IAUEC_Apps.DAO", "IAUEC_Apps.DAO\IAUEC_Apps.DAO.csproj", "{4C73C31E-6D1D-43F8-9ED1-A530BFE45419}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IAUEC_Apps.DTO", "IAUEC_Apps.DTO\IAUEC_Apps.DTO.csproj", "{33F96CEF-F280-4C54-92F0-4B124F1AE61D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IAUEC_Apps.Business", "IAUEC_Apps.Business\IAUEC_Apps.Business.csproj", "{97EDB8E0-F1BA-4052-AF8A-3B8AE2A4D8AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IAUEC_Apps.DAC", "IAUEC_Apps.DAC\IAUEC_Apps.DAC.csproj", "{CD796342-5FBC-4EC5-A449-2FC349133290}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IAUEC_Apps.UI", "IAUEC_Apps.UI\IAUEC_Apps.UI.csproj", "{A9CFD925-487C-4458-958E-85BC33EA0388}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C73C31E-6D1D-43F8-9ED1-A530BFE45419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C73C31E-6D1D-43F8-9ED1-A530BFE45419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C73C31E-6D1D-43F8-9ED1-A530BFE45419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C73C31E-6D1D-43F8-9ED1-A530BFE45419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33F96CEF-F280-4C54-92F0-4B124F1AE61D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33F96CEF-F280-4C54-92F0-4B124F1AE61D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33F96CEF-F280-4C54-92F0-4B124F1AE61D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33F96CEF-F280-4C54-92F0-4B124F1AE61D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97EDB8E0-F1BA-4052-AF8A-3B8AE2A4D8AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97EDB8E0-F1BA-4052-AF8A-3B8AE2A4D8AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97EDB8E0-F1BA-4052-AF8A-3B8AE2A4D8AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97EDB8E0-F1BA-4052-AF8A-3B8AE2A4D8AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD796342-5FBC-4EC5-A449-2FC349133290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD796342-5FBC-4EC5-A449-2FC349133290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD796342-5FBC-4EC5-A449-2FC349133290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD796342-5FBC-4EC5-A449-2FC349133290}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9CFD925-487C-4458-958E-85BC33EA0388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9CFD925-487C-4458-958E-85BC33EA0388}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9CFD925-487C-4458-958E-85BC33EA0388}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9CFD925-487C-4458-958E-85BC33EA0388}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EBFDECE2-F6CB-4DE2-8B54-BC08F3208879}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.4.21:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = IAUEC_Apps.DAC\\IAUEC_Apps.DAC.csproj
+		SccProjectName1 = IAUEC_Apps.DAC
+		SccLocalPath1 = IAUEC_Apps.DAC
+		SccProjectUniqueName2 = IAUEC_Apps.DAO\\IAUEC_Apps.DAO.csproj
+		SccProjectName2 = IAUEC_Apps.DAO
+		SccLocalPath2 = IAUEC_Apps.DAO
+		SccProjectUniqueName3 = IAUEC_Apps.Business\\IAUEC_Apps.Business.csproj
+		SccProjectName3 = IAUEC_Apps.Business
+		SccLocalPath3 = IAUEC_Apps.Business
+		SccProjectUniqueName4 = IAUEC_Apps.DTO\\IAUEC_Apps.DTO.csproj
+		SccProjectName4 = IAUEC_Apps.DTO
+		SccLocalPath4 = IAUEC_Apps.DTO
+		SccProjectUniqueName5 = IAUEC_Apps.UI\\IAUEC_Apps.UI.csproj
+		SccProjectName5 = IAUEC_Apps.UI
+		SccLocalPath5 = IAUEC_Apps.UI
+	EndGlobalSection
+EndGlobal

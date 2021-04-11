@@ -1,0 +1,6 @@
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.WinService\obj\Debug\IAUEC_Apps.WinService.csprojAssemblyReference.cache
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.WinService\obj\Debug\IAUEC_Apps.WinService.ProjectInstaller.resources
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.WinService\obj\Debug\IAUEC_Apps.WinService.csproj.GenerateResource.cache
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.WinService\obj\Debug\IAUEC_Apps.WinService.csproj.CoreCompileInputs.cache
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.WinService\obj\Debug\IAUEC_Apps.WinService.exe
+D:\aaa_UniversityProjects\ProjDanesh_192.168.4.21\eServices\IAUEC_Apps.WinService\obj\Debug\IAUEC_Apps.WinService.pdb
